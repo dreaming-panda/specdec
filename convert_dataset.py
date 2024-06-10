@@ -65,8 +65,7 @@ def get_dataset(dataset_name: str, max_samples :int, num_fewshots: int = 0):
                 prefix += fewshot_data[few_shot_list[i]]
             
             text = prefix + text
-            print(text)
-            exit(0)
+            
             return_data.append(text)
         
         return return_data[:max_samples]
