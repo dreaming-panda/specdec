@@ -26,14 +26,14 @@ TEMP = 0.6
 VOCAB = 32000
 
 
-data = get_dataset("gsm8k", 100)
+data = get_dataset("xsum", 100, num_fewshots=2)
 tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", use_fast=False)
 EOS = tokenizer.eos_token_id
 PAD = tokenizer.pad_token_id
 BOS = tokenizer.bos_token_id
 if PAD == None:
     PAD = EOS
-draft = LLMEngine(model_name="meta-llama/Llama-2-7b-chat-hf", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
+draft = LLMEngine(model_name="JackFram/llama-68m", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
 target = LLMEngine(model_name="JackFram/llama-160m", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
 causal_mask = _make_causal_mask((1, 4096), DTYPE, DEVICE)
 storage_ids = torch.arange(start=0, end=4096, device=DEVICE).long()
@@ -48,13 +48,11 @@ for patch in data:
     
     tokens = tokenizer.encode(patch["question"])
     tokens = torch.LongTensor(tokens).unsqueeze(0).to(DEVICE)
-    tokens = torch.cat([tokens, torch.LongTensor([[1128]]).to(DEVICE)], dim=-1)
+    
     prompt_len = tokens.shape[1]
     dlogits = draft.inference(input_ids=tokens, storage_ids=storage_ids[:prompt_len], 
             position_ids=position_ids[:,:prompt_len], attention_mask=causal_mask[None, None, :, :][...,:prompt_len,:])
-    print(tokens)
-    print(dlogits)
-    exit(0)
+    
     tlogits = target.inference(input_ids=tokens, storage_ids=storage_ids[:prompt_len], 
             position_ids=position_ids[:,:prompt_len], attention_mask=causal_mask[None, None, :, :][...,:prompt_len,:])
     tlogits = tlogits[:,-1,:]

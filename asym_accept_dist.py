@@ -11,6 +11,8 @@ import random
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--seed', type=int, help='random_seed')
+parser.add_argument('--data', type=str, help='dataset')
+parser.add_argument('--shot', type=int, help='fewshot')
 args = parser.parse_args()
 
 def setup_seed(seed):
@@ -45,7 +47,7 @@ GAMMA = 3
 TEMP = 0.6
 VOCAB = 32000
 
-data = get_dataset("gsm8k", 10)
+data = get_dataset(args.data, 300, num_fewshots=args.shot)
 tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", use_fast=False)
 EOS = tokenizer.eos_token_id
 PAD = tokenizer.pad_token_id
@@ -53,7 +55,7 @@ BOS = tokenizer.bos_token_id
 if PAD == None:
     PAD = EOS
 draft = LLMEngine(model_name="meta-llama/Llama-2-7b-chat-hf", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
-target = LLMEngine(model_name="meta-llama/Llama-2-13b-chat-hf", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
+target = LLMEngine(model_name="meta-llama/Llama-2-70b-chat-hf", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
 causal_mask = _make_causal_mask((1, 4096), DTYPE, DEVICE)
 storage_ids = torch.arange(start=0, end=4096, device=DEVICE).long()
 position_ids = torch.arange(start=0, end=4096, device=DEVICE).long().unsqueeze(0)
@@ -64,11 +66,14 @@ NUM_STEPS = 0
 ACCEPT_TOKENS = 0
 data_id = 0
 for patch in data:
-    input_sentence = "[INST] " + patch["question"] + " [/INST]"
+    input_sentence = patch
     draft_tokens = tokenizer.encode(input_sentence)
     tokens = tokenizer.encode(input_sentence)
     draft_tokens = torch.LongTensor(draft_tokens).unsqueeze(0).to(DEVICE)
     tokens = torch.LongTensor(tokens).unsqueeze(0).to(DEVICE)
+
+    dist.broadcast(tensor=draft_tokens, src=0)
+    dist.broadcast(tensor=tokens, src=0)
     input_text = (
                     tokenizer.decode(
                     tokens[0],
@@ -85,6 +90,8 @@ for patch in data:
     generated_ids = []
     prompt_len = tokens.shape[1]
     draft_prompt_len = draft_tokens.shape[1]
+    if prompt_len >= 3600:
+        continue
     dlogits = draft.inference(input_ids=draft_tokens, storage_ids=storage_ids[:draft_prompt_len], 
             position_ids=position_ids[:,:draft_prompt_len], attention_mask=causal_mask[None, None, :, :][...,:draft_prompt_len,:])
 
@@ -95,6 +102,7 @@ for patch in data:
     
     tproba = F.softmax(tlogits/TEMP, dim=-1)
     sampled_tokens = tproba.multinomial(num_samples=1)
+    dist.broadcast(tensor=sampled_tokens, src=0)
     num_generated_tokens = 0
     last_verified_position = prompt_len
     
