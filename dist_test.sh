@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 0 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 1 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 2 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 3 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 4 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 5 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 6 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 7 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 8 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 9 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 10 >> dist_check2.log 
+CUDA_VISIBLE_DEVICES=5,6 OMP_NUM_THREADS=48 torchrun --nproc_per_node=2 accept_dist.py --seed 11 >> dist_check2.log 
