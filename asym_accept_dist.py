@@ -43,8 +43,8 @@ torch.cuda.set_device(local_rank)
 DEVICE = torch.device("cuda", local_rank)
 DTYPE = torch.float16
 STEP = 32
-GAMMA = 3
-TEMP = 0.6
+GAMMA = 2
+TEMP = 0.3
 VOCAB = 32000
 
 data = get_dataset(args.data, 300, num_fewshots=args.shot)
@@ -140,11 +140,12 @@ for patch in data:
         
         target_token_proba = tproba[:-1].gather(dim=-1, index=tokens_for_verify)
         draft_token_proba = draft_proba_buffer[:-1].gather(dim=-1, index=tokens_for_verify)
-
         
         accept_proba = target_token_proba / (draft_token_proba + 1e-4)
         r = torch.rand_like(accept_proba)
-        accept = (r < accept_proba).T.squeeze()
+        accept = (r < accept_proba).T.squeeze(0)
+        
+        
         num_accept_tokens = torch.zeros(1).to(DEVICE).long()
         for idx, ac in enumerate(accept):
             if ac: num_accept_tokens += 1
@@ -188,4 +189,6 @@ for patch in data:
     if local_rank == 0:
         print("\nData ID {}: decoding step: {}, large model step: {}, {}".format(data_id, ACCEPT_TOKENS, NUM_STEPS, ACCEPT_TOKENS / NUM_STEPS), flush=True)
     data_id += 1
+    draft.llm.kv_cache.clear()
+    target.llm.kv_cache.clear()
     dist.barrier()

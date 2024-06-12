@@ -1,0 +1,118 @@
+###
+[INST]Help me set up my daily to-do list!
+
+Write a python program based on the above instruction.[/INST] Here is a simple Python program to help you set up your daily to-do list:
+
+```python
+class ToDoList:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, task):
+        self.tasks.append(task)
+
+    def view_tasks(self):
+        
+Data ID 0: decoding step: 58, large model step: 32, 1.8125
+###
+[INST]Create a shopping list based on my inputs!
+
+Write a python program based on the above instruction.[/INST] Here is a simple Python program that creates a shopping list based on user inputs:
+
+```python
+def create_shopping_list():
+    shopping_list = []
+    while True:
+        item = input("Enter an item to add to your shopping list (or 'quit' 
+Data ID 1: decoding step: 112, large model step: 64, 1.75
+###
+[INST]Calculate how much time I spend on my phone per week!
+
+Write a python program based on the above instruction.[/INST] Here is a Python program that calculates how much time you spend on your phone per week:
+
+```python
+def calculate_phone_time():
+    # Ask the user how many hours they spend on their phone per day
+    daily_phone_time = float(input("How many hours do you spend on your 
+Data ID 2: decoding step: 171, large model step: 96, 1.78125
+###
+[INST]Help me split the bill among my friends!
+
+Write a python program based on the above instruction.[/INST] Here is a Python program that helps split a bill among friends:
+
+```python
+def split_bill():
+    total_bill = float(input("Enter the total bill amount: "))
+    num_friends = int(input("Enter the number of friends: "))
+
+    split_amount = total_bill / 
+Data ID 3: decoding step: 229, large model step: 128, 1.7890625
+###
+[INST]Organize my movie list into genres!
+
+Write a python program based on the above instruction.[/INST] Here is a Python program that organizes a movie list into genres:
+
+```python
+# Define a dictionary to store movies by genre
+movies = {
+    "Action": [],
+    "Comedy": [],
+    "Drama": [],
+    "Horror": [],
+    
+Data ID 4: decoding step: 284, large model step: 160, 1.775
+###
+[INST]Calculate the average rating of my book collection!
+
+Write a python program based on the above instruction.[/INST] Here is a Python program that calculates the average rating of a book collection:
+
+```python
+class Book:
+    def __init__(self, title, rating):
+        self.title = title
+        self.rating = rating
+
+class BookCollection:
+    def __init__(self):
+        self.books = []
+
+    
+Data ID 5: decoding step: 346, large model step: 192, 1.8020833333333333
+###
+[INST]Create a playlist based on my mood!
+
+Write a python program based on the above instruction.[/INST] Here is a simple Python program that creates a playlist based on the user's mood. The program asks the user to input their mood and then generates a playlist of 5 songs based on that mood.
+
+```python
+# Define a dictionary that maps 
+Data ID 6: decoding step: 397, large model step: 224, 1.7723214285714286
+###
+[INST]Help me find the best deals on my shopping list!
+
+Write a python program based on the above instruction.[/INST] Here is a Python program that helps you find the best deals on your shopping list:
+
+```python
+class ShoppingList:
+    def __init__(self):
+        self.items = {}
+
+    def add_item(self, item, price):
+        self.items[item] = price
+
+    def 
+Data ID 7: decoding step: 456, large model step: 256, 1.78125
+###
+[INST]Calculate how much I need to save per month for my vacation!
+
+Write a python program based on the above instruction.[/INST] ```
+# Python program to calculate how much you need to save per month for your vacation
+
+def calculate_vacation_savings():
+    # Get the total cost of the vacation
+    total_cost = float(input("Enter the total cost of your vacation: 
+Data ID 8: decoding step: 509, large model step: 288, 1.7673611111111112
+###
+[INST]Determine the most efficient route for my errands!
+
+Write a python program based on the above instruction.[/INST] Here is a simple Python program that uses Google Maps API to determine the most efficient route for your errands. This program assumes that you have a list of addresses and you want to find the shortest route that visits each address exactly once and returns to the 
+Data ID 9: decoding step: 560, large model step: 320, 1.75

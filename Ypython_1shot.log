@@ -1,0 +1,231 @@
+###
+[INST]How to develop autonomous drone algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing autonomous drone algorithms using AirSim.
+import airsim
+# Implement drone control, navigation, and obstacle avoidance.
+```
+###
+[INST]Help me set up my daily to-do list!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Daily To-Do List Program
+
+# Initialize an empty list to store tasks
+tasks = []
+
+def add_task():
+    task = input("Enter a task: ")
+    tasks.append(task)
+    print("Task 
+Data ID 0: decoding step: 49, large model step: 32, 1.53125
+###
+[INST]How to generate PDF reports?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Generating PDF reports using ReportLab.
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.lib.units import inch
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+# Create PDF with table data.
+```
+###
+[INST]Create a shopping list based on my inputs!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Create a shopping list based on user inputs.
+shopping_list = {}
+
+while True:
+    item = input("Enter an item to add to your shopping list (or 'done' to finish): ")
+    if item.lower() == 'done':
+        break
+    quantity 
+Data ID 1: decoding step: 107, large model step: 64, 1.671875
+###
+[INST]Demonstrate Python's list slicing
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [0, 1, 2, 3, 4, 5]
+first_three = my_list[:3]
+last_three = my_list[-3:]
+# Demonstrates list slicing to get the first three and last three elements.
+```
+###
+[INST]Calculate how much time I spend on my phone per week!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Python program to calculate the total time spent on phone per week.
+
+# Input the time spent on phone per day in hours
+monday = float(input("Enter time spent on phone on Monday (in hours): "))
+tuesday = float(input("Enter time spent on phone 
+Data ID 2: decoding step: 166, large model step: 96, 1.7291666666666667
+###
+[INST]How to send automated emails?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login('your_email', 'your_password')
+server.sendmail('from_email', 'to_email', 'Hello, this is an automated email.')
+server.quit()
+# This will send an automated email from 'from_email' to 'to_email'.
+```
+###
+[INST]Help me split the bill among my friends!
+
+Write a python program based on the above instruction.[/INST] ```python
+def split_bill(total_bill, number_of_friends):
+    amount_per_friend = total_bill / number_of_friends
+    return amount_per_friend
+
+total_bill = float(input("Enter the total bill: "))
+number_of_friends = int(input("Enter the number of friends: 
+Data ID 3: decoding step: 224, large model step: 128, 1.75
+###
+[INST]Elaborate on Python's walrus operator
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [1, 2, 3, 4, 5]
+squared = [n * n for n in my_list if (n := n % 2) == 1]
+# Demonstrates the use of the walrus operator to both calculate a value and use it in a condition within a list comprehension.
+```
+###
+[INST]Organize my movie list into genres!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Define a dictionary with movie titles as keys and genres as values
+movies = {
+    "The Shawshank Redemption": "Drama",
+    "The Godfather": "Crime",
+    "The Dark Knight": "Action",
+    
+Data ID 4: decoding step: 276, large model step: 160, 1.725
+###
+[INST]How to model climate change?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling climate change using CESM.
+from cesm_py import *
+# Simulate atmospheric, oceanic, and land processes to understand climate change.
+```
+###
+[INST]Calculate the average rating of my book collection!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculate the average rating of my book collection
+book_collection = [
+    {"title": "Book1", "rating": 4.5},
+    {"title": "Book2", "rating": 4.0},
+    {"title": 
+Data ID 5: decoding step: 333, large model step: 192, 1.734375
+###
+[INST]How to automate SSH commands?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import paramiko
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect('hostname', username='username', password='password')
+stdin, stdout, stderr = ssh.exec_command('ls')
+print(stdout.read().decode())
+ssh.close()
+# This will connect to an SSH server, execute the 'ls' command, and print the output.
+```
+###
+[INST]Create a playlist based on my mood!
+
+Write a python program based on the above instruction.[/INST] ```python
+import random
+
+# Dictionary to store songs based on mood
+songs = {
+    "happy": ["Walking on Sunshine", "I Gotta Feeling", "Happy"],
+    "sad": ["Someone Like You", 
+Data ID 6: decoding step: 380, large model step: 224, 1.6964285714285714
+###
+[INST]Explain Python loops
+
+Write a python program based on the above instruction.[/INST]
+```python
+for i in range(5):
+    print(i)
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+# Demonstrates how to use for loops with range and while loops.
+```
+###
+[INST]Help me find the best deals on my shopping list!
+
+Write a python program based on the above instruction.[/INST] ```python
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class Store:
+    def __init__(self):
+        self.products = []
+
+    def add_product(self, product):
+        self.products.append(product)
+
+    
+Data ID 7: decoding step: 440, large model step: 256, 1.71875
+###
+[INST]How to automate data writing to Excel files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df.to_excel('output.xlsx', index=False)
+# This will write the DataFrame to an Excel file.
+```
+###
+[INST]Calculate how much I need to save per month for my vacation!
+
+Write a python program based on the above instruction.[/INST] ```python
+def calculate_savings(vacation_cost, months_until_vacation):
+    monthly_savings = vacation_cost / months_until_vacation
+    return monthly_savings
+
+vacation_cost = float(input("Enter the total cost of your vacation: 
+Data ID 8: decoding step: 497, large model step: 288, 1.7256944444444444
+###
+[INST]Show how Python handles XML parsing
+
+Write a python program based on the above instruction.[/INST]
+```python
+import xml.etree.ElementTree as ET
+root = ET.fromstring('<root><child name="foo" /></root>')
+for child in root:
+    print(child.tag, child.attrib)
+# Demonstrates parsing an XML string and iterating through its children.
+```
+###
+[INST]Determine the most efficient route for my errands!
+
+Write a python program based on the above instruction.[/INST] ```python
+import math
+
+# Define the locations of the errands
+errands = {
+    'Home': (0, 0),
+    'Bank': (3, 4),
+    'Grocery Store': (6, 8),
+    'Post 
+Data ID 9: decoding step: 552, large model step: 320, 1.725

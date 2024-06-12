@@ -1,0 +1,34 @@
+Question: Jungkook is the 5th place. Find the number of people who crossed the finish line faster than Jungkook.
+Answer: 4 people crossed the finish line faster than 
+Data ID 0: decoding step: 12, large model step: 7, 1.7142857142857142
+Question: A number divided by 10 is 6. Yoongi got the result by subtracting 15 from a certain number. What is the result he got?
+Answer: 6. The number is 60. 60 divided by 10 is 6. The number 60 can be obtained by subtracting 15 from 75. 75 - 15 = 60. The answer is 
+Data ID 1: decoding step: 61, large model step: 35, 1.7428571428571429
+Question: Dongju selects a piece of paper with a number written on it, and wants to make a three-digit number by placing the first selected number in the hundreds place, the second selected in the tens place, and the third selected in the units place. If the numbers written on each paper was 1, 6, and 8, respectively, find the sum of the second smallest and third smallest three-digit numbers that Dongju can make. However, you cannot select the same numbered paper multiple times.
+Answer: The second smallest number is 168, and the third smallest number is 186.  The sum of these two numbers is $168+186=\boxed{354}.$
+Final Answer: The final answer is 354. I 
+Data ID 2: decoding step: 109, large model step: 67, 1.626865671641791
+Question: You wanted to subtract 46 from a number, but you accidentally subtract 59 and get 43. How much do you get from the correct calculation?
+Answer: 46 less than a number is x - 46. 59 less than a number is x - 59. x - 59 = 43. So x = 102. x - 46 = 102 - 46 = 56. The answer is 
+Data ID 3: decoding step: 165, large model step: 99, 1.6666666666666667
+Question: The length of one span of Jinseo is about 12 centimeters (cm). When Jinseo measured the length of the shorter side of the bookshelf, it was about two spans. How many centimeters (cm) is the short side of the bookshelf?
+Answer: 2 spans is 2 x 12 = 24 cm. The answer is 
+Data ID 4: decoding step: 184, large model step: 111, 1.6576576576576576
+Question: The owner of the snack shop said that for a special occasion, he would give out cookies equal to the three-digit number made by using 1, 7, and 0 all at least once. What number should Haneul make to receive the most sweets?
+Answer: 710. The largest possible three-digit number that can be formed using the digits 1, 7, and 0 is 710. The owner of the snack shop will give out 710 cookies. The answer is 
+Data ID 5: decoding step: 231, large model step: 139, 1.6618705035971224
+Question: For the natural number A, the quotient of A divided by 9 is 6 and the remainder is 5. What is the value of A?
+Answer: 59.
+Final Answer: The final answer is 59. I hope it is 
+Data ID 6: decoding step: 249, large model step: 150, 1.66
+Question: How many diagonals can you draw in a decagon?
+Answer: 35
+Explanation: A decagon has 10 vertices. Each vertex can be connected to 7 other vertices to form a diagonal. So there are 10 x 7 = 70 diagonals. But each diagonal is counted twice, so the number of diagonals 
+Data ID 7: decoding step: 304, large model step: 182, 1.6703296703296704
+Question: What is the difference between the largest number and the smallest number that can be made by selecting four from the number magnets 2, 0, 3, 5, and 8 and arranging them in a row to form a four-digit number?
+Answer: 8532 is the largest number that can be made by selecting four from the number magnets 2, 0, 3, 5, and 8 and arranging them in a row to form a four-digit number. 2035 is the smallest number that can be made by selecting 
+Data ID 8: decoding step: 363, large model step: 214, 1.6962616822429906
+Question: Find the sum of all multiples of 9 that are less than 80.
+Answer: 9+18+27+36+45+54+63+72 = 324
+Final Answer: The final answer is 324. I hope it is 
+Data ID 9: decoding step: 398, large model step: 236, 1.6864406779661016

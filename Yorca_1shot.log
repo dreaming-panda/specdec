@@ -1,0 +1,238 @@
+Question: Jimin's school uses 7000 liters (l) of water per day. Find how many days it will take for the water used at Jimin's school to reach 100000 liters (l).
+Answer: To find out how many days it will take for the water used at Jimin's school to reach 100,000 liters, we need to divide the total amount of water to be used by the amount of water used per day.
+
+Total amount of water to be used: 100,000 liters
+Amount of water used per day: 7,000 liters
+
+Number of days = Total amount of water to be used / Amount of water used per day
+Number of days = 100,000 liters / 7,000 liters per day
+Number of days = 14.2857 days
+
+Since we can't have a fraction of a day, we'll round up to the nearest whole day. Therefore, it will take 15 days for the water used at Jimin's school to reach 100,000 liters.
+Question: Jungkook is the 5th place. Find the number of people who crossed the finish line faster than Jungkook.
+Answer: 4 people crossed the finish line faster than Jungkook.
+Question: There are 12 people in the room. If 4 people leave, how many people are left?
+Answer: 12 - 4 = 8
+There are 8 people left in the 
+Data ID 0: decoding step: 58, large model step: 32, 1.8125
+Question: There are fifteen pieces of square-shaped colored paper with a side length of 25 centimeters (cm) glued together. Given that they were overlapped by 0.5 centimeters (cm) to connect them having a maximum length of one side of the paper, find its length in meters (m).
+Answer: To find the total length of the paper, we need to consider the overlap between each piece of paper. Since each piece of paper is 25 cm in length and they overlap by 0.5 cm, the effective length added by each additional piece of paper is 25 cm - 0.5 cm.
+
+For the first piece of paper, we have the full length of 25 cm. For each subsequent piece, we add 24.5 cm (since 0.5 cm is overlapped).
+
+With 15 pieces of paper, we have one full piece and 14 additional pieces that contribute an effective length of 24.5 cm each.
+
+The total length in centimeters is:
+25 cm + (14 * 24.5 cm)
+
+Now, let's calculate that:
+25 cm + (14 * 24.5 cm) = 25 cm + 343 cm
+Total length = 368 cm
+
+To convert centimeters to meters, we divide by 100 (since 1 meter = 100 centimeters).
+
+Total length in meters = 368 cm / 100
+Total length in meters = 3.68 m
+
+So, the length of the paper in meters is 3.68 m.
+Question: A number divided by 10 is 6. Yoongi got the result by subtracting 15 from a certain number. What is the result he got?
+Answer: 10 x 6 = 60. 60 + 15 = 75. So the number is 75.
+Question: A snail is at the bottom of a 20-foot well. Each day, it climbs 
+Data ID 1: decoding step: 105, large model step: 64, 1.640625
+Question: There are three bottles, A, B, and C, each with different sizes. 7 bottles of A and 3 bottles of B have the same capacity, and 1 bottle of B and 5 bottles of C are the same. How many bottles of C are equal to 21 bottles of A?
+Answer: Let's denote the capacity of bottle A as \( a \), bottle B as \( b \), and bottle C as \( c \).
+
+According to the problem, we have the following relationships:
+
+1. \( 7a = 3b \) (7 bottles of A have the same capacity as 3 bottles of B)
+2. \( b = 5c \) (1 bottle of B has the same capacity as 5 bottles of C)
+
+We want to find out how many bottles of C are equal to 21 bottles of A.
+
+First, let's express \( b \) in terms of \( a \) using the first equation:
+
+\[ 7a = 3b \]
+\[ b = \frac{7a}{3} \]
+
+Now, let's substitute \( b \) in the second equation with \( \frac{7a}{3} \):
+
+\[ b = 5c \]
+\[ \frac{7a}{3} = 5c \]
+
+Now, we want to find the equivalent number of bottles of C for 21 bottles of A. Let's express 21 bottles of A in terms of \( c \):
+
+\[ 21a = x \cdot c \]
+
+We need to find \( x \), the number of bottles of C that are equivalent to 21 bottles of A. To do this, we can use the relationship we found between \( a \) and \( c \):
+
+\[ \frac{7a}{3} = 5c \]
+\[ a = \frac{15c}{7} \]
+
+Now, substitute \( a \) in the equation for 21 bottles of A:
+
+\[ 21 \cdot \frac{15c}{7} = x \cdot c \]
+
+Simplify the equation:
+
+\[ 3 \cdot 15c = x \cdot c \]
+\[ 45c = x \cdot c \]
+
+Now, divide both sides by \( c \) to solve for \( x \):
+
+\[ x = 45 \]
+
+Therefore, 21 bottles of A are equal to 45 bottles of C.
+Question: Dongju selects a piece of paper with a number written on it, and wants to make a three-digit number by placing the first selected number in the hundreds place, the second selected in the tens place, and the third selected in the units place. If the numbers written on each paper was 1, 6, and 8, respectively, find the sum of the second smallest and third smallest three-digit numbers that Dongju can make. However, you cannot select the same numbered paper multiple times.
+Answer: The second smallest three-digit number is 168, and the third smallest is 186.  Their sum is 168 + 186 = 354.
+Final Answer: The final answer is 354. I hope it is 
+Data ID 2: decoding step: 152, large model step: 92, 1.6521739130434783
+Question: The conch-shaped bread is 250 grams (g) and I made two boxes with 12 each. The Red-bean bread is 200 grams (g) and is made into three boxes with 16 each. Which bread is in the box that weighs more than other boxes?
+Answer: First, let's calculate the total weight of each type of bread per box.
+
+For the conch-shaped bread:
+Each bread weighs 250 grams and there are 12 in a box, so:
+250 grams/bread * 12 breads/box = 3000 grams/box
+
+For the Red-bean bread:
+Each bread weighs 200 grams and there are 16 in a box, so:
+200 grams/bread * 16 breads/box = 3200 grams/box
+
+Comparing the two:
+- A box of conch-shaped bread weighs 3000 grams.
+- A box of Red-bean bread weighs 3200 grams.
+
+The box with the Red-bean bread weighs more than the box with the conch-shaped bread.
+Question: You wanted to subtract 46 from a number, but you accidentally subtract 59 and get 43. How much do you get from the correct calculation?
+Answer: 43 + 59 = 102. 102 + 46 = 148. 148 - 46 = 102.
+Question: If 3 apples cost 100 yen, how much will 12 apples cost?
+Answer: 3 apples cost 100 
+Data ID 3: decoding step: 207, large model step: 124, 1.6693548387096775
+Question: I bought 16 pencils at a stationery store, but I lost a few on the way back home. When I counted the number of remaining pencils, there were 8. How many pencils were lost?
+Answer: If you started with 16 pencils and ended up with 8, then you lost:
+
+16 - 8 = 8 pencils.
+Question: The length of one span of Jinseo is about 12 centimeters (cm). When Jinseo measured the length of the shorter side of the bookshelf, it was about two spans. How many centimeters (cm) is the short side of the bookshelf?
+Answer: 2 spans = 2 x 12 = 24 cm.
+Question: If 5 apples cost 1000 won, how much will 15 apples cost?
+Answer: If 5 apples cost 1000 won, then 1 apple costs 1000 / 5 
+Data ID 4: decoding step: 264, large model step: 156, 1.6923076923076923
+Question: There are 56 tulips. Red tulips are 3/7 of the total. Blue tulips are 3/8 of the total. If the rest are pink tulips, how many pink tulips are there?
+Answer: First, let's find out how many red tulips there are. Since red tulips are 3/7 of the total, we can calculate the number of red tulips by multiplying the total number of tulips by 3/7:
+
+Number of red tulips = (3/7) * 56
+
+Now, let's find out how many blue tulips there are. Since blue tulips are 3/8 of the total, we can calculate the number of blue tulips by multiplying the total number of tulips by 3/8:
+
+Number of blue tulips = (3/8) * 56
+
+Finally, to find out how many pink tulips there are, we subtract the number of red and blue tulips from the total number of tulips:
+
+Number of pink tulips = Total tulips - (Number of red tulips + Number of blue tulips)
+
+Let's do the calculations:
+
+Number of red tulips = (3/7) * 56 = 3 * 8 = 24
+Number of blue tulips = (3/8) * 56 = 3 * 7 = 21
+
+Number of pink tulips = 56 - (24 + 21) = 56 - 45 = 11
+
+So, there are 11 pink tulips.
+Question: The owner of the snack shop said that for a special occasion, he would give out cookies equal to the three-digit number made by using 1, 7, and 0 all at least once. What number should Haneul make to receive the most sweets?
+Answer: 710. This is because 710 is the largest possible three-digit number that can be formed using the digits 1, 7, and 0. If Haneul makes this number, he will receive the most 
+Data ID 5: decoding step: 310, large model step: 181, 1.712707182320442
+Question: Find the sum of odd numbers from 100 to 200.
+Answer: To find the sum of odd numbers from 100 to 200, we first need to identify the first and last odd numbers in this range.
+
+The first odd number after 100 is 101, and the last odd number before 200 is 199.
+
+Now, we can use the formula for the sum of an arithmetic series:
+
+Sum = n/2 * (first term + last term)
+
+where n is the number of terms.
+
+To find n, we can use the formula for the nth term of an arithmetic sequence:
+
+last term = first term + (n - 1) * common difference
+
+Here, the common difference is 2 (since we are looking at odd numbers, which are 2 units apart).
+
+199 = 101 + (n - 1) * 2
+
+Solving for n:
+
+199 = 101 + 2n - 2
+199 = 99 + 2n
+100 = 2n
+n = 50
+
+So, there are 50 odd numbers between 100 and 200.
+
+Now, we can find the sum:
+
+Sum = 50/2 * (101 + 199)
+Sum = 25 * (300)
+Sum = 7500
+
+Therefore, the sum of odd numbers from 100 to 200 is 7500.
+Question: For the natural number A, the quotient of A divided by 9 is 6 and the remainder is 5. What is the value of A?
+Answer: 6 * 9 = 54. 54 + 5 = 59.
+Final Answer: The final answer is 59. I hope it is 
+Data ID 6: decoding step: 343, large model step: 201, 1.7064676616915422
+Question: 55 students participated in A competition and B competition. Among them, 38 students participated in A  competition, and 42 students participated in B competition. If no student did not participate in neither competitions A nor B, how many students participated in both competitions?
+Answer: Let's denote the number of students who participated in both competitions as X.
+
+According to the problem, we have the following information:
+
+- The total number of students who participated in at least one of the competitions is 55.
+- The number of students who participated in competition A is 38.
+- The number of students who participated in competition B is 42.
+
+We can use the principle of inclusion-exclusion to find the number of students who participated in both competitions. The principle of inclusion-exclusion states that for any two sets, the size of their union is equal to the sum of the sizes of each set minus the size of their intersection.
+
+In this case, the union of the two sets (students who participated in competition A and students who participated in competition B) is the total number of students who participated in at least one competition, which is 55.
+
+So, we have:
+
+Number of students in A + Number of students in B - Number of students in both A and B = Total number of students
+
+38 (A) + 42 (B) - X (Both A and B) = 55
+
+80 - X = 55
+
+X = 80 - 55
+
+X = 25
+
+Therefore, 25 students participated in both competitions A and B.
+Question: How many diagonals can you draw in a decagon?
+Answer: 35
+Explanation: A decagon is a polygon with 10 vertices. To find the number of diagonals, we can use the formula:
+
+Number of diagonals = (Number of vertices × (Number of vertices - 3)) / 2
+
+In this case, the number of 
+Data ID 7: decoding step: 402, large model step: 233, 1.7253218884120172
+Question: Find the area in centimeters (cm) of a rectangle whose length is 4 centimeters (cm) and width is 2 centimeters (cm).
+Answer: The area of a rectangle is calculated by multiplying the length by the width. 
+
+So, for a rectangle with a length of 4 cm and a width of 2 cm, the area would be:
+
+Area = length × width
+Area = 4 cm × 2 cm
+Area = 8 cm²
+
+Therefore, the area of the rectangle is 8 square centimeters (cm²).
+Question: What is the difference between the largest number and the smallest number that can be made by selecting four from the number magnets 2, 0, 3, 5, and 8 and arranging them in a row to form a four-digit number?
+Answer: 8532 is the largest number that can be formed using the given digits, and 2030 is the smallest number that can be formed. The difference between these two numbers is:
+
+8532 - 2030 = 6502
+
+Therefore, the difference between the largest and smallest 
+Data ID 8: decoding step: 459, large model step: 265, 1.7320754716981133
+Question: JungKook took the elevator from the entrance of the apartment and arrived on the third floor. At this time, Jimin was going up the stairs from the entrance of the same apartment building and passing by the 5th floor. Who climbed higher?
+Answer: Jimin climbed higher. He was passing by the 5th floor, while JungKook arrived on the 3rd floor.
+Question: Find the sum of all multiples of 9 that are less than 80.
+Answer: 9 + 18 + 27 + 36 + 45 + 54 + 63 + 72 = 324.
+Question: A snail is at the bottom of a 20-foot well. Each day, it climbs up 3 feet, but 
+Data ID 9: decoding step: 513, large model step: 297, 1.7272727272727273
