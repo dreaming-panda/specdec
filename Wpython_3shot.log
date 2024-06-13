@@ -1,0 +1,4505 @@
+###
+[INST]How to develop autonomous drone algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing autonomous drone algorithms using AirSim.
+import airsim
+# Implement drone control, navigation, and obstacle avoidance.
+```
+###
+[INST]Write the code for a chat application that supports end-to-end encryption
+
+Write a python program based on the above instruction.[/INST]
+```python
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+text = 'Hello, world!'
+encrypted_text = cipher_suite.encrypt(text.encode())
+decrypted_text = cipher_suite.decrypt(encrypted_text).decode()
+```
+###
+[INST]Implement a chatbot using the ChatterBot library
+
+Write a python program based on the above instruction.[/INST]
+```python
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+chatbot = ChatBot('MyBot')
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train('chatterbot.corpus.english')
+while True:
+    user_input = input('You: ')
+    if user_input.lower() == 'quit':
+        break
+    response = chatbot.get_response(user_input)
+    print(f'Bot: {response}')
+# Creates a conversational chatbot using ChatterBot and trains it with English corpus. The bot then engages in a chat loop.
+```
+###
+[INST]Help me set up my daily to-do list!
+
+Write a python program based on the above instruction.[/INST] ```python
+import datetime
+import os
+
+# Set up the daily to-do list
+todo_list = []
+
+# Function to add tasks to the list
+def add_task(task):
+    todo_list.append(task)
+
+# Function to display the list
+def display_list():
+    
+Data ID 0: decoding step: 55, large model step: 32, 1.71875
+###
+[INST]How to generate PDF reports?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Generating PDF reports using ReportLab.
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.lib.units import inch
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+# Create PDF with table data.
+```
+###
+[INST]How to perform real-time sentiment analysis?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Real-time sentiment analysis using Keras and LSTM.
+from keras.models import Sequential
+# Build an LSTM model for sentiment classification.
+```
+###
+[INST]Explain Python lambda functions
+
+Write a python program based on the above instruction.[/INST]
+```python
+square = lambda x: x ** 2
+result = square(5)  # Result will be 25
+# Demonstrates how to use a lambda function to square a number.
+```
+###
+[INST]Create a shopping list based on my inputs!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Create a shopping list based on user inputs.
+shopping_list = {}
+while True:
+    item = input("Enter item (or 'done' to finish): ")
+    if item.lower() == 'done':
+        
+Data ID 1: decoding step: 104, large model step: 64, 1.625
+###
+[INST]Demonstrate Python's list slicing
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [0, 1, 2, 3, 4, 5]
+first_three = my_list[:3]
+last_three = my_list[-3:]
+# Demonstrates list slicing to get the first three and last three elements.
+```
+###
+[INST]Explain Python's Scikit-learn library
+
+Write a python program based on the above instruction.[/INST]
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2)
+model = KNeighborsClassifier()
+model.fit(X_train, y_train)
+# Demonstrates how to load a dataset, split it into training and test sets, and train a K-NN classifier using Scikit-learn.
+```
+###
+[INST]Discuss Python's list methods like extend and remove
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [1, 2, 3]
+my_list.extend([4, 5])
+my_list.remove(2)
+# Demonstrates the use of list methods like extend to add multiple elements and remove to delete an element.
+```
+###
+[INST]Calculate how much time I spend on my phone per week!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Assuming you have a list of daily phone usage in minutes
+daily_usage = [30, 45, 60, 90, 120, 30, 45, 60, 90, 
+Data ID 2: decoding step: 154, large model step: 96, 1.6041666666666667
+###
+[INST]How to send automated emails?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login('your_email', 'your_password')
+server.sendmail('from_email', 'to_email', 'Hello, this is an automated email.')
+server.quit()
+# This will send an automated email from 'from_email' to 'to_email'.
+```
+###
+[INST]How to simulate quantum computing algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum computing algorithms using Cirq.
+import cirq
+# Design, simulate, and run quantum circuits.
+```
+###
+[INST]How to work with natural language queries?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import nltk
+import sqlparse
+# Function to convert natural language query to SQL goes here.
+# This will translate a natural language query into an SQL query for database interactions.
+```
+###
+[INST]Help me split the bill among my friends!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Split the bill among friends.
+import math
+def split_bill(total_bill, friends):
+    return total_bill / friends
+
+friends = int(input("Enter the number of friends: "))
+total_bill = float(input("Enter the total bill: 
+Data ID 3: decoding step: 207, large model step: 128, 1.6171875
+###
+[INST]Elaborate on Python's walrus operator
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [1, 2, 3, 4, 5]
+squared = [n * n for n in my_list if (n := n % 2) == 1]
+# Demonstrates the use of the walrus operator to both calculate a value and use it in a condition within a list comprehension.
+```
+###
+[INST]Write the code for a file encryption desktop app
+
+Write a python program based on the above instruction.[/INST]
+```python
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+# File encryption logic here
+```
+###
+[INST]Explain Python's use of dunder methods
+
+Write a python program based on the above instruction.[/INST]
+```python
+class MyClass:
+    def __init__(self, x):
+        self.x = x
+    def __add__(self, other):
+        return self.x + other.x
+a = MyClass(5)
+b = MyClass(10)
+print(a + b)
+# Demonstrates the use of dunder methods to overload the + operator.
+```
+###
+[INST]Organize my movie list into genres!
+
+Write a python program based on the above instruction.[/INST] ```python
+class Movie:
+    def __init__(self, title, genre):
+        self.title = title
+        self.genre = genre
+movies = [
+    Movie("The Shawshank Redemption", "Drama"),
+    Movie("The Godfather", 
+Data ID 4: decoding step: 262, large model step: 160, 1.6375
+###
+[INST]How to model climate change?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling climate change using CESM.
+from cesm_py import *
+# Simulate atmospheric, oceanic, and land processes to understand climate change.
+```
+###
+[INST]Explain Python threading
+
+Write a python program based on the above instruction.[/INST]
+```python
+import threading
+def print_numbers():
+    for i in range(10):
+        print(i)
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()
+# Demonstrates how to use threading to run a function concurrently.
+```
+###
+[INST]How to model climate change?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling climate change using CESM.
+import cesm
+# Simulate atmospheric, oceanic, and land surface processes.
+```
+###
+[INST]Calculate the average rating of my book collection!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculate the average rating of my book collection.
+import statistics
+ratings = [4.5, 3.8, 4.2, 4.1, 4.9]
+average_rating = statistics.mean(ratings)
+print("Average 
+Data ID 5: decoding step: 318, large model step: 192, 1.65625
+###
+[INST]How to automate SSH commands?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import paramiko
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect('hostname', username='username', password='password')
+stdin, stdout, stderr = ssh.exec_command('ls')
+print(stdout.read().decode())
+ssh.close()
+# This will connect to an SSH server, execute the 'ls' command, and print the output.
+```
+###
+[INST]How to automate API requests?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import requests
+response = requests.get('https://api.example.com/data')
+data = response.json()
+print(data)
+# This will send a GET request to the specified API and print the response data.
+```
+###
+[INST]How to automate data extraction from SQL databases?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sqlite3
+conn = sqlite3.connect('database.db')
+c = conn.cursor()
+c.execute('SELECT * FROM table')
+rows = c.fetchall()
+for row in rows:
+    print(row)
+# This will connect to a SQLite database, execute a SQL query, and print the results.
+```
+###
+[INST]Create a playlist based on my mood!
+
+Write a python program based on the above instruction.[/INST] ```python
+import random
+mood = input("Enter your mood (e.g. happy, sad, energetic): ")
+playlist = {
+    "happy": ["song1", "song2", "song3"],
+    "sad": ["song4", 
+Data ID 6: decoding step: 372, large model step: 224, 1.6607142857142858
+###
+[INST]Explain Python loops
+
+Write a python program based on the above instruction.[/INST]
+```python
+for i in range(5):
+    print(i)
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+# Demonstrates how to use for loops with range and while loops.
+```
+###
+[INST]How to model neuronal dynamics?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling neuronal dynamics using Brian2.
+from brian2 import *
+# Create and simulate spiking neural networks.
+```
+###
+[INST]How to perform image-to-text conversion?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from PIL import Image
+import pytesseract
+text = pytesseract.image_to_string(Image.open('image.png'))
+print(f'Text extracted: {text}')
+# This will open an image file, convert it to text using pytesseract, and then print the extracted text.
+```
+###
+[INST]Help me find the best deals on my shopping list!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Find the best deals on your shopping list using Python.
+import requests
+from bs4 import BeautifulSoup
+
+# Define the shopping list and the target website.
+shopping_list = ['apple', 'banana', 'orange']
+target_website = 
+Data ID 7: decoding step: 424, large model step: 256, 1.65625
+###
+[INST]How to automate data writing to Excel files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df.to_excel('output.xlsx', index=False)
+# This will write the DataFrame to an Excel file.
+```
+###
+[INST]How to perform high-frequency trading?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing high-frequency trading using Backtrader.
+import backtrader as bt
+# Develop trading algorithms, backtest strategies, and execute trades in real-time.
+```
+###
+[INST]How to simulate quantum many-body systems?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum many-body systems using QuTiP.
+from qutip import *
+# Model quantum systems and solve quantum dynamics.
+```
+###
+[INST]Calculate how much I need to save per month for my vacation!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculate how much to save per month for your vacation.
+import math
+
+# Define variables
+vacation_cost = 10000  # Total cost of vacation
+months_to_save = 12  # Number of months to 
+Data ID 8: decoding step: 475, large model step: 288, 1.6493055555555556
+###
+[INST]Show how Python handles XML parsing
+
+Write a python program based on the above instruction.[/INST]
+```python
+import xml.etree.ElementTree as ET
+root = ET.fromstring('<root><child name="foo" /></root>')
+for child in root:
+    print(child.tag, child.attrib)
+# Demonstrates parsing an XML string and iterating through its children.
+```
+###
+[INST]How to develop augmented reality experiences?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing augmented reality experiences using Vuforia SDK.
+from vuforia import *
+# Create interactive 3D overlays on real-world environments.
+```
+###
+[INST]How to deploy a machine learning model?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, request, jsonify
+import pickle
+app = Flask(__name__)
+model = pickle.load(open('model.pkl', 'rb'))
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json()
+    prediction = model.predict([data])[0]
+    return jsonify({'prediction': prediction})
+if __name__ == '__main__':
+    app.run()
+# This will deploy a pre-trained machine learning model as a web service using Flask.
+```
+###
+[INST]Determine the most efficient route for my errands!
+
+Write a python program based on the above instruction.[/INST] ```python
+import networkx as nx
+from ortools.constraint_solver import routing_enums_pb2
+from ortools.constraint_solver import pywrapcp
+# Create a sample problem data.
+manager = 
+Data ID 9: decoding step: 520, large model step: 320, 1.625
+###
+[INST]Write the code for a bot that plays chess
+
+Write a python program based on the above instruction.[/INST]
+```python
+import chess
+import chess.engine
+board = chess.Board()
+engine = chess.engine.SimpleEngine.popen_uci("/path/to/engine")
+result = engine.play(board, chess.engine.Limit(time=1.0))
+board.push(result.move)
+```
+###
+[INST]How to perform brain-computer interface?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing brain-computer interface using BrainFlow.
+import brainflow
+# Acquire, analyze and visualize brain data.
+```
+###
+[INST]How to develop a quantum key distribution system?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing a quantum key distribution system using QKD.
+from pyqkd.qkd import BB84
+# Implement quantum cryptography for secure communication.
+```
+###
+[INST]Help me manage my subscriptions!
+
+Write a python program based on the above instruction.[/INST] ```python
+import csv
+import datetime
+import os
+
+# Load subscription data from a CSV file
+with open('subscriptions.csv', 'r') as f:
+    reader = csv.DictReader(f)
+    subscriptions = 
+Data ID 10: decoding step: 565, large model step: 352, 1.6051136363636365
+###
+[INST]Elaborate on Python's memory management using gc module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import gc
+collected = gc.collect()
+# Demonstrates forcing garbage collection using the gc module. Returns the number of unreachable objects.
+```
+###
+[INST]How to automate data writing to zip files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import zipfile
+with zipfile.ZipFile('file.zip', 'w') as zipf:
+    zipf.write('file.txt')
+# This will write a file to a new zip file.
+```
+###
+[INST]Write the code for a web scraper using Selenium.
+
+Write a python program based on the above instruction.[/INST]
+```python
+from selenium import webdriver
+driver = webdriver.Firefox()
+driver.get('http://www.python.org\nassert 'Python' in driver.title')
+```
+###
+[INST]Create a meal plan for the week!
+
+Write a python program based on the above instruction.[/INST] ```python
+import random
+import datetime
+
+# List of meals
+meals = ['Breakfast', 'Lunch', 'Dinner']
+# List of dishes
+dishes = ['Eggs', 'Pasta', 'Grilled Chicken', 
+Data ID 11: decoding step: 618, large model step: 384, 1.609375
+###
+[INST]How to automate SSH commands?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import paramiko
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect('hostname', username='username', password='password')
+stdin, stdout, stderr = ssh.exec_command('ls')
+print(stdout.read().decode())
+ssh.close()
+# This will connect to an SSH server, execute the 'ls' command, and print the output.
+```
+###
+[INST]How to develop a self-driving car algorithm?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing a self-driving car algorithm using CARLA.
+import carla
+# Create autonomous driving simulations and scenarios.
+```
+###
+[INST]Show how Python handles XML parsing
+
+Write a python program based on the above instruction.[/INST]
+```python
+import xml.etree.ElementTree as ET
+root = ET.fromstring('<root><child name="foo" /></root>')
+for child in root:
+    print(child.tag, child.attrib)
+# Demonstrates parsing an XML string and iterating through its children.
+```
+###
+[INST]Calculate my carbon footprint based on my daily activities!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculate daily carbon footprint based on daily activities.
+import carbonfootprint
+activities = {
+    'commuting': 10,  # kg CO2e
+    'cooking': 5,  # kg 
+Data ID 12: decoding step: 668, large model step: 416, 1.6057692307692308
+###
+[INST]How to perform computational fluid dynamics?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing computational fluid dynamics using SU2.
+import SU2
+# Solve flow equations and optimize aerodynamic shapes.
+```
+###
+[INST]Implement natural language processing
+
+Write a python program based on the above instruction.[/INST]
+```python
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+example_text = input('Enter a sentence for NLP processing: ')
+words = word_tokenize(example_text)
+filtered_words = [w for w in words if w not in stopwords.words('english')]
+print(f'Filtered words: {filtered_words}')
+# Dynamically tokenize a sentence and remove stopwords.
+```
+###
+[INST]How to analyze subatomic particle data?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing subatomic particle data using ROOT.
+import ROOT
+# Process and visualize data from particle accelerators.
+```
+###
+[INST]Help me set reminders for my favorite TV shows!
+
+Write a python program based on the above instruction.[/INST] ```python
+import datetime
+import time
+# Set reminders for favorite TV shows.
+def set_reminder(show_name, start_time):
+    while True:
+        current_time = datetime.datetime.now()
+        if current_time.hour == start_time.hour and 
+Data ID 13: decoding step: 719, large model step: 448, 1.6049107142857142
+###
+[INST]How to create a neural network for image classification?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+    MaxPooling2D((2, 2)),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D((2, 2)),
+    Flatten(),
+    Dense(128, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+# This will create a convolutional neural network for image classification.
+```
+###
+[INST]Automate file operations like copy, move, and delete
+
+Write a python program based on the above instruction.[/INST]
+```python
+import shutil, os
+source_file ='source.txt'
+destination_folder = 'destination_folder'
+shutil.copy(source_file, destination_folder)
+shutil.move('destination_folder/source.txt', 'destination_folder/moved_source.txt')
+os.remove('destination_folder/moved_source.txt')
+# Copies a file to a destination folder, renames it by moving, and then deletes it using shutil and os libraries.
+```
+###
+[INST]How to build a Twitter bot?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tweepy
+auth = tweepy.OAuthHandler('CONSUMER_KEY', 'CONSUMER_SECRET')
+auth.set_access_token('ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET')
+api = tweepy.API(auth)
+api.update_status('Hello, Twitter!')
+# This will post a tweet saying 'Hello, Twitter!' from your account.
+```
+###
+[INST]Assist me in managing my study schedule!
+
+Write a python program based on the above instruction.[/INST] ```python
+import datetime
+class StudySchedule:
+    def __init__(self):
+        self.tasks = []
+    def add_task(self, task, deadline):
+        self.tasks.append({'task': task, 'deadline': deadline})
+    def check_tasks(self):
+        for task 
+Data ID 14: decoding step: 775, large model step: 480, 1.6145833333333333
+###
+[INST]Discuss Python's use of the hashlib module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import hashlib
+hashed = hashlib.sha256(b'hello world').hexdigest()
+# Demonstrates hashing a string using the SHA-256 algorithm from the hashlib module.
+```
+###
+[INST]How to do network analysis?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing network analysis using NetworkX.
+import networkx as nx
+# Use NetworkX for network analysis.
+# Implement graph algorithms, shortest paths, and network visualization.
+```
+###
+[INST]How to develop autonomous drones?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing autonomous drones using DroneKit.
+import dronekit
+# Control drones using simple and powerful API.
+```
+###
+[INST]Help me calculate the ROI for my investments!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculating ROI using Python.
+import pandas as pd
+# Load data into a pandas DataFrame.
+# Calculate ROI using the formula: ROI = (Gain from Investment - Cost of Investment) / Cost of 
+Data ID 15: decoding step: 827, large model step: 512, 1.615234375
+###
+[INST]Explain Python file operations
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as file:
+    content = file.read()
+with open('file.txt', 'w') as file:
+    file.write('Hello, world!')
+# Demonstrates how to read from and write to files in Python using the with statement.
+```
+###
+[INST]Illustrate Python dictionary and its methods
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+value = my_dict.get('key1')  # Get value by key
+my_dict['key3'] = 'value3'  # Add new key-value pair
+keys = my_dict.keys()  # Get all keys
+# Demonstrates basic dictionary methods like getting value by key, adding key-value pairs, and getting all keys.
+```
+###
+[INST]How to apply genetic algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from deap import base, creator, tools, algorithms
+creator.create('FitnessMax', base.Fitness, weights=(1.0,))
+creator.create('Individual', list, fitness=creator.FitnessMax)
+# Further implementation details go here.
+# This will set up a basic framework for applying genetic algorithms using the DEAP library.
+```
+###
+[INST]Assist me in tracking my water intake!
+
+Write a python program based on the above instruction.[/INST] ```python
+class WaterTracker:
+    def __init__(self):
+        self.water_intake = 0
+        self.target_intake = 0
+
+    def set_target_intake(self, target_intake):
+        self.target_intake = 
+Data ID 16: decoding step: 880, large model step: 544, 1.6176470588235294
+###
+[INST]How to simulate quantum computing algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum computing algorithms using Quipper.
+import quipper
+# Implement quantum circuits and quantum algorithms.
+```
+###
+[INST]Explain Python's use of decorators with arguments
+
+Write a python program based on the above instruction.[/INST]
+```python
+def repeat(n):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for _ in range(n):
+                func(*args, **kwargs)
+        return wrapper
+    return decorator
+@repeat(3)
+def greet():
+    print('Hello')
+# Demonstrates a decorator that takes an argument to repeat a function multiple times.
+```
+###
+[INST]Elaborate on Python's logging capabilities
+
+Write a python program based on the above instruction.[/INST]
+```python
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.info('This is an info message')
+# Demonstrates basic logging capabilities.
+```
+###
+[INST]Help me find the best time to post on social media based on my followers!
+
+Write a python program based on the above instruction.[/INST] ```python
+import pandas as pd
+from datetime import datetime
+# Load your followers' engagement data into a pandas DataFrame.
+# Calculate the average engagement rate for each hour of the day.
+# Determine the best time to post based on the average engagement 
+Data ID 17: decoding step: 932, large model step: 576, 1.6180555555555556
+###
+[INST]Write the code for a video game bot
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pygame
+pygame.init()
+screen = pygame.display.set_mode((800, 600))
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    # Bot logic here
+    pygame.display.update()
+```
+###
+[INST]Write the code for a sentiment analysis model using NLTK
+
+Write a python program based on the above instruction.[/INST]
+```python
+from nltk.sentiment import SentimentIntensityAnalyzer
+sia = SentimentIntensityAnalyzer()
+text = 'What a great day!'
+polarity = sia.polarity_scores(text)
+print(polarity)
+```
+###
+[INST]Discuss Python's zipfile module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import zipfile
+with zipfile.ZipFile('example.zip', 'w') as myzip:
+    myzip.write('example.txt')
+# Demonstrates how to create a ZIP file and write a file into it using the zipfile module.
+```
+###
+[INST]Assist me in calculating my monthly budget!
+
+Write a python program based on the above instruction.[/INST] ```python
+# Define the income and expenses
+income = float(input("Enter your monthly income: "))
+rent = float(input("Enter your monthly rent: "))
+utilities = float(input("Enter your monthly utilities: "))
+food = float(input("Enter your monthly food: 
+Data ID 18: decoding step: 988, large model step: 608, 1.625
+###
+[INST]How to automate file decompression?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import zipfile
+with zipfile.ZipFile('file.zip', 'r') as zipf:
+    zipf.extractall()
+# This will decompress all files from 'file.zip' into the current directory.
+```
+###
+[INST]Explain Python's use of the sqlite3 module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sqlite3
+conn = sqlite3.connect('example.db')
+c = conn.cursor()
+c.execute('CREATE TABLE IF NOT EXISTS users (name text, age integer)')
+# Demonstrates creating a SQLite database and a table using the sqlite3 module.
+```
+###
+[INST]How to develop augmented reality applications?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing augmented reality applications using ARToolKit.
+import ARToolKit
+# Create AR markers, track objects, and overlay virtual content.
+```
+###
+[INST]Calculate my coffee consumption
+
+Write a python program based on the above instruction.[/INST] ```python
+# Calculate your coffee consumption.
+import datetime
+start_date = datetime.date(2022, 1, 1)
+end_date = datetime.date(2022, 12, 31)
+coffee_consumption = 0
+for day in 
+Data ID 19: decoding step: 1041, large model step: 640, 1.6265625
+###
+[INST]Write the code for a real-time stock market tracking desktop app
+
+Write a python program based on the above instruction.[/INST]
+```python
+import yfinance as yf
+ticker = yf.Ticker('AAPL\nhistory = ticker.history(period='1d')
+# Stock tracking logic here')
+```
+###
+[INST]Elaborate on Python's ternary conditional operator
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 5
+result = 'Even' if x % 2 == 0 else 'Odd'
+# Demonstrates the use of the ternary conditional operator to check if a number is even or odd.
+```
+###
+[INST]How to build an OS kernel?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building an OS kernel using COSMOS.
+import cosmos
+# Develop and simulate an operating system kernel.
+```
+###
+[INST]Help me balance my diet
+
+Write a python program based on the above instruction.[/INST] ```python
+# A simple Python program to help you track your daily calorie intake.
+def calculate_calories():
+    # Ask the user for their daily calorie intake goal.
+    goal = int(input("Enter your daily calorie intake goal: "))
+    # Ask the user for their 
+Data ID 20: decoding step: 1097, large model step: 672, 1.6324404761904763
+###
+[INST]How to automate audio playback?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sounddevice as sd
+import numpy as np
+fs = 44100  # Sample rate
+myrecording = np.loadtxt('myrecording.txt')  # Load from text file
+sd.play(myrecording, fs)
+sd.wait()  # Wait until file is done playing
+# This will load an audio file from a text file and play it.
+```
+###
+[INST]Discuss Python's use of metaclasses
+
+Write a python program based on the above instruction.[/INST]
+```python
+class MyMeta(type):
+    def __init__(cls, name, bases, dct):
+        super().__init__(name, bases, dct)
+class MyClass(metaclass=MyMeta):
+    pass
+# Demonstrates the use of a metaclass to control class creation.
+```
+###
+[INST]How to perform face recognition?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import face_recognition
+image = face_recognition.load_image_file('your_image.jpg')
+face_locations = face_recognition.face_locations(image)
+print(f'Found {len(face_locations)} face(s) in the image.')
+# This will load an image file and detect the number of faces present.
+```
+###
+[INST]Help me set fitness goals
+
+Write a python program based on the above instruction.[/INST] ```python
+class FitnessGoal:
+    def __init__(self, goal_type, target_value):
+        self.goal_type = goal_type
+        self.target_value = target_value
+    def check_progress(self, current_value):
+        if self.goal_type == 
+Data ID 21: decoding step: 1152, large model step: 704, 1.6363636363636365
+###
+[INST]How to perform automated unit testing?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import unittest
+class TestStringMethods(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+if __name__ == '__main__':
+    unittest.main()
+# This will perform a basic unit test to check if the upper method for strings works as expected.
+```
+###
+[INST]Write the code for a recommendation system using collaborative filtering.
+
+Write a python program based on the above instruction.[/INST]
+```python
+from surprise import KNNBasic
+from surprise import Dataset
+from surprise.model_selection import cross_validate
+data = Dataset.load_builtin('ml-100k\nalgo = KNNBasic()
+cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=True)')
+```
+###
+[INST]How to perform real-time financial trading?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing real-time financial trading using Alpaca API.
+import alpaca_trade_api as tradeapi
+# Execute orders, manage portfolios, and access market data.
+```
+###
+[INST]Sort my favorite quotes
+
+Write a python program based on the above instruction.[/INST] ```python
+# Sort favorite quotes based on the rating.
+quotes = [
+    {"quote": "Life is what happens when you're busy making other plans.", "rating": 4},
+    {"quote": 
+Data ID 22: decoding step: 1197, large model step: 736, 1.6263586956521738
+###
+[INST]How to perform pharmacokinetic modeling?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing pharmacokinetic modeling using Simcyp.
+import simcyp
+# Simulate drug absorption, distribution, metabolism, and excretion.
+```
+###
+[INST]How to automate data extraction from web pages?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+import requests
+response = requests.get('https://www.example.com')
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())
+# This will scrape the HTML of the specified website and print it.
+```
+###
+[INST]How to conduct high-frequency trading?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Conducting high-frequency trading using Backtrader.
+import backtrader as bt
+# Implement trading strategies and backtest against historical data.
+```
+###
+[INST]Help me manage my reading list
+
+Write a python program based on the above instruction.[/INST] ```python
+# Managing a reading list using Python.
+import csv
+# Read and write to a CSV file.
+```
+###
+[INST]How to perform sentiment analysis on text data?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing 
+Data ID 23: decoding step: 1254, large model step: 768, 1.6328125
+###
+[INST]How to create an Artificial General Intelligence (AGI)?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating an AGI using OpenCog.
+import opencog
+# Implement reasoning, learning, and natural language understanding.
+```
+###
+[INST]Write the code for a web scraper using BeautifulSoup
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+import requests
+url = 'https://example.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser\n# scraping logic here')
+```
+###
+[INST]Show Python's capabilities for array manipulations
+
+Write a python program based on the above instruction.[/INST]
+```python
+from array import array
+arr = array('i', [1, 2, 3])
+arr.append(4)
+arr.pop(0)
+# Demonstrates basic array manipulations using the array module.
+```
+###
+[INST]Recommend me a movie based on my mood
+
+Write a python program based on the above instruction.[/INST] ```python
+import random
+mood = input("What's your mood? (1-5) ")
+movies = ["The Shawshank Redemption", "The Godfather", "The Dark Knight", "12 Angry Men", 
+Data ID 24: decoding step: 1301, large model step: 800, 1.62625
+###
+[INST]Discuss Python's JSON handling
+
+Write a python program based on the above instruction.[/INST]
+```python
+import json
+data = {'name': 'Alice', 'age': 30}
+json_string = json.dumps(data)
+new_data = json.loads(json_string)
+# Demonstrates how to serialize Python object to JSON and deserialize JSON back to Python object.
+```
+###
+[INST]Explain Python's context managers
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as f:
+    content = f.read()
+# Demonstrates reading a file using a context manager to ensure the file is closed after reading.
+```
+###
+[INST]How to simulate a nuclear reactor?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating a nuclear reactor using OpenMC.
+import openmc
+# Perform neutron transport calculations.
+```
+###
+[INST]Calculate how much I should tip
+
+Write a python program based on the above instruction.[/INST] ```python
+def calculate_tip(total_cost, service_quality):
+    if service_quality == 'excellent':
+        return total_cost * 0.2
+    elif service_quality == 'good':
+        return total_cost * 0.15
+    elif service_quality == 
+Data ID 25: decoding step: 1356, large model step: 832, 1.6298076923076923
+###
+[INST]How to create a REST API?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, jsonify
+app = Flask(__name__)
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    return jsonify({'key': 'value'})
+if __name__ == '__main__':
+    app.run(debug=True)
+# This will create a simple REST API that returns JSON data.
+```
+###
+[INST]Show Python's variable-length argument lists
+
+Write a python program based on the above instruction.[/INST]
+```python
+def my_function(*args, **kwargs):
+    for arg in args:
+        print(f'arg: {arg}')
+    for key, value in kwargs.items():
+        print(f'key: {key}, value: {value}')
+# Demonstrates handling of variable-length argument lists in a function.
+```
+###
+[INST]How to simulate quantum algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, Aer, transpile
+from qiskit.visualization import plot_histogram
+from qiskit.providers.aer import AerSimulator
+qc = QuantumCircuit(2, 2)
+qc.h(0)
+qc.cx(0, 1)
+qc.measure([0, 1], [0, 1])
+simulator = AerSimulator()
+compiled_circuit = transpile(qc, simulator)
+result = simulator.run(compiled_circuit).result()
+counts = result.get_counts()
+plot_histogram(counts)
+# This will create a simple quantum circuit, simulate its operation, and visualize the results.
+```
+###
+[INST]Find me the best day to book a flight
+
+Write a python program based on the above instruction.[/INST] ```python
+import pandas as pd
+from datetime import datetime, timedelta
+# Load the flight data
+flight_data = pd.read_csv('flight_data.csv')
+# Define the start and end dates
+start_date = 
+Data ID 26: decoding step: 1405, large model step: 864, 1.6261574074074074
+###
+[INST]Explain Python's handling of command-line arguments
+
+Write a python program based on the above instruction.[/INST]
+```python
+import argparse
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('integers', metavar='N', type=int, nargs='+', help='an integer for the accumulator')
+args = parser.parse_args()
+# Demonstrates using argparse to handle command-line arguments.
+```
+###
+[INST]Discuss Python's subprocess module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import subprocess
+result = subprocess.run(['ls', '-l'], capture_output=True, text=True)
+print(result.stdout)
+# Demonstrates how to run a shell command and capture its output using the subprocess module.
+```
+###
+[INST]Write the code for video editing
+
+Write a python program based on the above instruction.[/INST]
+```python
+from moviepy.editor import VideoFileClip
+clip = VideoFileClip('input_video.mp4\n# Video editing logic here')
+```
+###
+[INST]Calculate my screen time
+
+Write a python program based on the above instruction.[/INST] ```python
+import datetime
+start_time = datetime.datetime.now()
+# Add code to track screen time
+end_time = datetime.datetime.now()
+print(f"Screen time: {end_time - start_time}")
+```
+###
+[INST]Write a Python 
+Data ID 27: decoding step: 1456, large model step: 896, 1.625
+###
+[INST]How to simulate quantum algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, Aer, transpile
+from qiskit.visualization import plot_histogram
+from qiskit.providers.aer import AerSimulator
+qc = QuantumCircuit(2, 2)
+qc.h(0)
+qc.cx(0, 1)
+qc.measure([0, 1], [0, 1])
+simulator = AerSimulator()
+compiled_circuit = transpile(qc, simulator)
+result = simulator.run(compiled_circuit).result()
+counts = result.get_counts()
+plot_histogram(counts)
+# This will create a simple quantum circuit, simulate its operation, and visualize the results.
+```
+###
+[INST]Generate QR codes for data
+
+Write a python program based on the above instruction.[/INST]
+```python
+import qrcode
+data = input('Enter the data for the QR code: ')
+qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_H, box_size=10, border=4)
+qr.add_data(data)
+qr.make(fit=True)
+img = qr.make_image(fill_color='black', back_color='white')
+img.save('qrcode.png')
+# Generates a QR code from user input data using the qrcode library and saves it as an image.
+```
+###
+[INST]How to develop autonomous vehicles?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing autonomous vehicles using Autoware.
+import autoware
+# Implement path planning and vehicle control algorithms.
+```
+###
+[INST]Switch to dark mode
+
+Write a python program based on the above instruction.[/INST] ```python
+import tkinter as tk
+root = tk.Tk()
+root.configure(background='black')
+root.title("Dark Mode")
+root.mainloop()
+# This will create a simple GUI application with a dark background.
+```
+###
+[INST]How to create a 
+Data ID 28: decoding step: 1510, large model step: 928, 1.6271551724137931
+###
+[INST]How to perform computational fluid dynamics?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing computational fluid dynamics using SU2.
+import SU2
+# Simulate fluid flow, heat transfer, and other related phenomena.
+```
+###
+[INST]Explain Python's use of the re module for regex
+
+Write a python program based on the above instruction.[/INST]
+```python
+import re
+pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+email = 'example@example.com'
+if re.fullmatch(pattern, email):
+    print('Valid email')
+else:
+    print('Invalid email')
+# Demonstrates using the re module for regular expression matching.
+```
+###
+[INST]Demonstrate Python f-strings
+
+Write a python program based on the above instruction.[/INST]
+```python
+name = 'Alice'
+age = 30
+print(f'{name} is {age} years old.')
+# Demonstrates the use of f-strings for string formatting.
+```
+###
+[INST]Open a random browser tab from a list of my favorite websites
+
+Write a python program based on the above instruction.[/INST] ```python
+import webbrowser
+favorite_websites = ['https://www.google.com', 'https://www.github.com', 'https://www.stackoverflow.com']
+import random
+website = random.choice(favorite_websites)
+webbrowser.open(website)
+```
+###
+[INST]Write 
+Data ID 29: decoding step: 1569, large model step: 960, 1.634375
+###
+[INST]How to conduct a planetary exploration simulation?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Conducting planetary exploration simulations using Orekit.
+from orekit.pyhelpers import *
+# Model celestial mechanics and spacecraft trajectories.
+```
+###
+[INST]How to create a 3D game engine?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a 3D game engine using Panda3D.
+from panda3d.core import *
+# Build a 3D game engine from scratch.
+```
+###
+[INST]Write the code for a microservices communication using RabbitMQ.
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pika
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost\)
+channel = connection.channel()
+channel.queue_declare(queue='task_queue', durable=True)
+channel.basic_publish(exchange='', routing_key='task_queue', body='Hello World!', properties=pika.BasicProperties(delivery_mode = 2,))
+connection.close()')
+```
+###
+[INST]Create a quick text note
+
+Write a python program based on the above instruction.[/INST] ```python
+# Create a quick text note using Python.
+import datetime
+import os
+note = input("Enter your note: ")
+date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+filename 
+Data ID 30: decoding step: 1618, large model step: 992, 1.6310483870967742
+###
+[INST]How to analyze audio data?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import librosa
+y, sr = librosa.load('audio_file.mp3')
+tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
+print(f'The tempo of the audio file is {tempo} BPM.')
+# This will print the tempo of the audio file in BPM.
+```
+###
+[INST]How to build a CAPTCHA solver?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import cv2
+from PIL import Image
+import pytesseract
+image = cv2.imread('captcha.png')
+# Preprocessing steps go here.
+processed_image = Image.fromarray(image)
+text = pytesseract.image_to_string(processed_image)
+print(f'Solved CAPTCHA: {text}')
+# This will read a CAPTCHA image, preprocess it, and then solve it.
+```
+###
+[INST]How to perform text summarization?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from gensim.summarization import summarize
+text = 'Your long text here.'
+print(summarize(text))
+# This will print a summarized version of the given text.
+```
+###
+[INST]Restart my PC now!
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+os.system('shutdown /r /t 0')
+# This will restart your PC.
+```
+Note: The above code is for Windows. For Linux, you can use `os.system('reboot')` instead. 
+Data ID 31: decoding step: 1670, large model step: 1024, 1.630859375
+###
+[INST]How to create a neural network?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu', input_shape=(784,)),
+    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dense(10)
+])
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+# This will create a simple neural network with one hidden layer.
+```
+###
+[INST]Show Python's use of slices in strings
+
+Write a python program based on the above instruction.[/INST]
+```python
+text = 'Hello World'
+first_five = text[:5]
+# Demonstrates string slicing to get the first five characters.
+```
+###
+[INST]Explain Python variables and data types
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 10  # Integer
+decimal = 3.14  # Float
+text = 'Hello'  # String
+boolean = True  # Boolean
+# Demonstrates basic variable assignments and data types in Python.
+```
+###
+[INST]Empty my recycle bin
+
+Write a python program based on the above instruction.[/INST] ```python
+# This is not a valid Python program as the recycle bin is a physical location and not a Python concept.
+```
+###
+[INST]Write a Python program to calculate the area of a rectangle
+
+Write a python program based on the above 
+Data ID 32: decoding step: 1727, large model step: 1056, 1.6354166666666667
+###
+[INST]Write the code for a weather dashboard
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, render_template
+import requests
+app = Flask(__name__)
+@app.route('/\ndef weather_dashboard():
+    response = requests.get('http://api.openweathermap.org/data/2.5/weather?q=London&appid=your_api_key')
+    data = response.json()
+    return render_template('dashboard.html', weather_data=data)')
+```
+###
+[INST]Demonstrate Python's asynchronous programming with asyncio
+
+Write a python program based on the above instruction.[/INST]
+```python
+import asyncio
+async def hello_world():
+    print('Hello')
+    await asyncio.sleep(1)
+    print('World')
+asyncio.run(hello_world())
+# Demonstrates a basic asynchronous function that prints 'Hello', waits for 1 second, and then prints 'World'.
+```
+###
+[INST]How to encrypt a message using cryptography?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+text ='my deep dark secret'
+encrypted_text = cipher_suite.encrypt(text.encode())
+decrypted_text = cipher_suite.decrypt(encrypted_text).decode()
+print(f'Encrypted: {encrypted_text}, Decrypted: {decrypted_text}')
+# This will encrypt and then decrypt a text message.
+```
+###
+[INST]Set my desktop background color to black
+
+Write a python program based on the above instruction.[/INST] ```python
+import ctypes
+ctypes.windll.user32.SystemParametersInfoW(20, 0, 'black', 0)
+# This will change the desktop background color to black.
+```
+###
+[INST]Write a Python 
+Data ID 33: decoding step: 1776, large model step: 1088, 1.6323529411764706
+###
+[INST]How to recognize faces in an image?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import cv2
+cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+image = cv2.imread('image.jpg')
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+faces = cascade.detectMultiScale(gray_image, 1.1, 4)
+for (x, y, w, h) in faces:
+    cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+cv2.imshow('Face detection', image)
+cv2.waitKey()
+# This will display the image with rectangles around recognized faces.
+```
+###
+[INST]Discuss Python's enum module
+
+Write a python program based on the above instruction.[/INST]
+```python
+from enum import Enum
+class Color(Enum):
+    RED = 1
+    GREEN = 2
+    BLUE = 3
+print(Color.RED)
+# Demonstrates how to define and use an enumeration using the enum module.
+```
+###
+[INST]How to perform sentiment analysis on real-time tweets?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tweepy
+from textblob import TextBlob
+consumer_key = 'your_key'
+consumer_secret = 'your_secret'
+access_token = 'your_token'
+access_token_secret = 'your_token_secret'
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+public_tweets = api.search('Python')
+for tweet in public_tweets:
+    analysis = TextBlob(tweet.text)
+    print(analysis.sentiment)
+# This will search for tweets containing the word 'Python' and analyze their sentiment.
+```
+###
+[INST]Show system information
+
+Write a python program based on the above instruction.[/INST] ```python
+import platform
+import psutil
+print("System Information:")
+print("Platform:", platform.system())
+print("Platform Release:", platform.release())
+print("Platform Version:", platform.version())
+print("Architecture:", platform.machine())
+print("Processor:", 
+Data ID 34: decoding step: 1826, large model step: 1120, 1.6303571428571428
+###
+[INST]Write the code for a musical chord generator
+
+Write a python program based on the above instruction.[/INST]
+```python
+import random
+notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+scale = ['C', 'D', 'E', 'G', 'A']
+chord = random.sample(scale, 3)
+print(f"Chord: {chord}")
+```
+###
+[INST]Perform sentiment analysis using TextBlob
+
+Write a python program based on the above instruction.[/INST]
+```python
+from textblob import TextBlob
+text = 'I love programming.'
+blob = TextBlob(text)
+print(f'Sentiment: {blob.sentiment.polarity}')
+# Performs sentiment analysis on a given text using TextBlob. Positive, neutral, or negative sentiment is determined based on polarity.
+```
+###
+[INST]How to analyze cosmic microwave background?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing cosmic microwave background using Healpy.
+import healpy as hp
+# Perform spherical harmonics analysis on cosmic microwave background data.
+```
+###
+[INST]Find the largest file in a given folder
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+folder_path = '/path/to/folder'
+largest_file = max((os.path.join(folder_path, f), os.path.getsize(os.path.join(folder_path, f))) for f in 
+Data ID 35: decoding step: 1873, large model step: 1152, 1.6258680555555556
+###
+[INST]Show how to use the 'dis' module to inspect bytecode
+
+Write a python program based on the above instruction.[/INST]
+```python
+import dis
+def feet_to_meters(feet):
+    return 0.3048 * feet
+dis.dis(feet_to_meters)
+# Demonstrates how to use the 'dis' module to inspect Python bytecode.
+```
+###
+[INST]How to develop augmented reality applications?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing augmented reality applications using ARToolKit.
+import ARToolKit
+# Create AR markers, track objects, and overlay virtual content.
+```
+###
+[INST]How to automate data extraction from audio files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import librosa
+y, sr = librosa.load('audio.wav')
+tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
+print(f'Tempo: {tempo}
+Beat frames: {beat_frames}')
+# This will load an audio file, extract the tempo and beat frames, and print them.
+```
+###
+[INST]Close all instances of a specific application
+
+Write a python program based on the above instruction.[/INST] ```python
+import psutil
+for proc in psutil.process_iter():
+    if proc.name() == 'chrome.exe':
+        proc.terminate()
+# This will close all instances of the chrome browser.
+```
+###
+[INST]How to convert a 
+Data ID 36: decoding step: 1924, large model step: 1184, 1.625
+###
+[INST]How to build a real-time financial trading algorithm?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a real-time financial trading algorithm using QuantConnect.
+from AlgorithmImports import *
+# Implement trading strategies, risk management, and execute trades in real-time.
+```
+###
+[INST]Elaborate on Python's use of type hints
+
+Write a python program based on the above instruction.[/INST]
+```python
+from typing import List, Tuple
+def add(a: int, b: int) -> int:
+    return a + b
+def coordinates() -> Tuple[int, int]:
+    return (1, 2)
+# Demonstrates the use of type hints in function signatures.
+```
+###
+[INST]Demonstrate Python's string formatting
+
+Write a python program based on the above instruction.[/INST]
+```python
+name = 'Alice'
+age = 30
+formatted_string = f'My name is {name} and I am {age} years old.'
+# Demonstrates the use of f-strings for string formatting.
+```
+###
+[INST]Toggle airplane mode
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+os.system('airplane mode')
+# This command is not valid in Python and is used for demonstration purposes only.
+```
+###
+[INST]How to use Python's built-in functions and modules
+
+Write a python program based 
+Data ID 37: decoding step: 1976, large model step: 1216, 1.625
+###
+[INST]Explain Python threading
+
+Write a python program based on the above instruction.[/INST]
+```python
+import threading
+def print_numbers():
+    for i in range(10):
+        print(i)
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()
+# Demonstrates how to use threading to run a function concurrently.
+```
+###
+[INST]How to deploy a machine learning model?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, request, jsonify
+import pickle
+app = Flask(__name__)
+model = pickle.load(open('model.pkl', 'rb'))
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json()
+    prediction = model.predict([data])[0]
+    return jsonify({'prediction': prediction})
+if __name__ == '__main__':
+    app.run()
+# This will deploy a pre-trained machine learning model as a web service using Flask.
+```
+###
+[INST]Show how Python handles binary data with the struct module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import struct
+packed_data = struct.pack('i', 123)
+unpacked_data = struct.unpack('i', packed_data)
+# Demonstrates packing and unpacking an integer using the struct module.
+```
+###
+[INST]Clone a GitHub repository
+
+Write a python program based on the above instruction.[/INST] ```python
+import git
+repo = git.Repo.clone_from('https://github.com/user/repo', 'path/to/local/repo')
+# This will clone a GitHub repository using the gitpython 
+Data ID 38: decoding step: 2025, large model step: 1248, 1.6225961538461537
+###
+[INST]How to simulate genetic algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating genetic algorithms using DEAP.
+from deap import base
+# Create genetic algorithms for optimization problems.
+```
+###
+[INST]How to create a compiler?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a compiler using LLVM.
+import llvm
+# Implement compiler optimization and code generation.
+```
+###
+[INST]How to perform radio astronomy data analysis?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing radio astronomy data analysis using CASA.
+import casatools
+# Calibrate and visualize radio telescope data.
+```
+###
+[INST]Create a SQLite database and table
+
+Write a python program based on the above instruction.[/INST] ```python
+# Creating a SQLite database and table.
+import sqlite3
+# Create a connection to the database.
+conn = sqlite3.connect('example.db')
+# Create a cursor object.
+c = conn.cursor()
+# Create a table.
+c.execute('''CREATE TABLE 
+Data ID 39: decoding step: 2081, large model step: 1280, 1.62578125
+###
+[INST]Explain Python's use of the threading module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import threading
+def print_numbers():
+    for i in range(10):
+        print(i)
+thread = threading.Thread(target=print_numbers)
+thread.start()
+# Demonstrates creating and starting a thread using the threading module.
+```
+###
+[INST]How to build a ray tracer?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a ray tracer using Pygame.
+import pygame
+# Implement ray tracing algorithms for realistic image rendering.
+```
+###
+[INST]Write the code for a decentralized application using blockchain
+
+Write a python program based on the above instruction.[/INST]
+```python
+from web3 import Web3
+web3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545\)
+contract_address = 'your_contract_address'
+contract_abi = 'your_contract_abi'
+contract = web3.eth.contract(address=contract_address, abi=contract_abi)
+transaction = contract.functions.vote('candidate1').buildTransaction({'gas': 2000000, 'gasPrice': web3.toWei('30', 'gwei'), 'nonce': 0})
+signed_tx = web3.eth.account.signTransaction(transaction, 'your_private_key')
+web3.eth.sendRawTransaction(signed_tx.rawTransaction)')
+```
+###
+[INST]Update all Python packages
+
+Write a python program based on the above instruction.[/INST] ```python
+import pip
+pip.main(['install', '--upgrade', 'pip'])
+```
+###
+[INST]Write a Python program to create a simple calculator
+
+Write a python program based on the above instruction.[/INST]
+```python
+def add(x, 
+Data ID 40: decoding step: 2136, large model step: 1312, 1.6280487804878048
+###
+[INST]How to create a neural network?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu', input_shape=(784,)),
+    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dense(10)
+])
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+# This will create a simple neural network with one hidden layer.
+```
+###
+[INST]How to analyze social network data?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import networkx as nx
+G = nx.Graph()
+G.add_edges_from([(1, 2), (1, 3), (2, 4), (3, 4)])
+nx.draw(G, with_labels=True)
+# This will create a simple graph and visualize it, representing social network data.
+```
+###
+[INST]How to develop augmented reality applications?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing augmented reality applications using ARToolKit.
+import ARToolKit
+# Create AR markers, track objects, and overlay virtual content.
+```
+###
+[INST]Run a Python script at a specific time
+
+Write a python program based on the above instruction.[/INST] ```python
+import schedule
+import time
+def job():
+    print("This is a scheduled job")
+schedule.every(10).minutes.do(job) # Run the job every 10 minutes
+while True:
+    
+Data ID 41: decoding step: 2183, large model step: 1344, 1.6242559523809523
+###
+[INST]How to automate data extraction from APIs?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import requests
+response = requests.get('https://api.example.com/data')
+data = response.json()
+print(data)
+# This will send a GET request to the specified API and print the response data.
+```
+###
+[INST]Elaborate on Python's use of the bisect module for binary search
+
+Write a python program based on the above instruction.[/INST]
+```python
+import bisect
+my_list = [1, 3, 4, 4, 6, 8]
+position = bisect.bisect(my_list, 4)
+# Demonstrates using bisect to find the position where an element should be inserted to keep the list sorted.
+```
+###
+[INST]Elaborate on Python's use of the os module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import os
+file_path = 'example.txt'
+if os.path.exists(file_path):
+    os.remove(file_path)
+# Demonstrates the use of the os module to check if a file exists and remove it.
+```
+###
+[INST]Rename all files in a folder to lowercase
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+folder_path = 'path_to_your_folder'
+for filename in os.listdir(folder_path):
+    os.rename(os.path.join(folder_path, filename), os.path.join(folder_path, filename.lower()))
+# Demonstrates the use of the os module to 
+Data ID 42: decoding step: 2238, large model step: 1376, 1.626453488372093
+###
+[INST]How to develop a DNA sequencer?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing a DNA sequencer using Biopython.
+from Bio import SeqIO
+# Parse DNA sequences and perform various bioinformatics tasks.
+```
+###
+[INST]How to create a real-time trading bot?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a real-time trading bot using Alpaca API.
+import alpaca_trade_api as alpaca
+# Implement trading algorithms and execute trades.
+```
+###
+[INST]Elaborate on Python's use of conditional expressions
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 10
+y = 'Even' if x % 2 == 0 else 'Odd'
+# Demonstrates using a conditional expression to determine if a number is even or odd.
+```
+###
+[INST]Count the number of lines in a file
+
+Write a python program based on the above instruction.[/INST] ```python
+with open('file.txt', 'r') as file:
+    lines = file.readlines()
+    count = len(lines)
+    print(f'The file has {count} lines.')
+```
+###
+[INST]How to create a simple calculator using 
+Data ID 43: decoding step: 2292, large model step: 1408, 1.6278409090909092
+###
+[INST]Elaborate on Python's sys module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sys
+platform = sys.platform
+# Demonstrates getting the platform name using the sys module.
+```
+###
+[INST]Write the code for a blockchain-based voting system.
+
+Write a python program based on the above instruction.[/INST]
+```python
+class Block {
+  constructor(index, previousHash, timestamp, data, hash) {
+    this.index = index;
+  }
+}
+```
+###
+[INST]How to encrypt a message using cryptography?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+text ='my deep dark secret'
+encrypted_text = cipher_suite.encrypt(text.encode())
+decrypted_text = cipher_suite.decrypt(encrypted_text).decode()
+print(f'Encrypted: {encrypted_text}, Decrypted: {decrypted_text}')
+# This will encrypt and then decrypt a text message.
+```
+###
+[INST]List all branches in a Git repository
+
+Write a python program based on the above instruction.[/INST] ```python
+import git
+repo = git.Repo()
+branches = [branch.name for branch in repo.branches]
+print(branches)
+# This will list all branches in a Git repository.
+```
+###
+[INST]Write a Python program to find the maximum 
+Data ID 44: decoding step: 2346, large model step: 1440, 1.6291666666666667
+###
+[INST]Elaborate on Python list comprehensions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squared_numbers = [x ** 2 for x in range(5)]  # Result will be [0, 1, 4, 9, 16]
+# Demonstrates how to use list comprehensions to create a list of squared numbers.
+```
+###
+[INST]How to implement real-time speech recognition?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import speech_recognition as sr
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    print('Speak Anything:')
+    audio = r.listen(source)
+    text = r.recognize_google(audio)
+    print(f'You said: {text}')
+# This captures audio from the microphone and converts it to text using Google's speech recognition API.
+```
+###
+[INST]How to simulate brain neural networks?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating brain neural networks using NEST.
+import nest
+# Model spiking neural networks and synaptic connections.
+```
+###
+[INST]Create a ZIP archive of a folder
+
+Write a python program based on the above instruction.[/INST] ```python
+import zipfile
+import os
+
+# Create a ZIP archive of a folder
+def zip_folder(folder_path, zip_path):
+    with zipfile.ZipFile(zip_path, 'w') as zip_file:
+        for root, dirs, files in 
+Data ID 45: decoding step: 2398, large model step: 1472, 1.6290760869565217
+###
+[INST]Write the code for a payment gateway integration
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, request
+import stripe
+app = Flask(__name__)
+stripe.api_key = 'your_stripe_api_key'
+@app.route('/charge', methods=['POST'])
+def charge():
+    amount = request.form['amount']
+    currency = request.form['currency']
+    stripe.Charge.create(amount=amount, currency=currency, source=request.form['stripeToken'])
+    return 'Payment successful'
+```
+###
+[INST]How to simulate weather patterns?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating weather patterns using MetPy.
+import metpy
+# Perform meteorological calculations and data visualization.
+```
+###
+[INST]Elaborate on Python's use of lambda functions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squared = lambda x: x * x
+result = squared(5)
+# Demonstrates using a lambda function to square a number.
+```
+###
+[INST]Push changes to a GitHub repository
+
+Write a python program based on the above instruction.[/INST] ```python
+import git
+repo = git.Repo('path/to/your/repo')
+repo.index.add(['file1.txt', 'file2.txt'])
+repo.index.commit('commit 
+Data ID 46: decoding step: 2447, large model step: 1504, 1.6269946808510638
+###
+[INST]Explain Python's use of descriptors
+
+Write a python program based on the above instruction.[/INST]
+```python
+class MyDescriptor:
+    def __get__(self, instance, owner):
+        return 42
+class MyClass:
+    x = MyDescriptor()
+obj = MyClass()
+print(obj.x)
+# Demonstrates the use of a descriptor to customize attribute access.
+```
+###
+[INST]How to automate data extraction from HTML files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+with open('data.html') as f:
+    soup = BeautifulSoup(f, 'html.parser')
+print(soup.prettify())
+# This will read data from an HTML file and print it.
+```
+###
+[INST]Explain Python's generator expressions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squares = (x*x for x in range(1, 6))
+# Demonstrates the use of generator expressions to create a generator of squares.
+```
+###
+[INST]Start a local web server
+
+Write a python program based on the above instruction.[/INST] ```python
+from http.server import BaseHTTPRequestHandler, HTTPServer
+class MyServer(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/html")
+        
+Data ID 47: decoding step: 2495, large model step: 1536, 1.6243489583333333
+###
+[INST]Write the code for a quantum entanglement simulator
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, Aer, transpile
+from qiskit.visualization import plot_histogram
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0, 1)
+print(qc)
+```
+###
+[INST]How to automate data writing to web forms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from selenium import webdriver
+browser = webdriver.Firefox()
+browser.get('http://www.example.com')
+username = browser.find_element_by_name('username')
+password = browser.find_element_by_name('password')
+username.send_keys('your_username')
+password.send_keys('your_password')
+login_button = browser.find_element_by_name('login')
+login_button.click()
+# This will open a Firefox browser, navigate to the specified URL, fill in the username and password fields, and click the login button.
+```
+###
+[INST]Write the code to control IoT devices
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tkinter as tk
+from paho.mqtt import client as mqtt_client
+root = tk.Tk()
+# MQTT setup and GUI logic here
+```
+###
+[INST]Create an HTTP server to share files
+
+Write a python program based on the above instruction.[/INST] ```python
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import os
+
+class MyServer(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/':
+            self.send_response(200)
+            
+Data ID 48: decoding step: 2542, large model step: 1568, 1.621173469387755
+###
+[INST]Write the code for a serverless function to process image uploads
+
+Write a python program based on the above instruction.[/INST]
+```python
+import boto3
+s3 = boto3.client('s3\ndef lambda_handler(event, context):
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+    s3.download_file(bucket, key, '/tmp/image.jpg')
+    # Process image
+    return {'statusCode': 200}')
+```
+###
+[INST]Write the code for a server-side rendering with Next.js.
+
+Write a python program based on the above instruction.[/INST]
+```python
+import { GetServerSideProps } from 'next'
+export const getServerSideProps: GetServerSideProps = async context => {
+  const res = await fetch(`https://api.example.com/data`)
+  const data = await res.json()
+  return { props: { data } }
+}
+```
+###
+[INST]Write the code for an astronomical event predictor
+
+Write a python program based on the above instruction.[/INST]
+```python
+import ephem
+observer = ephem.Observer()
+observer.lat, observer.lon = '40', '-80'
+sun, moon = ephem.Sun(), ephem.Moon()
+sun.compute(observer)
+moon.compute(observer)
+```
+###
+[INST]Create a symbolic link
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+os.symlink('/path/to/source', '/path/to/destination')
+```
+###
+[INST]Write the code for a chatbot using Dialogflow
+
+Write a python program based on the above instruction.[/INST]
+```python
+import 
+Data ID 49: decoding step: 2599, large model step: 1600, 1.624375
+###
+[INST]How to model neuronal dynamics?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling neuronal dynamics using Brian2.
+from brian2 import *
+# Create and simulate spiking neural networks.
+```
+###
+[INST]How to analyze astronomical data?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing astronomical data using Astropy.
+from astropy.io import fits
+# Handle FITS files and perform data analysis.
+```
+###
+[INST]Discuss Python's capabilities for dynamic code execution
+
+Write a python program based on the above instruction.[/INST]
+```python
+dynamic_code = 'print("Hello, world!")'
+exec(dynamic_code)
+# Demonstrates dynamic code execution using the exec function.
+```
+###
+[INST]Extract the text content from a webpage
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+from bs4 import BeautifulSoup
+url = 'https://www.example.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+text = soup.get_text()
+print(text)
+# Extracts the text 
+Data ID 50: decoding step: 2651, large model step: 1632, 1.6243872549019607
+###
+[INST]Elaborate on Python's use of lambda functions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squared = lambda x: x * x
+result = squared(5)
+# Demonstrates using a lambda function to square a number.
+```
+###
+[INST]Explain Python's dictionary comprehension
+
+Write a python program based on the above instruction.[/INST]
+```python
+squares = {x: x*x for x in range(1, 6)}
+# Demonstrates the use of dictionary comprehensions to create a dictionary of squares.
+```
+###
+[INST]Write the code for IoT device management
+
+Write a python program based on the above instruction.[/INST]
+```python
+import paho.mqtt.client as mqtt
+client = mqtt.Client()
+client.connect('mqtt.eclipse.org', 1883, 60)
+def on_message(client, userdata, msg):
+    print(f'Received message: {msg.payload.decode()}\nclient.on_message = on_message
+client.subscribe('/iot/device')
+client.loop_forever()')
+```
+###
+[INST]Extract all email addresses from a text file
+
+Write a python program based on the above instruction.[/INST] ```python
+import re
+with open('emails.txt', 'r') as file:
+    text = file.read()
+emails = 
+Data ID 51: decoding step: 2697, large model step: 1664, 1.6207932692307692
+###
+[INST]How to perform pharmacokinetic modeling?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing pharmacokinetic modeling using Simcyp.
+import simcyp
+# Simulate drug absorption, distribution, metabolism, and excretion.
+```
+###
+[INST]Write the code for a state management using Redux.
+
+Write a python program based on the above instruction.[/INST]
+```python
+import { createStore } from'redux'
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+let store = createStore(counter)
+```
+###
+[INST]How to perform real-time chat analysis?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import spacy
+nlp = spacy.load('en_core_web_sm')
+while True:
+    message = input('Enter a chat message: ')
+    doc = nlp(message)
+    for token in doc:
+        print(token.text, token.lemma_, token.pos_)
+    if message == 'exit':
+        break
+# This will perform tokenization, lemmatization, and part-of-speech tagging on chat messages in real-time.
+```
+###
+[INST]Check for updates of a specific Python package
+
+Write a python program based on the above instruction.[/INST] ```python
+import pip
+import requests
+def check_package_updates(package_name):
+    try:
+        package_info = requests.get(f'https://pypi.org/pypi/{package_name}/json')
+        package_info = package_info.json()
+        
+Data ID 52: decoding step: 2746, large model step: 1696, 1.6191037735849056
+###
+[INST]How to design protein structures?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Designing protein structures using Rosetta.
+from pyrosetta import *
+# Predict and design protein structures, folding pathways.
+```
+###
+[INST]How to build a ray tracer?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a ray tracer using Pygame.
+import pygame
+# Implement ray tracing algorithms for realistic image rendering.
+```
+###
+[INST]How to develop augmented reality experiences?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing augmented reality experiences using Vuforia SDK.
+from vuforia import *
+# Create interactive 3D overlays on real-world environments.
+```
+###
+[INST]Remove trailing whitespaces from a Python file
+
+Write a python program based on the above instruction.[/INST] ```python
+# Remove trailing whitespaces from a Python file using the `re` module.
+import re
+with open('file.py', 'r') as file:
+    content = file.read()
+    content = 
+Data ID 53: decoding step: 2796, large model step: 1728, 1.6180555555555556
+###
+[INST]How to create a 3D game engine?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a 3D game engine using Panda3D.
+from panda3d.core import *
+# Build a 3D game engine from scratch.
+```
+###
+[INST]How to automate email sending?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login('your_email@gmail.com', 'your_password')
+server.sendmail('your_email@gmail.com','recipient_email@gmail.com', 'Hello, world!')
+server.quit()
+# This will send an email with the text 'Hello, world!' from your Gmail account to the recipient's email.
+```
+###
+[INST]How to simulate a quantum field theory?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating a quantum field theory using PyQFT.
+import pyqft
+# Calculate Feynman diagrams and perform quantum simulations.
+```
+###
+[INST]Convert tabs to spaces in a Python file
+
+Write a python program based on the above instruction.[/INST] ```python
+import re
+with open('input_file.py', 'r') as f:
+    content = f.read()
+content = re.sub(r'\t',   ', content)
+with 
+Data ID 54: decoding step: 2841, large model step: 1760, 1.6142045454545455
+###
+[INST]How to analyze cosmic microwave background?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing cosmic microwave background using CAMB.
+import camb
+# Generate and analyze cosmic microwave background spectra.
+```
+###
+[INST]How to simulate quantum computing algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum computing algorithms using Cirq.
+import cirq
+# Design, simulate, and run quantum circuits.
+```
+###
+[INST]Write the code for a data pipeline using Apache Beam
+
+Write a python program based on the above instruction.[/INST]
+```python
+import apache_beam as beam
+p = beam.Pipeline()
+(p | beam.Create([1, 2, 3, 4, 5])
+   | 'Print the data' >> beam.Map(print))
+p.run()
+```
+###
+[INST]Sort the import statements alphabetically
+
+Write a python program based on the above instruction.[/INST] ```python
+import apache_beam as beam
+import camb
+import cirq
+import os
+import sys
+
+p = beam.Pipeline()
+(p | beam.Create([1, 2, 3, 4, 5])
+   | 'Print the data' >> 
+Data ID 55: decoding step: 2903, large model step: 1792, 1.6199776785714286
+###
+[INST]How to model climate change?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling climate change using ClimateModel.
+import climatemodel
+# Perform long-term climate simulations and predictions.
+```
+###
+[INST]How to analyze radio signals?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing radio signals using GNU Radio.
+import gnuradio
+# Implement signal processing blocks for radio communications.
+```
+###
+[INST]How to automate web scraping?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+import requests
+response = requests.get('https://www.example.com')
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())
+# This will scrape the HTML of the specified website and print it.
+```
+###
+[INST]Break lines longer than 80 characters
+
+Write a python program based on the above instruction.[/INST] ```python
+import textwrap
+long_string = "This is a very long string that needs to be wrapped."
+wrapped_string = textwrap.fill(long_string, width=80)
+print(wrapped_string)
+# This will break the 
+Data ID 56: decoding step: 2950, large model step: 1824, 1.6173245614035088
+###
+[INST]Write the code for a time series forecasting model using Prophet
+
+Write a python program based on the above instruction.[/INST]
+```python
+from fbprophet import Prophet
+df = pd.read_csv('data.csv\nm = Prophet()
+m.fit(df)
+future = m.make_future_dataframe(periods=365)
+forecast = m.predict(future)
+fig = m.plot(forecast)')
+```
+###
+[INST]Demonstrate Python functions
+
+Write a python program based on the above instruction.[/INST]
+```python
+def greet(name):
+    return f'Hello, {name}!'
+greeting = greet('Alice')
+print(greeting)
+# Demonstrates how to define and call a function in Python. The function takes an argument and returns a string.
+```
+###
+[INST]Demonstrate Python's sys module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sys
+print(sys.argv)  # List of command line arguments
+print(sys.version)  # Python version
+sys.exit(0)  # Exit the script
+# Demonstrates how to use sys module to get command-line arguments, Python version, and exit the script.
+```
+###
+[INST]Convert a Python file to PEP8 standards
+
+Write a python program based on the above instruction.[/INST] ```python
+import pep8
+with open('file.py', 'r') as file:
+    code = file.read()
+errors = pep8.StyleGuide().check_files([code])
+if errors:
+    
+Data ID 57: decoding step: 2996, large model step: 1856, 1.6142241379310345
+###
+[INST]How to develop AI for autonomous flying drones?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing AI for autonomous flying drones using AirSim.
+from airsim import *
+# Train AI agents to navigate, avoid obstacles, and perform tasks in a simulated environment.
+```
+###
+[INST]How to analyze radio signals?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing radio signals using GNU Radio.
+import gnuradio
+# Implement signal processing blocks for radio communications.
+```
+###
+[INST]Create a blockchain example
+
+Write a python program based on the above instruction.[/INST]
+```python
+import hashlib
+import json
+class Block:
+    def __init__(self, index, data, previous_hash):
+        self.index = index
+        self.data = data
+        self.previous_hash = previous_hash
+        self.hash = self.calculate_hash()
+    def calculate_hash(self):
+        return hashlib.sha256(json.dumps(self.__dict__, sort_keys=True).encode()).hexdigest()
+# Creates a simple blockchain example with a Block class that calculates its own hash based on its content and the hash of the previous block.
+```
+###
+[INST]Add type annotations to function arguments
+
+Write a python program based on the above instruction.[/INST] ```python
+def greet(name: str, age: int) -> str:
+    return f"Hello, {name}! You are {age} years old."
+print(greet("John", 30))  # Output: Hello, 
+Data ID 58: decoding step: 3046, large model step: 1888, 1.6133474576271187
+###
+[INST]Write the code for a file encryption desktop app
+
+Write a python program based on the above instruction.[/INST]
+```python
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+# File encryption logic here
+```
+###
+[INST]How to automate data writing to text files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'w') as f:
+    f.write('Hello, world!')
+# This will write the text 'Hello, world!' to a text file.
+```
+###
+[INST]How to automate data extraction from Excel files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.read_excel('data.xlsx')
+print(df)
+# This will read data from an Excel file and print it.
+```
+###
+[INST]Remove all comments from a Python file
+
+Write a python program based on the above instruction.[/INST] ```python
+import re
+with open('file.py', 'r') as f:
+    code = f.read()
+clean_code = re.sub(r'#.*', '', code)
+with open('file.py', 'w') as 
+Data ID 59: decoding step: 3095, large model step: 1920, 1.6119791666666667
+###
+[INST]How to simulate a nuclear reactor?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating a nuclear reactor using OpenMC.
+import openmc
+# Perform neutron transport calculations.
+```
+###
+[INST]Show Python regular expressions
+
+Write a python program based on the above instruction.[/INST]
+```python
+import re
+pattern = r'\b[aeiouAEIOU]\w+\b'
+result = re.findall(pattern, 'Apple Umbrella Orange')
+# Demonstrates how to use Python's re module to find all words that start with a vowel.
+```
+###
+[INST]Write the code for a recommendation system using Surprise library
+
+Write a python program based on the above instruction.[/INST]
+```python
+from surprise import SVD
+from surprise import Dataset
+from surprise.model_selection import cross_validate
+data = Dataset.load_builtin('ml-100k\nalgo = SVD()
+cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=True)')
+```
+###
+[INST]Remove all print statements from a Python file
+
+Write a python program based on the above instruction.[/INST] ```python
+import re
+with open('filename.py', 'r') as file:
+    filedata = file.read()
+    filedata = re.sub(r'print\([^\)]*\)', '', filedata)
+with 
+Data ID 60: decoding step: 3143, large model step: 1952, 1.6101434426229508
+###
+[INST]Explain Python's use of slice objects
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [0, 1, 2, 3, 4, 5]
+even_slice = slice(0, 6, 2)
+evens = my_list[even_slice]
+# Demonstrates the use of a slice object for list slicing.
+```
+###
+[INST]Write the code for a sentiment analysis service using NLP.
+
+Write a python program based on the above instruction.[/INST]
+```python
+from textblob import TextBlob
+text = 'I love coding!'
+blob = TextBlob(text)
+print(blob.sentiment.polarity)
+```
+###
+[INST]How to create a natural language processor?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a natural language processor using spaCy.
+import spacy
+# Perform tokenization, POS tagging, and entity recognition.
+```
+###
+[INST]Add docstrings to all functions
+
+Write a python program based on the above instruction.[/INST] ```python
+def greet(name: str) -> str:
+    """
+    Greet a person with a personalized message.
+
+    Args:
+        name (str): The name of the person to greet.
+
+    Returns:
+        str: A personalized greeting 
+Data ID 61: decoding step: 3193, large model step: 1984, 1.609375
+###
+[INST]Write the code for a URL shortener web app
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, request, redirect
+import redis
+app = Flask(__name__)
+r = redis.Redis(host='localhost', port=6379, db=0)
+@app.route('/shorten', methods=['POST'])
+def shorten_url():
+    url = request.form['url']
+    short_url = some_hash_function(url)
+    r.set(short_url, url)
+    return short_url
+```
+###
+[INST]How to perform speech-to-text conversion?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import speech_recognition as sr
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    audio_data = r.record(source)
+    text = r.recognize_google(audio_data)
+print(f'Text from speech: {text}')
+# This will convert speech to text.
+```
+###
+[INST]Explain Python's use of decorators with arguments
+
+Write a python program based on the above instruction.[/INST]
+```python
+def repeat(n):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for _ in range(n):
+                func(*args, **kwargs)
+        return wrapper
+    return decorator
+@repeat(3)
+def greet():
+    print('Hello')
+# Demonstrates a decorator that takes an argument to repeat a function multiple times.
+```
+###
+[INST]Implement a simple feedforward neural network
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+
+class NeuralNetwork:
+    def __init__(self, x, y):
+        self.input      = x
+        self.weights1   = 
+Data ID 62: decoding step: 3240, large model step: 2016, 1.6071428571428572
+###
+[INST]Write the code for a quantum entanglement simulator
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, Aer, transpile
+from qiskit.visualization import plot_histogram
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0, 1)
+print(qc)
+```
+###
+[INST]How to scrape Twitter profiles?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tweepy
+auth = tweepy.OAuthHandler('consumer_key', 'consumer_secret')
+auth.set_access_token('access_token', 'access_token_secret')
+api = tweepy.API(auth)
+for status in tweepy.Cursor(api.user_timeline, id='username_here').items():
+    print(status.text)
+# This will print the tweets of the specified Twitter profile.
+```
+###
+[INST]Discuss Python's with statement
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as f:
+    content = f.read()
+# Demonstrates the use of the with statement for resource management, such as file handling.
+```
+###
+[INST]Implement an advanced feedforward neural network using PyTorch and train it
+
+Write a python program based on the above instruction.[/INST] ```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.fc1 = 
+Data ID 63: decoding step: 3290, large model step: 2048, 1.6064453125
+###
+[INST]How to perform web scraping with authentication?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+driver = webdriver.Firefox()
+driver.get('https://example.com/login')
+username = driver.find_element_by_id('username')
+password = driver.find_element_by_id('password')
+username.send_keys('YourUsername')
+password.send_keys('YourPassword')
+password.send_keys(Keys.RETURN)
+# This will log into a website and prepare it for web scraping.
+```
+###
+[INST]Show Python's lambda functions in sorting
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [(1, 'one'), (4, 'four'), (3, 'three')]
+sorted_list = sorted(my_list, key=lambda x: x[1])
+# Demonstrates the use of a lambda function for custom sorting based on the second element of tuples in a list.
+```
+###
+[INST]Explain Python's use of the collections module
+
+Write a python program based on the above instruction.[/INST]
+```python
+from collections import Counter
+elements = ['a', 'b', 'c', 'a', 'b', 'b']
+count = Counter(elements)
+# Demonstrates the use of Counter from the collections module to count occurrences of elements in a list.
+```
+###
+[INST]Visualize the activations of a neural network layer
+
+Write a python program based on the above instruction.[/INST] ```python
+import matplotlib.pyplot as plt
+import numpy as np
+# Assuming you have a neural network layer with activations
+activations = np.random.rand(100, 10)
+plt.imshow(activations, cmap='hot', 
+Data ID 64: decoding step: 3345, large model step: 2080, 1.6081730769230769
+###
+[INST]How to create a distributed file system?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a distributed file system using Pyro4.
+import Pyro4
+# Implement distributed objects and remote method invocation.
+```
+###
+[INST]Perform sentiment analysis using TextBlob
+
+Write a python program based on the above instruction.[/INST]
+```python
+from textblob import TextBlob
+text = 'I love programming.'
+blob = TextBlob(text)
+print(f'Sentiment: {blob.sentiment.polarity}')
+# Performs sentiment analysis on a given text using TextBlob. Positive, neutral, or negative sentiment is determined based on polarity.
+```
+###
+[INST]How to develop a self-driving car algorithm?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing a self-driving car algorithm using CARLA.
+import carla
+# Simulate various driving scenarios and evaluate autonomous driving algorithms.
+```
+###
+[INST]Implement a GAN to generate new data samples
+
+Write a python program based on the above instruction.[/INST] ```python
+# Implementing a GAN to generate new data samples using TensorFlow.
+import tensorflow as tf
+# Define generator and discriminator models.
+```
+###
+[INST]How to implement a chatbot using Natural Language Processing (NLP)?
+
+Write a python program based on the above 
+Data ID 65: decoding step: 3403, large model step: 2112, 1.6112689393939394
+###
+[INST]Demonstrate Python's list slicing
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [0, 1, 2, 3, 4, 5]
+first_three = my_list[:3]
+last_three = my_list[-3:]
+# Demonstrates list slicing to get the first three and last three elements.
+```
+###
+[INST]How to perform sentiment analysis on customer reviews?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+sia = SentimentIntensityAnalyzer()
+reviews = ['Great product!', 'Terrible service.']
+for review in reviews:
+    print(sia.polarity_scores(review))
+# This will analyze the sentiment of each customer review and print the polarity scores.
+```
+###
+[INST]Explain Python file operations
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as file:
+    content = file.read()
+with open('file.txt', 'w') as file:
+    file.write('Hello, world!')
+# Demonstrates how to read from and write to files in Python using the with statement.
+```
+###
+[INST]Extract features from an image using a pre-trained CNN
+
+Write a python program based on the above instruction.[/INST] ```python
+from keras.applications import VGG16
+from keras.preprocessing import image
+model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+img = 
+Data ID 66: decoding step: 3449, large model step: 2144, 1.6086753731343284
+###
+[INST]Write the code for a recommendation system using collaborative filtering.
+
+Write a python program based on the above instruction.[/INST]
+```python
+from surprise import KNNBasic
+from surprise import Dataset
+from surprise.model_selection import cross_validate
+data = Dataset.load_builtin('ml-100k\nalgo = KNNBasic()
+cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=True)')
+```
+###
+[INST]Show Python's chaining comparison operators
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 10
+result = 1 < x < 20
+# Demonstrates chaining comparison operators to check if a variable is within a specific range.
+```
+###
+[INST]Write the code for a web scraping service
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, jsonify
+from bs4 import BeautifulSoup
+import requests
+app = Flask(__name__)
+@app.route('/scrape', methods=['GET'])
+def scrape_site():
+    url = 'https://example.com'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser\n    data = {}
+    # scraping logic here
+    return jsonify(data)')
+```
+###
+[INST]Implement a Random Forest Classifier using scikit-learn
+
+Write a python program based on the above instruction.[/INST] ```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+iris = load_iris()
+X = iris.data
+y = 
+Data ID 67: decoding step: 3500, large model step: 2176, 1.6084558823529411
+###
+[INST]Elaborate on Python's use of type hints
+
+Write a python program based on the above instruction.[/INST]
+```python
+from typing import List, Tuple
+def add(a: int, b: int) -> int:
+    return a + b
+def coordinates() -> Tuple[int, int]:
+    return (1, 2)
+# Demonstrates the use of type hints in function signatures.
+```
+###
+[INST]Elaborate on Python decorators
+
+Write a python program based on the above instruction.[/INST]
+```python
+def my_decorator(func):
+    def wrapper():
+        print('Something before the function.')
+        func()
+        print('Something after the function.')
+    return wrapper
+@my_decorator
+def say_hello():
+    print('Hello!')
+say_hello()
+# Demonstrates how to create and apply a decorator.
+```
+###
+[INST]Write the code for a data cleaning process using Pandas
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.read_csv('data.csv\ndf = df.dropna()
+df = df.drop_duplicates()
+df.to_csv('clean_data.csv', index=False)')
+```
+###
+[INST]Create a TensorFlow model to recognize handwritten digits
+
+Write a python program based on the above instruction.[/INST] ```python
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+model = keras.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 
+Data ID 68: decoding step: 3553, large model step: 2208, 1.6091485507246377
+###
+[INST]How to automate file management?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import os
+import shutil
+shutil.move('source_file.txt', 'destination_folder')
+# This will move'source_file.txt' to 'destination_folder'.
+```
+###
+[INST]How to perform hydrodynamic simulations?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing hydrodynamic simulations using OpenFOAM.
+import openfoam
+# Create and solve hydrodynamic models.
+```
+###
+[INST]How to automate data writing to web forms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from selenium import webdriver
+browser = webdriver.Firefox()
+browser.get('http://www.example.com')
+username = browser.find_element_by_name('username')
+password = browser.find_element_by_name('password')
+username.send_keys('your_username')
+password.send_keys('your_password')
+login_button = browser.find_element_by_name('login')
+login_button.click()
+# This will open a Firefox browser, navigate to the specified URL, fill in the username and password fields, and click the login button.
+```
+###
+[INST]Create a K-means clustering model to segment customers
+
+Write a python program based on the above instruction.[/INST] ```python
+import pandas as pd
+from sklearn.cluster import KMeans
+# Load the customer data
+customer_data = pd.read_csv('customer_data.csv')
+# Create a K-means clustering model
+kmeans = KMeans(n_clusters=5)
+# Fit the 
+Data ID 69: decoding step: 3608, large model step: 2240, 1.6107142857142858
+###
+[INST]Write the code for a database connection using SQLAlchemy
+
+Write a python program based on the above instruction.[/INST]
+```python
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///example.db\nconnection = engine.connect()')
+```
+###
+[INST]How to simulate brain neural networks?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating brain neural networks using NEST.
+import nest
+# Model spiking neural networks and synaptic connections.
+```
+###
+[INST]How to design cryptographic protocols?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Designing cryptographic protocols using Cryptography.
+from cryptography import fernet
+# Develop and implement secure communication protocols.
+```
+###
+[INST]Implement a Naive Bayes classifier for text classification
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+# Load dataset
+train_data = 
+Data ID 70: decoding step: 3657, large model step: 2272, 1.6095950704225352
+###
+[INST]Explain Python file operations
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as file:
+    content = file.read()
+with open('file.txt', 'w') as file:
+    file.write('Hello, world!')
+# Demonstrates how to read from and write to files in Python using the with statement.
+```
+###
+[INST]How to develop an AI for autonomous drones?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing AI for autonomous drones using AirSim.
+import airsim
+# Implement pathfinding, obstacle avoidance, and autonomous navigation.
+```
+###
+[INST]Show Python's variable-length argument lists
+
+Write a python program based on the above instruction.[/INST]
+```python
+def my_function(*args, **kwargs):
+    for arg in args:
+        print(f'arg: {arg}')
+    for key, value in kwargs.items():
+        print(f'key: {key}, value: {value}')
+# Demonstrates handling of variable-length argument lists in a function.
+```
+###
+[INST]Implement a simple chatbot using Python's NLTK library
+
+Write a python program based on the above instruction.[/INST] ```python
+import nltk
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+intents = json.loads(open('intents.json').read())
+words = 
+Data ID 71: decoding step: 3704, large model step: 2304, 1.6076388888888888
+###
+[INST]Write the code for a voice-controlled desktop assistant
+
+Write a python program based on the above instruction.[/INST]
+```python
+import speech_recognition as sr
+import pyttsx3
+engine = pyttsx3.init()
+# Voice recognition and assistant logic here
+```
+###
+[INST]How to automate image rotation?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from PIL import Image
+image = Image.open('image.jpg')
+rotated_image = image.rotate(90)
+rotated_image.save('rotated_image.jpg')
+# This will open the image file 'image.jpg', rotate it 90 degrees, and save it as 'rotated_image.jpg'.
+```
+###
+[INST]Explain Python threading
+
+Write a python program based on the above instruction.[/INST]
+```python
+import threading
+def print_numbers():
+    for i in range(10):
+        print(i)
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()
+# Demonstrates how to use threading to run a function concurrently.
+```
+###
+[INST]Implement a Python script to control a robotic arm
+
+Write a python program based on the above instruction.[/INST] ```python
+import pyserial
+import time
+# Connect to the robotic arm's serial port
+ser = pyserial.Serial('COM3', 9600, timeout=1)
+# Define the robotic arm's movements
+def move_arm(x, y, 
+Data ID 72: decoding step: 3758, large model step: 2336, 1.6087328767123288
+###
+[INST]Explain Python's map function
+
+Write a python program based on the above instruction.[/INST]
+```python
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x ** 2, numbers))
+# Demonstrates the use of the map function to square each element in a list.
+```
+###
+[INST]Write the code for a web crawler using Scrapy
+
+Write a python program based on the above instruction.[/INST]
+```python
+import scrapy
+class MySpider(scrapy.Spider):
+    name ='myspider'
+    start_urls = ['http://example.com']
+    def parse(self, response):
+        self.log('Visited %s' % response.url)
+```
+###
+[INST]How to perform sentiment analysis on real-time tweets?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tweepy
+from textblob import TextBlob
+consumer_key = 'your_key'
+consumer_secret = 'your_secret'
+access_token = 'your_token'
+access_token_secret = 'your_token_secret'
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+public_tweets = api.search('Python')
+for tweet in public_tweets:
+    analysis = TextBlob(tweet.text)
+    print(analysis.sentiment)
+# This will search for tweets containing the word 'Python' and analyze their sentiment.
+```
+###
+[INST]Implement reinforcement learning for a maze-solving bot
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+import random
+class MazeSolver:
+    def __init__(self, maze):
+        self.maze = maze
+        self.q_table = np.zeros((len(maze), len(maze[0]), 4))
+        
+Data ID 73: decoding step: 3812, large model step: 2368, 1.6097972972972974
+###
+[INST]How to build a trading bot?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a trading bot using AlgoTrader.
+from algotrader import *
+# Implement trading strategies and execute orders.
+```
+###
+[INST]Write the code for a quantum circuit simulator
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, transpile
+from qiskit.providers.aer import AerSimulator
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0, 1)
+simulator = AerSimulator()
+compiled_circuit = transpile(qc, simulator)
+result = simulator.run(compiled_circuit).result()
+out_state = result.get_statevector()
+```
+###
+[INST]How to perform forensic analysis?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing forensic analysis using Volatility.
+import volatility.framework as vf
+# Analyze memory dumps for digital investigations.
+```
+###
+[INST]Implement a linear regression model using scikit-learn
+
+Write a python program based on the above instruction.[/INST] ```python
+from sklearn.linear_model import LinearRegression
+from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split
+
+# Load Boston housing dataset
+boston = load_boston()
+X = boston.data
+y = 
+Data ID 74: decoding step: 3864, large model step: 2400, 1.61
+###
+[INST]How to design space missions?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Designing space missions using GMAT.
+from pygmat import GMAT
+# Implement orbit determination and trajectory optimization.
+```
+###
+[INST]Explain Python's assert statement
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 10
+assert x > 5, 'x should be greater than 5'
+# Demonstrates the use of assert to check if a condition is met.
+```
+###
+[INST]Write the code for a web scraper using Selenium.
+
+Write a python program based on the above instruction.[/INST]
+```python
+from selenium import webdriver
+driver = webdriver.Firefox()
+driver.get('http://www.python.org\nassert 'Python' in driver.title')
+```
+###
+[INST]Create a neural network for natural language processing using PyTorch
+
+Write a python program based on the above instruction.[/INST] ```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+# Define a simple neural network for NLP
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.fc1 
+Data ID 75: decoding step: 3918, large model step: 2432, 1.6110197368421053
+###
+[INST]How to automate data extraction from web pages?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+import requests
+response = requests.get('https://www.example.com')
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.prettify())
+# This will scrape the HTML of the specified website and print it.
+```
+###
+[INST]Write the code for a quantum entanglement simulator
+
+Write a python program based on the above instruction.[/INST]
+```python
+from qiskit import QuantumCircuit, Aer, transpile
+from qiskit.visualization import plot_histogram
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0, 1)
+print(qc)
+```
+###
+[INST]How to build a Twitter bot?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tweepy
+auth = tweepy.OAuthHandler('CONSUMER_KEY', 'CONSUMER_SECRET')
+auth.set_access_token('ACCESS_TOKEN', 'ACCESS_TOKEN_SECRET')
+api = tweepy.API(auth)
+api.update_status('Hello, Twitter!')
+# This will post a tweet saying 'Hello, Twitter!' from your account.
+```
+###
+[INST]Implement a decision tree classifier to predict loan approval
+
+Write a python program based on the above instruction.[/INST] ```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+X = [[0, 0], [0, 1], [1, 0], [1, 1]]
+y 
+Data ID 76: decoding step: 3973, large model step: 2464, 1.6124188311688312
+###
+[INST]Show Python's chaining comparison operators
+
+Write a python program based on the above instruction.[/INST]
+```python
+x = 10
+result = 1 < x < 20
+# Demonstrates chaining comparison operators to check if a variable is within a specific range.
+```
+###
+[INST]How to analyze black holes?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing black holes using BlackHoleToolkit.
+import blackholetk
+# Perform calculations related to event horizons and singularities.
+```
+###
+[INST]Elaborate on Python's walrus operator
+
+Write a python program based on the above instruction.[/INST]
+```python
+my_list = [1, 2, 3, 4, 5]
+squared = [n * n for n in my_list if (n := n % 2) == 1]
+# Demonstrates the use of the walrus operator to both calculate a value and use it in a condition within a list comprehension.
+```
+###
+[INST]Implement a Support Vector Machine for binary classification
+
+Write a python program based on the above instruction.[/INST] ```python
+from sklearn import datasets
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+
+# Load the iris dataset
+iris = datasets.load_iris()
+X = iris.data[:, :2]  # we 
+Data ID 77: decoding step: 4022, large model step: 2496, 1.611378205128205
+###
+[INST]How to automate data writing to CSV files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df.to_csv('output.csv', index=False)
+# This will write the DataFrame to a CSV file.
+```
+###
+[INST]Discuss Python's capabilities for dynamic code execution
+
+Write a python program based on the above instruction.[/INST]
+```python
+dynamic_code = 'print("Hello, world!")'
+exec(dynamic_code)
+# Demonstrates dynamic code execution using the exec function.
+```
+###
+[INST]Explain Python's itertools module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import itertools
+for item in itertools.count(0, 5):
+    if item > 20:
+        break
+    print(item)
+# Demonstrates the use of itertools.count to create an infinite iterator that starts from 0 and increments by 5.
+```
+###
+[INST]Create a Python script for sentiment analysis using TextBlob
+
+Write a python program based on the above instruction.[/INST] ```python
+from textblob import TextBlob
+def sentiment_analysis(text):
+    analysis = TextBlob(text)
+    if analysis.sentiment.polarity > 0:
+        return "Positive"
+    elif analysis.sentiment.polarity == 0:
+        return "Neutral"
+    else:
+        
+Data ID 78: decoding step: 4081, large model step: 2528, 1.6143196202531647
+###
+[INST]How to simulate quantum computing algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum computing algorithms using Cirq.
+import cirq
+# Design, simulate, and run quantum circuits.
+```
+###
+[INST]How to create an Artificial General Intelligence (AGI)?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating an AGI using OpenCog.
+import opencog
+# Implement reasoning, learning, and natural language understanding.
+```
+###
+[INST]How to simulate black holes?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating black holes using BlackHoleLib.
+import BlackHoleLib
+# Calculate spacetime metrics and simulate black hole dynamics.
+```
+###
+[INST]Implement a logistic regression model for churn prediction
+
+Write a python program based on the above instruction.[/INST] ```python
+# Implementing logistic regression for churn prediction.
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+# Load dataset, preprocess data, train model, and make predictions.
+```
+###
+[INST]How to implement a neural network 
+Data ID 79: decoding step: 4133, large model step: 2560, 1.614453125
+###
+[INST]How to build a quantum computer simulator?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a quantum computer simulator using QuTiP.
+from qutip import *
+# Simulate quantum states and quantum operations.
+```
+###
+[INST]How to create a REST API?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, jsonify
+app = Flask(__name__)
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    return jsonify({'key': 'value'})
+if __name__ == '__main__':
+    app.run(debug=True)
+# This will create a simple REST API that returns JSON data.
+```
+###
+[INST]How to perform quantum chemistry simulations?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing quantum chemistry simulations using Psi4.
+import psi4
+# Run electronic structure calculations.
+```
+###
+[INST]Implement a neural network for image recognition using OpenCV
+
+Write a python program based on the above instruction.[/INST] ```python
+import cv2
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+
+# Load the dataset
+train_data = []
+test_data = []
+for filename 
+Data ID 80: decoding step: 4184, large model step: 2592, 1.6141975308641976
+###
+[INST]Show how to execute shell commands using subprocess
+
+Write a python program based on the above instruction.[/INST]
+```python
+import subprocess
+completed_process = subprocess.run(['ls', '-l'])
+# Demonstrates executing a shell command using the subprocess module.
+```
+###
+[INST]Perform image classification using TensorFlow
+
+Write a python program based on the above instruction.[/INST]
+```python
+import tensorflow as tf
+model = tf.keras.models.load_model('model.h5')
+image = tf.keras.preprocessing.image.load_img('image.jpg', target_size=(224, 224))
+image = tf.keras.preprocessing.image.img_to_array(image)
+image = tf.expand_dims(image, axis=0)
+predictions = model.predict(image)
+print(f'Predictions: {predictions}')
+# Loads a pre-trained TensorFlow model, preprocesses an image, and performs classification.
+```
+###
+[INST]How to build a computer vision-based surgical robot?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Building a computer vision-based surgical robot using ROS.
+import rospy
+# Integrate sensors, actuators, and use computer vision algorithms for surgical tasks.
+```
+###
+[INST]Create a Python script to simulate a PID controller
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+class PIDController:
+    def __init__(self, P, I, D):
+        self.Kp = P
+        self.Ki = I
+        self.Kd = D
+        self.integral = 
+Data ID 81: decoding step: 4237, large model step: 2624, 1.6147103658536586
+###
+[INST]How to simulate quantum computing algorithms?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating quantum computing algorithms using Quipper.
+import quipper
+# Implement quantum circuits and quantum algorithms.
+```
+###
+[INST]Write the code for a WebSocket server
+
+Write a python program based on the above instruction.[/INST]
+```python
+import websockets
+import asyncio
+async def echo(websocket, path):
+    async for message in websocket:
+        await websocket.send(message)
+start_server = websockets.serve(echo, 'localhost', 8765)
+asyncio.get_event_loop().run_until_complete(start_server)
+asyncio.get_event_loop().run_forever()
+```
+###
+[INST]Write the code for a state management using Redux.
+
+Write a python program based on the above instruction.[/INST]
+```python
+import { createStore } from'redux'
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+let store = createStore(counter)
+```
+###
+[INST]Implement a genetic algorithm for solving optimization problems
+
+Write a python program based on the above instruction.[/INST] ```python
+import random
+import numpy as np
+
+class GeneticAlgorithm:
+    def __init__(self, population_size, mutation_rate, selection_rate):
+        self.population_size = population_size
+        self.mutation_rate = mutation_rate
+        self.selection_rate = 
+Data ID 82: decoding step: 4293, large model step: 2656, 1.6163403614457832
+###
+[INST]Perform face recognition with dlib
+
+Write a python program based on the above instruction.[/INST]
+```python
+import dlib
+import cv2
+video = cv2.VideoCapture(0)
+detector = dlib.get_frontal_face_detector()
+while True:
+    ret, frame = video.read()
+    faces = detector(frame)
+    for face in faces:
+        x, y, w, h = (face.left(), face.top(), face.width(), face.height())
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+    cv2.imshow('Face Recognition', frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+video.release()
+cv2.destroyAllWindows()
+# Performs face recognition using dlib and OpenCV. The program captures video from the webcam and identifies faces in real-time.
+```
+###
+[INST]How to create a language translation engine?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating a language translation engine using OpenNMT.
+import opennmt
+# Train neural network models for language translation.
+```
+###
+[INST]How to simulate financial market risks?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating financial market risks using QuantLib.
+import QuantLib as ql
+# Implement financial instruments and risk assessment.
+```
+###
+[INST]Implement a Python script for anomaly detection using Isolation Forest
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+from sklearn.ensemble import IsolationForest
+from sklearn.datasets import make_moons
+from sklearn.preprocessing import StandardScaler
+
+# Generate sample data
+X, y = make_moons(n_samples=100, 
+Data ID 83: decoding step: 4346, large model step: 2688, 1.6168154761904763
+###
+[INST]How to perform video-to-text conversion?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from moviepy.editor import *
+from pydub import AudioSegment
+import speech_recognition as sr
+clip = VideoFileClip('video.mp4')
+audio = clip.audio
+audio.write_audiofile('audio.wav')
+recognizer = sr.Recognizer()
+with sr.AudioFile('audio.wav') as source:
+    audio_data = recognizer.record(source)
+    text = recognizer.recognize_google(audio_data)
+print(f'Text from video: {text}')
+# This will convert the audio from a video file to text.
+```
+###
+[INST]Write the code for a bot that plays chess
+
+Write a python program based on the above instruction.[/INST]
+```python
+import chess
+import chess.engine
+board = chess.Board()
+engine = chess.engine.SimpleEngine.popen_uci("/path/to/engine")
+result = engine.play(board, chess.engine.Limit(time=1.0))
+board.push(result.move)
+```
+###
+[INST]Implement a chatbot using the ChatterBot library
+
+Write a python program based on the above instruction.[/INST]
+```python
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+chatbot = ChatBot('MyBot')
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train('chatterbot.corpus.english')
+while True:
+    user_input = input('You: ')
+    if user_input.lower() == 'quit':
+        break
+    response = chatbot.get_response(user_input)
+    print(f'Bot: {response}')
+# Creates a conversational chatbot using ChatterBot and trains it with English corpus. The bot then engages in a chat loop.
+```
+###
+[INST]Implement a Principal Component Analysis for feature reduction
+
+Write a python program based on the above instruction.[/INST] ```python
+import pandas as pd
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+df = pd.read_csv('data.csv')
+scaler = StandardScaler()
+df_scaled = scaler.fit_transform(df)
+pca = 
+Data ID 84: decoding step: 4399, large model step: 2720, 1.6172794117647058
+###
+[INST]Explain Python's use of the json module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import json
+data = {'name': 'Alice', 'age': 30}
+json_str = json.dumps(data)
+# Demonstrates serializing a Python dictionary to a JSON-formatted string.
+```
+###
+[INST]Elaborate on Python's itertools module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import itertools
+for i in itertools.count(start=10, step=2):
+    if i > 20:
+        break
+    print(i)
+# Demonstrates using itertools.count for generating infinite sequences.
+```
+###
+[INST]How to create generative art?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating generative art using Processing.
+import processing
+# Create graphical sketches using generative algorithms.
+```
+###
+[INST]Implement a k-Nearest Neighbors algorithm for classification
+
+Write a python program based on the above instruction.[/INST] ```python
+import numpy as np
+from sklearn.neighbors import KNeighborsClassifier
+
+# Create a dataset
+X = np.array([[1, 2], [2, 3], [3, 1], [4, 5], 
+Data ID 85: decoding step: 4452, large model step: 2752, 1.617732558139535
+###
+[INST]Create a blockchain example
+
+Write a python program based on the above instruction.[/INST]
+```python
+import hashlib
+import json
+class Block:
+    def __init__(self, index, data, previous_hash):
+        self.index = index
+        self.data = data
+        self.previous_hash = previous_hash
+        self.hash = self.calculate_hash()
+    def calculate_hash(self):
+        return hashlib.sha256(json.dumps(self.__dict__, sort_keys=True).encode()).hexdigest()
+# Creates a simple blockchain example with a Block class that calculates its own hash based on its content and the hash of the previous block.
+```
+###
+[INST]How to perform sentiment analysis on Reddit posts?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import praw
+from textblob import TextBlob
+reddit = praw.Reddit(client_id='CLIENT_ID', client_secret='CLIENT_SECRET', user_agent='USER_AGENT')
+posts = reddit.subreddit('Python').hot(limit=10)
+for post in posts:
+    analysis = TextBlob(post.title)
+    print(analysis.sentiment)
+# This will fetch hot posts from the Python subreddit and perform sentiment analysis on the titles.
+```
+###
+[INST]How to model climate change?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Modeling climate change using CESM.
+import cesm
+# Simulate atmospheric, oceanic, and land surface processes.
+```
+###
+[INST]Implement a Python script to perform web scraping and data extraction
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+from bs4 import BeautifulSoup
+url = "https://www.example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+# Extract the title of the webpage
+title = 
+Data ID 86: decoding step: 4508, large model step: 2784, 1.6192528735632183
+###
+[INST]How to automate SQL queries?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sqlite3
+conn = sqlite3.connect('database.db')
+c = conn.cursor()
+c.execute('SELECT * FROM table')
+rows = c.fetchall()
+for row in rows:
+    print(row)
+# This will connect to a SQLite database, execute a SQL query, and print the results.
+```
+###
+[INST]How to analyze radio signals?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing radio signals using GNU Radio.
+import gnuradio
+# Implement signal processing blocks for radio communications.
+```
+###
+[INST]How to automate directory creation?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import os
+os.makedirs('new_directory')
+# This will create a new directory named 'new_directory'.
+```
+###
+[INST]Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+import csv
+import pandas as pd
+
+url = 'https://sharegpt.com/c/4qj1DB0'
+response = requests.get(url)
+soup = BeautifulSoup(response.content, 'html.parser')
+
+data = []
+for row 
+Data ID 87: decoding step: 4562, large model step: 2816, 1.6200284090909092
+###
+[INST]How to automate directory creation?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import os
+os.makedirs('new_directory')
+# This will create a new directory named 'new_directory'.
+```
+###
+[INST]How to analyze radio frequency signals?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Analyzing radio frequency signals using GNU Radio.
+import gnuradio
+# Process, filter, and analyze radio frequency data.
+```
+###
+[INST]Discuss Python's use of the hashlib module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import hashlib
+hashed = hashlib.sha256(b'hello world').hexdigest()
+# Demonstrates hashing a string using the SHA-256 algorithm from the hashlib module.
+```
+###
+[INST]Fetch the latest gaming news and display them interactively
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+import json
+import webbrowser
+
+# Fetch the latest gaming news
+url = 'https://api.example.com/gaming-news'
+response = requests.get(url)
+data = json.loads(response.text)
+
+# Display the news 
+Data ID 88: decoding step: 4615, large model step: 2848, 1.620435393258427
+###
+[INST]Elaborate on Python's dictionary comprehensions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squares = {x: x*x for x in range(5)}
+# Demonstrates creating a dictionary of squares using dictionary comprehension.
+```
+###
+[INST]How to simulate brain-computer interfaces?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating brain-computer interfaces using MNE.
+import mne
+# Analyze and visualize electrophysiological data.
+```
+###
+[INST]How to simulate black holes?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating black holes using EinsteinPy.
+from einsteinpy.geodesic import *
+# Simulate geodesics around black holes.
+```
+###
+[INST]Monitor CPU and GPU temperature and alert if it's too high
+
+Write a python program based on the above instruction.[/INST] ```python
+import psutil
+import os
+import time
+
+while True:
+    cpu_temp = psutil.sensors_temperatures()['coretemp'][0][1]
+    gpu_temp = 
+Data ID 89: decoding step: 4658, large model step: 2880, 1.617361111111111
+###
+[INST]How to automate data writing to CSV files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import pandas as pd
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df.to_csv('output.csv', index=False)
+# This will write the DataFrame to a CSV file.
+```
+###
+[INST]Demonstrate Python's sys module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import sys
+print(sys.argv)  # List of command line arguments
+print(sys.version)  # Python version
+sys.exit(0)  # Exit the script
+# Demonstrates how to use sys module to get command-line arguments, Python version, and exit the script.
+```
+###
+[INST]How to create a REST API?
+
+Write a python program based on the above instruction.[/INST]
+```python
+from flask import Flask, jsonify
+app = Flask(__name__)
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    return jsonify({'key': 'value'})
+if __name__ == '__main__':
+    app.run(debug=True)
+# This will create a simple REST API that returns JSON data.
+```
+###
+[INST]Automatically update game mods based on user choice
+
+Write a python program based on the above instruction.[/INST] ```python
+import os
+import shutil
+import tkinter as tk
+from tkinter import filedialog
+
+root = tk.Tk()
+root.title("Mod Updater")
+
+def update_mods():
+    # Get the user's selection
+    selected_mod = 
+Data ID 90: decoding step: 4710, large model step: 2912, 1.617445054945055
+###
+[INST]How to automate data extraction from text files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('file.txt', 'r') as f:
+    data = f.read()
+print(data)
+# This will read data from a text file and print it.
+```
+###
+[INST]Discuss Python's SQLAlchemy
+
+Write a python program based on the above instruction.[/INST]
+```python
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///example.db')
+connection = engine.connect()
+result = connection.execute('SELECT * FROM users')
+# Demonstrates how to create a connection to a SQLite database and execute a SQL query using SQLAlchemy.
+```
+###
+[INST]How to develop custom voice assistants?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing custom voice assistants using Mycroft.
+from mycroft import MycroftSkill
+# Build and deploy voice-enabled applications.
+```
+###
+[INST]Fetch and display live game scores based on user's choice
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+import json
+# Fetch live game scores from API.
+url = 'https://api.example.com/scores'
+response = requests.get(url)
+data = json.loads(response.text)
+# Display scores based on user's 
+Data ID 91: decoding step: 4763, large model step: 2944, 1.617866847826087
+###
+[INST]Write the code for a medical imaging application
+
+Write a python program based on the above instruction.[/INST]
+```python
+import SimpleITK as sitk
+image = sitk.ReadImage('/path/to/dicom/file\nsitk.Show(image, 'Medical Image')')
+```
+###
+[INST]How to perform computational fluid dynamics?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing computational fluid dynamics using SU2.
+import SU2
+# Simulate fluid flow, heat transfer, and other related phenomena.
+```
+###
+[INST]How to generate QR Codes?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import qrcode
+img = qrcode.make('Some data here')
+img.save('qrcode.png')
+# This will generate a QR code containing the text 'Some data here' and save it as 'qrcode.png'.
+```
+###
+[INST]Optimize game settings interactively based on hardware specs
+
+Write a python program based on the above instruction.[/INST] ```python
+import psutil
+import platform
+import os
+
+def get_hardware_specs():
+    # Get CPU architecture
+    cpu_arch = platform.processor()
+    # Get RAM size
+    ram_size = 
+Data ID 92: decoding step: 4809, large model step: 2976, 1.6159274193548387
+###
+[INST]How to perform pharmacokinetic modeling?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing pharmacokinetic modeling using Simcyp.
+import simcyp
+# Simulate drug absorption, distribution, metabolism, and excretion.
+```
+###
+[INST]How to simulate protein folding?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating protein folding using FoldX.
+import foldx
+# Model and analyze protein structures.
+```
+###
+[INST]How to simulate subatomic particle behavior?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating subatomic particle behavior using Geant4.
+import geant4
+# Perform Monte Carlo simulation of the passage of particles through matter.
+```
+###
+[INST]Suggest a game to play based on mood
+
+Write a python program based on the above instruction.[/INST] ```python
+# Suggesting a game based on mood using a simple mood-based decision tree.
+import random
+
+def suggest_game(mood):
+    if mood == "relaxed":
+        return "Chess"
+    elif mood == 
+Data ID 93: decoding step: 4860, large model step: 3008, 1.615691489361702
+###
+[INST]How to perform climate modeling?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Performing climate modeling using xarray.
+import xarray as xr
+# Analyze and visualize geospatial data.
+```
+###
+[INST]How to automate data writing to XML files?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import xml.etree.ElementTree as ET
+root = ET.Element('root')
+child1 = ET.SubElement(root, 'child1')
+child1.text = 'text1'
+tree = ET.ElementTree(root)
+tree.write('output.xml')
+# This will create an XML file with a root element and one child element.
+```
+###
+[INST]Enhance traceback feature
+
+Write a python program based on the above instruction.[/INST]
+```python
+def divide_numbers(a, b):
+    return a / b
+try:
+    divide_numbers(5, 0)
+except ZeroDivisionError as e:
+    traceback_info = e.__traceback__
+    # Demonstrates how to use enhanced traceback in Python 3.11 for better debugging.
+```
+###
+[INST]Change game settings to dark mode if it's night time
+
+Write a python program based on the above instruction.[/INST] ```python
+import datetime
+import time
+import pygame
+
+# Initialize Pygame
+pygame.init()
+
+# Set up the game settings
+game_settings = {'mode': 'light'}
+
+# Check the current time
+current_time = datetime.datetime.now()
+if current_time.hour 
+Data ID 94: decoding step: 4915, large model step: 3040, 1.6167763157894737
+###
+[INST]How to simulate particle physics experiments?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating particle physics experiments using Geant4.
+from Geant4 import *
+# Model particles, their interactions, and simulate experiments.
+```
+###
+[INST]Write the code for a geothermal energy calculator
+
+Write a python program based on the above instruction.[/INST]
+```python
+def geothermal_energy(temperature, volume):
+    density = 2500
+    specific_heat = 1000
+    energy =  density * specific_heat * volume * temperature
+    return energy
+print(geothermal_energy(100, 1e+6))
+```
+###
+[INST]How to create generative art?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Creating generative art using Processing.
+import processing
+# Create graphical sketches using generative algorithms.
+```
+###
+[INST]Mute all background apps while gaming
+
+Write a python program based on the above instruction.[/INST] ```python
+import pyautogui
+import time
+
+def mute_all_apps():
+    # Get a list of all running apps
+    apps = pyautogui.apps()
+    for app in apps:
+        # Check if the app 
+Data ID 95: decoding step: 4962, large model step: 3072, 1.615234375
+###
+[INST]Show Python's queue module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import queue
+q = queue.Queue()
+q.put(1)
+q.put(2)
+q.put(3)
+while not q.empty():
+    print(q.get())
+# Demonstrates how to use a simple FIFO queue using the queue module.
+```
+###
+[INST]How to develop a space exploration algorithm?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Developing space exploration algorithms using Orekit.
+from orekit.pyhelpers import setup_orekit_curdir
+# Implement orbital mechanics and spacecraft navigation.
+```
+###
+[INST]How to simulate nuclear reactions?
+
+Write a python program based on the above instruction.[/INST]
+```python
+# Simulating nuclear reactions using OpenMC.
+import openmc
+# Model a reactor, define materials, and simulate neutron transport.
+```
+###
+[INST]Display a summary of my gaming stats
+
+Write a python program based on the above instruction.[/INST] ```python
+# Displaying a summary of gaming stats.
+import csv
+with open('gaming_stats.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(f"Game: 
+Data ID 96: decoding step: 5015, large model step: 3104, 1.6156572164948453
+###
+[INST]Write the code for a web scraper using BeautifulSoup
+
+Write a python program based on the above instruction.[/INST]
+```python
+from bs4 import BeautifulSoup
+import requests
+url = 'https://example.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser\n# scraping logic here')
+```
+###
+[INST]Discuss Python's implementation of recursion
+
+Write a python program based on the above instruction.[/INST]
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+# Demonstrates implementing a factorial function using recursion.
+```
+###
+[INST]Implement multithreading for a task
+
+Write a python program based on the above instruction.[/INST]
+```python
+import threading
+def print_numbers():
+    for i in range(10):
+        print(i)
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_numbers)
+thread1.start()
+thread2.start()
+thread1.join()
+thread2.join()
+# Creates two threads that run the same function concurrently using Python's threading library.
+```
+###
+[INST]Find online co-op games available now
+
+Write a python program based on the above instruction.[/INST] ```python
+import requests
+from bs4 import BeautifulSoup
+url = 'https://www.giantbomb.com/co-op-games/'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+games = soup.find_all('a', class_='title')
+for 
+Data ID 97: decoding step: 5072, large model step: 3136, 1.6173469387755102
+###
+[INST]Discuss Python's use of metaclasses
+
+Write a python program based on the above instruction.[/INST]
+```python
+class MyMeta(type):
+    def __init__(cls, name, bases, dct):
+        super().__init__(name, bases, dct)
+class MyClass(metaclass=MyMeta):
+    pass
+# Demonstrates the use of a metaclass to control class creation.
+```
+###
+[INST]Elaborate on Python's dictionary comprehensions
+
+Write a python program based on the above instruction.[/INST]
+```python
+squares = {x: x*x for x in range(5)}
+# Demonstrates creating a dictionary of squares using dictionary comprehension.
+```
+###
+[INST]How to automate data visualization?
+
+Write a python program based on the above instruction.[/INST]
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv('data.csv')
+df.plot(kind='bar')
+plt.show()
+# This will read data from a CSV file and create a bar plot.
+```
+###
+[INST]Check if any of my Steam friends are online
+
+Write a python program based on the above instruction.[/INST] ```python
+import steam
+import requests
+
+# Set your Steam API key and Steam ID
+api_key = "your_api_key"
+steam_id = "your_steam_id"
+
+# Get the friend list
+response = 
+Data ID 98: decoding step: 5124, large model step: 3168, 1.6174242424242424
+###
+[INST]Write the code for a geothermal energy calculator
+
+Write a python program based on the above instruction.[/INST]
+```python
+def geothermal_energy(temperature, volume):
+    density = 2500
+    specific_heat = 1000
+    energy =  density * specific_heat * volume * temperature
+    return energy
+print(geothermal_energy(100, 1e+6))
+```
+###
+[INST]Demonstrate Python's use of the with statement
+
+Write a python program based on the above instruction.[/INST]
+```python
+with open('example.txt', 'r') as file:
+    content = file.read()
+# Demonstrates the use of the with statement for resource management.
+```
+###
+[INST]Show how Python handles binary data with the struct module
+
+Write a python program based on the above instruction.[/INST]
+```python
+import struct
+packed_data = struct.pack('i', 123)
+unpacked_data = struct.unpack('i', packed_data)
+# Demonstrates packing and unpacking an integer using the struct module.
+```
+###
+[INST]Suggest a game based on my mood and genre preference
+
+Write a python program based on the above instruction.[/INST] ```python
+def game_suggestion(mood, genre):
+    mood_map = {
+        'happy': ['Overwatch', 'Minecraft'],
+        ['The Last of Us', 'What Remains of 
+Data ID 99: decoding step: 5169, large model step: 3200, 1.6153125

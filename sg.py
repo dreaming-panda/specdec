@@ -460,7 +460,20 @@ class LLM:
 
         hidden_states = torch.matmul(attn_weights, value_states)
         
+        # if hidden_states.shape[2] > 1:
+        #     neuron_stat = ((hidden_states / hidden_states.norm(dim=-1, keepdim=True))) # B, D
+        #     neuron_stat = neuron_stat.norm(dim=2)
+            
+        #     if int(0.25 * hidden_states.shape[-1]) > 0:
+        #         _, indices = torch.abs(neuron_stat).topk(k=int(0.25 * hidden_states.shape[-1]), largest=False, dim=-1)
+               
+        #         self.layer_mask_attn[layer_idx] = indices
         
+        # else:
+        #     if int(0.25 * hidden_states.shape[-1]) > 0 and layer_idx >= 2:
+        #         assert self.layer_mask_attn[layer_idx] is not None
+        #         #hidden_states[:,:,self.layer_mask_attn[layer_idx].unsqueeze(-2)] = 0.0
+        #         hidden_states = hidden_states.scatter(dim=-1, index=self.layer_mask_attn[layer_idx].unsqueeze(-2), value=0.0)
         hidden_states = hidden_states.reshape(bsz, self.num_heads, q_len, -1)
         hidden_states = hidden_states.transpose(1, 2).contiguous()
         hidden_states = hidden_states.reshape(bsz, q_len, self.hidden_size)

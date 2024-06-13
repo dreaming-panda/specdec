@@ -1,0 +1,1512 @@
+###
+Problem: Help me set up my daily to-do list!
+
+Write a python program o solve the problem.
+ Code: 1
+###
+
+
+# Define a function to generate a daily to-do list
+def daily_todo_list():
+    # Ask the user for their name
+    name = input("What is your name? ")
+
+    # Ask the user for their daily tasks
+    tasks = 
+Data ID 0: decoding step: 56, large model step: 32, 1.75
+###
+Problem: Create a shopping list based on my inputs!
+
+Write a python program o solve the problem.
+ Code: https://github.com/techiediaries/python-shopping-list
+###
+
+
+class ShoppingList:
+    def __init__(self):
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def remove_item(self, 
+Data ID 1: decoding step: 110, large model step: 64, 1.71875
+###
+Problem: Calculate how much time I spend on my phone per week!
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+# Define the variables
+hours_per_day = 2  # hours per day
+days_per_week = 7  # days per week
+
+# Calculate the total hours per week
+total_hours_per_week = hours_per_day * 
+Data ID 2: decoding step: 166, large model step: 96, 1.7291666666666667
+###
+Problem: Help me split the bill among my friends!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+def split_bill(total_bill, friends):
+    return total_bill / friends
+
+# Test the function
+total_bill = float(input("Enter the total bill: "))
+friends = int(input("Enter the number of friends: "))
+
+bill_per_friend = split_bill(total_bill, 
+Data ID 3: decoding step: 224, large model step: 128, 1.75
+###
+Problem: Organize my movie list into genres!
+
+Write a python program o solve the problem.
+ Code: 2022-02-13
+###
+
+# Define a dictionary to store movies and their genres
+movies = {
+    "The Shawshank Redemption": "Drama",
+    "The Godfather": "Crime",
+    "The Dark Knight": 
+Data ID 4: decoding step: 275, large model step: 160, 1.71875
+###
+Problem: Calculate the average rating of my book collection!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+class Book:
+    def __init__(self, title, rating):
+        self.title = title
+        self.rating = rating
+
+    def __str__(self):
+        return f"{self.title}: {self.rating}/5"
+
+
+class BookCollection:
+    def 
+Data ID 5: decoding step: 336, large model step: 192, 1.75
+###
+Problem: Create a playlist based on my mood!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+# Define a dictionary to map moods to songs
+mood_to_song = {
+    "happy": ["Walking on Sunshine", "I Gotta Feeling", "Can't Stop the Feeling"],
+    "sad": 
+Data ID 6: decoding step: 384, large model step: 224, 1.7142857142857142
+###
+Problem: Help me find the best deals on my shopping list!
+
+Write a python program o solve the problem.
+ Code: (Python 3.x)
+###
+
+
+# Define a function to calculate the total cost of items
+def calculate_total_cost(shopping_list):
+    total_cost = 0
+    for item, price in shopping_list.items():
+        total_cost += price
+    return 
+Data ID 7: decoding step: 441, large model step: 256, 1.72265625
+###
+Problem: Calculate how much I need to save per month for my vacation!
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+# Define the variables
+vacation_cost = 5000  # The cost of the vacation
+months_to_save = 6  # The number of months to save
+current_savings = 0  # The current savings
+
+# Calculate the monthly 
+Data ID 8: decoding step: 497, large model step: 288, 1.7256944444444444
+###
+Problem: Determine the most efficient route for my errands!
+
+Write a python program o solve the problem.
+ Code: (Python)
+###
+
+
+# Define the errands and their locations
+errands = {
+    "Grocery Store": (43.6532, -79.3832),
+    "Post Office": (43.6552, 
+Data ID 9: decoding step: 550, large model step: 320, 1.71875
+###
+Problem: Help me manage my subscriptions!
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+class SubscriptionManager:
+    def __init__(self):
+        self.subscriptions = {}
+
+    def add_subscription(self, name, frequency):
+        if name in self.subscriptions:
+            print(f"Subscription '{name}' already exists.")
+        else:
+            
+Data ID 10: decoding step: 606, large model step: 352, 1.7215909090909092
+###
+Problem: Create a meal plan for the week!
+
+Write a python program o solve the problem.
+ Code: https://github.com/Abhishek-Bhardwaj/Meal-Plan-Generator
+###
+
+
+# Meal Plan Generator
+class MealPlanGenerator:
+    def __init__(self):
+        self.meal_plan = {}
+
+    def 
+Data ID 11: decoding step: 655, large model step: 384, 1.7057291666666667
+###
+Problem: Calculate my carbon footprint based on my daily activities!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+class CarbonFootprint:
+    def __init__(self):
+        self.carbon_footprint = 0
+
+    def calculate_footprint(self, activities):
+        for activity, carbon_emission in activities.items():
+            self.carbon_footprint += 
+Data ID 12: decoding step: 709, large model step: 416, 1.7043269230769231
+###
+Problem: Help me set reminders for my favorite TV shows!
+
+Write a python program o solve the problem.
+ Code: https://github.com/Pranav-Srivastava/Python-Practice/blob/main/TV%20Show%20Reminders.py
+###
+
+
+# Define a function to set reminders for TV shows
+def set_reminders(tv_shows):
+    
+Data ID 13: decoding step: 761, large model step: 448, 1.6986607142857142
+###
+Problem: Assist me in managing my study schedule!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+class StudySchedule:
+    def __init__(self):
+        self.schedule = {}
+
+    def add_task(self, task, duration):
+        if task in self.schedule:
+            self.schedule[task]['duration'] += duration
+        else:
+            
+Data ID 14: decoding step: 817, large model step: 480, 1.7020833333333334
+###
+Problem: Help me calculate the ROI for my investments!
+
+Write a python program o solve the problem.
+ Code: python
+# Define a function to calculate ROI
+def calculate_roi(initial_investment, final_value, time):
+    roi = ((final_value - initial_investment) / initial_investment) * 100
+    roi = roi / time
+    return 
+Data ID 15: decoding step: 870, large model step: 512, 1.69921875
+###
+Problem: Assist me in tracking my water intake!
+
+Write a python program o solve the problem.
+ Code: #!/usr/bin/env python
+# import the necessary modules
+import datetime
+
+class WaterTracker:
+    def __init__(self):
+        self.water_intake = 0
+
+    def add_water(self, amount):
+        self.water_intake += amount
+
+    def 
+Data ID 16: decoding step: 925, large model step: 544, 1.7003676470588236
+###
+Problem: Help me find the best time to post on social media based on my followers!
+
+Write a python program o solve the problem.
+ Code: 1
+###
+import datetime
+import random
+
+# Define the number of followers
+followers = 1000
+
+# Define the number of posts per day
+posts_per_day = 5
+
+# Define the time range for posting (in hours)
+start_time = 
+Data ID 17: decoding step: 980, large model step: 576, 1.7013888888888888
+###
+Problem: Assist me in calculating my monthly budget!
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+# Define a function to calculate monthly budget
+def calculate_budget():
+    # Get user input for income
+    income = float(input("Enter your monthly income: "))
+
+    # Get user input for fixed expenses
+    fixed_expenses = float(input("Enter your fixed monthly 
+Data ID 18: decoding step: 1040, large model step: 608, 1.7105263157894737
+###
+Problem: Calculate my coffee consumption
+
+Write a python program o solve the problem.
+ Code: 2022-02-23-1
+###
+
+# Define a function to calculate the total coffee consumption
+def calculate_coffee_consumption():
+    # Ask the user for the number of cups of coffee consumed
+    cups_consumed = float(input("Enter the number of 
+Data ID 19: decoding step: 1095, large model step: 640, 1.7109375
+###
+Problem: Help me balance my diet
+
+Write a python program o solve the problem.
+ Code: `diet_balancer.py`
+###
+
+
+class DietBalancer:
+    def __init__(self):
+        self.foods = {}
+
+    def add_food(self, name, calories, carbohydrates, proteins, fats):
+        self.foods[name] = {"calories": calories, 
+Data ID 20: decoding step: 1152, large model step: 672, 1.7142857142857142
+###
+Problem: Help me set fitness goals
+
+Write a python program o solve the problem.
+ Code: 1
+```
+# Define a function to set fitness goals
+def set_fitness_goals():
+    # Ask user for their current fitness level
+    current_fitness_level = input("Enter your current fitness level (beginner, intermediate, advanced): ")
+
+    # Ask user for their fitness 
+Data ID 21: decoding step: 1210, large model step: 704, 1.71875
+###
+Problem: Sort my favorite quotes
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+# Define a list of quotes
+quotes = [
+    "Believe you can and you're halfway there.",
+    "The greatest glory in living lies not in never falling, but in rising every time we 
+Data ID 22: decoding step: 1256, large model step: 736, 1.7065217391304348
+###
+Problem: Help me manage my reading list
+
+Write a python program o solve the problem.
+ Code: 1
+```
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        self.read = False
+
+    def mark_as_read(self):
+        self.read = True
+
+    def __str__(self):
+        status = 
+Data ID 23: decoding step: 1316, large model step: 768, 1.7135416666666667
+###
+Problem: Recommend me a movie based on my mood
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+import random
+
+# Dictionary to store movie recommendations based on mood
+mood_movies = {
+    "happy": ["The Shawshank Redemption", "The Princess Bride", "The Sound of Music"],
+    "sad": ["The Notebook", 
+Data ID 24: decoding step: 1369, large model step: 800, 1.71125
+###
+Problem: Calculate how much I should tip
+
+Write a python program o solve the problem.
+ Code: 2022-02-02-01
+###
+
+# Define the function to calculate the tip
+def calculate_tip(total_cost, tip_percentage):
+    # Calculate the tip amount
+    tip_amount = total_cost * (tip_percentage / 100)
+    # 
+Data ID 25: decoding step: 1421, large model step: 832, 1.7079326923076923
+###
+Problem: Find me the best day to book a flight
+
+Write a python program o solve the problem.
+ Code: https://github.com/Prakhar1989/Best-Day-to-Book-a-Flight/blob/master/BestDayToBookFlight.py
+###
+
+
+import requests
+import json
+from datetime import datetime, timedelta
+import calendar
+
+# Function to get 
+Data ID 26: decoding step: 1473, large model step: 864, 1.7048611111111112
+###
+Problem: Calculate my screen time
+
+Write a python program o solve the problem.
+ Code: #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# Define a function to calculate the total screen time
+def calculate_screen_time(hours, minutes, seconds):
+    # Convert the time to seconds
+    total_seconds = hours * 3600 
+Data ID 27: decoding step: 1528, large model step: 896, 1.7053571428571428
+###
+Problem: Switch to dark mode
+
+Write a python program o solve the problem.
+ Code: 1
+###
+
+
+# Function to switch to dark mode
+def switch_to_dark_mode():
+    # Set the background color to dark gray
+    background_color = "#333"
+    
+    # Set the text color to white
+    text_color = "#fff"
+    
+    
+Data ID 28: decoding step: 1583, large model step: 928, 1.7058189655172413
+###
+Problem: Open a random browser tab from a list of my favorite websites
+
+Write a python program o solve the problem.
+ Code: 1
+###
+
+
+import webbrowser
+import random
+
+# List of favorite websites
+favorite_websites = ["https://www.google.com", "https://www.facebook.com", "https://www.github.com", "https://www.stackoverflow.com", 
+Data ID 29: decoding step: 1641, large model step: 960, 1.709375
+###
+Problem: Create a quick text note
+
+Write a python program o solve the problem.
+ Code: 1
+###
+
+
+# Define a function to create a quick text note
+def create_note():
+    # Ask the user for the note title and content
+    title = input("Enter the note title: ")
+    content = input("Enter the 
+Data ID 30: decoding step: 1691, large model step: 992, 1.7046370967741935
+###
+Problem: Restart my PC now!
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+import os
+
+def restart_pc():
+    os.system("shutdown /r /t 0")
+
+restart_pc()  # Run the function
+print("Your PC will restart now!")  # Print a message to the 
+Data ID 31: decoding step: 1740, large model step: 1024, 1.69921875
+###
+Problem: Empty my recycle bin
+
+Write a python program o solve the problem.
+ Code: ###
+import os
+import shutil
+
+# Get the path of the recycle bin
+recycle_bin_path = os.path.join(os.environ['USERPROFILE'], 'Recycle Bin')
+
+# Check if the recycle bin exists
+if 
+Data ID 32: decoding step: 1793, large model step: 1056, 1.6979166666666667
+###
+Problem: Set my desktop background color to black
+
+Write a python program o solve the problem.
+ Code: ###
+import ctypes
+
+# Set the desktop background color to black
+ctypes.windll.user32.SystemParametersInfoW(20, 0, "black", 0)
+
+print("Desktop background color set to black 
+Data ID 33: decoding step: 1839, large model step: 1088, 1.6902573529411764
+###
+Problem: Show system information
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+import platform
+import psutil
+import cpuinfo
+import GPUtil
+
+def show_system_info():
+    print("System Information:")
+    print(f"Platform: {platform.system()} {platform.release()} {platform.version()}")
+    
+Data ID 34: decoding step: 1890, large model step: 1120, 1.6875
+###
+Problem: Find the largest file in a given folder
+
+Write a python program o solve the problem.
+ Code: 1
+###
+
+
+import os
+
+def find_largest_file(folder_path):
+    largest_file = None
+    largest_size = 0
+    for file in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file)
+        if 
+Data ID 35: decoding step: 1944, large model step: 1152, 1.6875
+###
+Problem: Close all instances of a specific application
+
+Write a python program o solve the problem.
+ Code: close_all_instances.py
+###
+
+import os
+import subprocess
+
+def close_all_instances(app_name):
+    # Get all running processes
+    processes = subprocess.check_output(['tasklist']).decode('utf-8').splitlines()
+
+    # Iterate over each 
+Data ID 36: decoding step: 1997, large model step: 1184, 1.6866554054054055
+###
+Problem: Toggle airplane mode
+
+Write a python program o solve the problem.
+ Code: ###
+import os
+import subprocess
+
+def toggle_airplane_mode():
+    # Check if airplane mode is enabled
+    output = subprocess.check_output(['netsh', 'wlan', 'interface']).decode('utf-8')
+    if 
+Data ID 37: decoding step: 2050, large model step: 1216, 1.6858552631578947
+###
+Problem: Clone a GitHub repository
+
+Write a python program o solve the problem.
+ Code: clone_github_repo.py
+
+Description: This program will clone a GitHub repository using the GitHub API and Python's requests library.
+
+How to run:
+1. Install the requests library by running pip install requests in your terminal.
+2. Run the program by executing python 
+Data ID 38: decoding step: 2104, large model step: 1248, 1.685897435897436
+###
+Problem: Create a SQLite database and table
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+import sqlite3
+
+# Connect to SQLite database. It will be created if it doesn't exist.
+conn = sqlite3.connect('my_database.db')
+
+# Create a cursor object
+c = conn.cursor()
+
+# Create table
+c.execute("""CREATE 
+Data ID 39: decoding step: 2158, large model step: 1280, 1.6859375
+###
+Problem: Update all Python packages
+
+Write a python program o solve the problem.
+ Code: update_all_packages.py
+###
+
+import subprocess
+import os
+
+# List of packages to update
+packages = ['pip', 'wheel', 'virtualenv', 'pip-tools']
+
+# Update each package
+for package in packages:
+    # Check 
+Data ID 40: decoding step: 2211, large model step: 1312, 1.6852134146341464
+###
+Problem: Run a Python script at a specific time
+
+Write a python program o solve the problem.
+ Code: Run a Python script at a specific time
+###
+
+import time
+import datetime
+import os
+
+def run_script_at_time(script_path, time_str):
+    while True:
+        current_time = datetime.datetime.now().strftime("%H:%M:%S")
+        if 
+Data ID 41: decoding step: 2265, large model step: 1344, 1.6852678571428572
+###
+Problem: Rename all files in a folder to lowercase
+
+Write a python program o solve the problem.
+ Code: ###
+import os
+
+def rename_files_to_lowercase(folder_path):
+    for filename in os.listdir(folder_path):
+        new_filename = filename.lower()
+        os.rename(os.path.join(folder_path, filename), os.path.join(folder_path, new_filename))
+
+folder_path = 
+Data ID 42: decoding step: 2320, large model step: 1376, 1.686046511627907
+###
+Problem: Count the number of lines in a file
+
+Write a python program o solve the problem.
+ Code: `count_lines.py`
+###
+def count_lines(filename):
+    try:
+        with open(filename, 'r') as f:
+            lines = f.readlines()
+            return len(lines)
+    except FileNotFoundError:
+        print(f"File {filename} not found")
+        return 
+Data ID 43: decoding step: 2375, large model step: 1408, 1.6867897727272727
+###
+Problem: List all branches in a Git repository
+
+Write a python program o solve the problem.
+ Code: ```
+python
+import os
+import subprocess
+
+def list_branches():
+    # Get the current directory
+    current_dir = os.getcwd()
+
+    # Get the Git repository path
+    git_repo_path = os.path.join(current_dir, '.git')
+
+    # Check if 
+Data ID 44: decoding step: 2430, large model step: 1440, 1.6875
+###
+Problem: Create a ZIP archive of a folder
+
+Write a python program o solve the problem.
+ Code: `zip_folder.py`
+###
+
+
+import os
+import zipfile
+
+def zip_folder(folder_path, zip_file_path):
+    zip_file = zipfile.ZipFile(zip_file_path, 'w')
+    for root, dirs, files in 
+Data ID 45: decoding step: 2481, large model step: 1472, 1.685461956521739
+###
+Problem: Push changes to a GitHub repository
+
+Write a python program o solve the problem.
+ Code: ```
+python
+import os
+import subprocess
+
+# Define the repository URL and the commit message
+repo_url = "https://github.com/your-username/your-repo-name.git"
+commit_message = "Automated commit from Python 
+Data ID 46: decoding step: 2531, large model step: 1504, 1.6828457446808511
+###
+Problem: Start a local web server
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving at port", 
+Data ID 47: decoding step: 2583, large model step: 1536, 1.681640625
+###
+Problem: Create an HTTP server to share files
+
+Write a python program o solve the problem.
+ Code: https://github.com/krishnachandra/HTTP-Server-File-Share
+###
+
+
+import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with 
+Data ID 48: decoding step: 2631, large model step: 1568, 1.6779336734693877
+###
+Problem: Create a symbolic link
+
+Write a python program o solve the problem.
+ Code: ###
+import os
+import shutil
+
+def create_symbolic_link(src, dst):
+    if os.path.exists(dst):
+        print("Destination already exists. Please choose a different path.")
+        return
+    os.symlink(src, dst)
+    
+Data ID 49: decoding step: 2682, large model step: 1600, 1.67625
+###
+Problem: Extract the text content from a webpage
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+import requests
+from bs4 import BeautifulSoup
+
+def extract_text(url):
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        text = soup.get_text()
+        return text
+    except Exception as e:
+        
+Data ID 50: decoding step: 2740, large model step: 1632, 1.678921568627451
+###
+Problem: Extract all email addresses from a text file
+
+Write a python program o solve the problem.
+ Code: email_extractor.py
+###
+
+
+import re
+
+def extract_emails(file_name):
+    pattern = 
+Data ID 51: decoding step: 2783, large model step: 1664, 1.6724759615384615
+###
+Problem: Check for updates of a specific Python package
+
+Write a python program o solve the problem.
+ Code: check_updates.py
+
+###
+
+
+import pip
+import requests
+import json
+
+def check_updates(package_name):
+    try:
+        package_info = pip.get_installed_distributions()
+        package_version = [package.project_name for package in package_info if 
+Data ID 52: decoding step: 2832, large model step: 1696, 1.669811320754717
+###
+Problem: Remove trailing whitespaces from a Python file
+
+Write a python program o solve the problem.
+ Code: (Python)
+```
+import os
+
+def remove_trailing_whitespace(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    with open(file_path, 'w') as file:
+        for line in lines:
+            
+Data ID 53: decoding step: 2888, large model step: 1728, 1.6712962962962963
+###
+Problem: Convert tabs to spaces in a Python file
+
+Write a python program o solve the problem.
+ Code: convert_tabs_to_spaces.py
+###
+
+def convert_tabs_to_spaces(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    content = content.replace('\t', * 4)  # replace tab with 
+Data ID 54: decoding step: 2942, large model step: 1760, 1.6715909090909091
+###
+Problem: Sort the import statements alphabetically
+
+Write a python program o solve the problem.
+ Code: ###
+import re
+import os
+
+def sort_imports(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    import_statements = 
+Data ID 55: decoding step: 2991, large model step: 1792, 1.6690848214285714
+###
+Problem: Break lines longer than 80 characters
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+def break_lines(text):
+    lines = text.split('\n')
+    new_lines = []
+    for line in lines:
+        if len(line) > 80:
+            words = line.split()
+            new_line = ''
+            for word in words:
+                if 
+Data ID 56: decoding step: 3049, large model step: 1824, 1.6716008771929824
+###
+Problem: Convert a Python file to PEP8 standards
+
+Write a python program o solve the problem.
+ Code: `pep8_converter.py`
+###
+
+
+import re
+import os
+
+def pep8_converter(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+
+    # Check for blank lines
+    content = 
+Data ID 57: decoding step: 3103, large model step: 1856, 1.671875
+###
+Problem: Add type annotations to function arguments
+
+Write a python program o solve the problem.
+ Code: (Python)
+```
+def greet(name: str, age: int) -> None:
+    print(f"Hello, {name}! You are {age} years old.")
+
+greet("John", 30)
+```
+In this code, we define a function 
+Data ID 58: decoding step: 3159, large model step: 1888, 1.6731991525423728
+###
+Problem: Remove all comments from a Python file
+
+Write a python program o solve the problem.
+ Code: remove_comments.py
+###
+
+import re
+
+def remove_comments(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    content = re.sub(r'#.*$', '', content, flags=re.MULTILINE)
+    content = 
+Data ID 59: decoding step: 3213, large model step: 1920, 1.6734375
+###
+Problem: Remove all print statements from a Python file
+
+Write a python program o solve the problem.
+ Code: #!/usr/bin/env python
+import re
+import os
+
+def remove_print_statements(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    content = 
+Data ID 60: decoding step: 3265, large model step: 1952, 1.6726434426229508
+###
+Problem: Add docstrings to all functions
+
+Write a python program o solve the problem.
+ Code: ###
+def add(x, y):
+    """
+    This function adds two numbers.
+    
+    Parameters:
+    x (int): The first number.
+    y (int): The second number.
+    
+    Returns:
+    int: The sum of x and y.
+    """
+    return x + y
+
+def 
+Data ID 61: decoding step: 3327, large model step: 1984, 1.6769153225806452
+###
+Problem: Implement a simple feedforward neural network
+
+Write a python program o solve the problem.
+ Code: https://github.com/NeuralNetworks/FeedForwardNeuralNetwork
+###
+
+
+import numpy as np
+
+class NeuralNetwork:
+    def __init__(self, x, y):
+        self.input      = x
+        self.weights1   = 
+Data ID 62: decoding step: 3382, large model step: 2016, 1.6775793650793651
+###
+Problem: Implement an advanced feedforward neural network using PyTorch and train it
+
+Write a python program o solve the problem.
+ Code: https://github.com/Pranav-Aggarwal/Neural-Networks/blob/master/FeedForward_Network.py
+###
+
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import matplotlib.pyplot as 
+Data ID 63: decoding step: 3437, large model step: 2048, 1.67822265625
+###
+Problem: Visualize the activations of a neural network layer
+
+Write a python program o solve the problem.
+ Code: https://github.com/Pranav-Srivastava/Neural-Network-Visualizations/blob/main/Activation%20Visualization.ipynb
+###
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+from 
+Data ID 64: decoding step: 3483, large model step: 2080, 1.6745192307692307
+###
+Problem: Implement a GAN to generate new data samples
+
+Write a python program o solve the problem.
+ Code: 2022-02-16-01.py
+###
+
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.layers import Dense, Reshape, Flatten
+from tensorflow.keras.layers import BatchNormalization
+from 
+Data ID 65: decoding step: 3527, large model step: 2112, 1.6699810606060606
+###
+Problem: Extract features from an image using a pre-trained CNN
+
+Write a python program o solve the problem.
+ Code: 2022-02-15-Extract-Features-From-Image.py
+###
+
+import cv2
+import numpy as np
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.preprocessing import image
+from 
+Data ID 66: decoding step: 3576, large model step: 2144, 1.6679104477611941
+###
+Problem: Implement a Random Forest Classifier using scikit-learn
+
+Write a python program o solve the problem.
+ Code: https://github.com/PraveenRajput/Random-Forest-Classifier
+###
+
+
+# Import necessary libraries
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from 
+Data ID 67: decoding step: 3628, large model step: 2176, 1.6672794117647058
+###
+Problem: Create a TensorFlow model to recognize handwritten digits
+
+Write a python program o solve the problem.
+ Code: https://github.com/Chirag-123/Handwritten-Digit-Recognition/blob/main/handwritten_digit_recognition.py
+###
+
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+import numpy as np
+import 
+Data ID 68: decoding step: 3680, large model step: 2208, 1.6666666666666667
+###
+Problem: Create a K-means clustering model to segment customers
+
+Write a python program o solve the problem.
+ Code: KMeansClustering.py
+###
+
+
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+
+# Load the dataset
+customer_data = pd.read_csv('customer_data.csv')
+
+# Select 
+Data ID 69: decoding step: 3732, large model step: 2240, 1.6660714285714286
+###
+Problem: Implement a Naive Bayes classifier for text classification
+
+Write a python program o solve the problem.
+ Code: Naive_Bayes.py
+###
+
+
+import numpy as np
+from collections import Counter
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import 
+Data ID 70: decoding step: 3783, large model step: 2272, 1.6650528169014085
+###
+Problem: Implement a simple chatbot using Python's NLTK library
+
+Write a python program o solve the problem.
+ Code: `chatbot.py`
+###
+
+import nltk
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+import pickle
+import numpy as np
+
+from keras.models import load_model
+model = 
+Data ID 71: decoding step: 3837, large model step: 2304, 1.6653645833333333
+###
+Problem: Implement a Python script to control a robotic arm
+
+Write a python program o solve the problem.
+ Code: https://github.com/techiediaries/robotic-arm-control-python
+###
+
+
+import RPi.GPIO as GPIO
+import time
+import math
+
+# Set up GPIO pins for the robotic 
+Data ID 72: decoding step: 3886, large model step: 2336, 1.663527397260274
+###
+Problem: Implement reinforcement learning for a maze-solving bot
+
+Write a python program o solve the problem.
+ Code: 2022-02-23-RL-Maze-Solver.py
+###
+
+
+import numpy as np
+import random
+import matplotlib.pyplot as plt
+from collections import defaultdict
+
+class MazeSolver:
+    def __init__(self, maze, 
+Data ID 73: decoding step: 3936, large model step: 2368, 1.662162162162162
+###
+Problem: Implement a linear regression model using scikit-learn
+
+Write a python program o solve the problem.
+ Code: LinearRegression.py
+###
+
+# Import necessary libraries
+from sklearn.linear_model import LinearRegression
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate sample data
+X = np.array([[1], [2], [3], [4], 
+Data ID 74: decoding step: 3988, large model step: 2400, 1.6616666666666666
+###
+Problem: Create a neural network for natural language processing using PyTorch
+
+Write a python program o solve the problem.
+ Code: nnlp.py
+###
+
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+from torch.utils.data import Dataset, DataLoader
+import numpy as np
+
+class TextDataset(Dataset):
+    def __init__(self, 
+Data ID 75: decoding step: 4045, large model step: 2432, 1.6632401315789473
+###
+Problem: Implement a decision tree classifier to predict loan approval
+
+Write a python program o solve the problem.
+ Code: decision_tree_loan_approval.py
+###
+
+# Import necessary libraries
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load the 
+Data ID 76: decoding step: 4097, large model step: 2464, 1.6627435064935066
+###
+Problem: Implement a Support Vector Machine for binary classification
+
+Write a python program o solve the problem.
+ Code: SVM.py
+###
+
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn import svm
+from sklearn.metrics import accuracy_score
+
+# Load iris dataset
+iris = datasets.load_iris()
+X = 
+Data ID 77: decoding step: 4146, large model step: 2496, 1.6610576923076923
+###
+Problem: Create a Python script for sentiment analysis using TextBlob
+
+Write a python program o solve the problem.
+ Code: `sentiment_analysis.py`
+###
+
+
+from textblob import TextBlob
+import nltk
+nltk.download('vader_lexicon')
+
+def sentiment_analysis(text):
+    analysis = TextBlob(text)
+    if analysis.sentiment.polarity > 
+Data ID 78: decoding step: 4196, large model step: 2528, 1.6598101265822784
+###
+Problem: Implement a logistic regression model for churn prediction
+
+Write a python program o solve the problem.
+ Code: logistic_regression_churn_prediction.py
+###
+
+
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load 
+Data ID 79: decoding step: 4248, large model step: 2560, 1.659375
+###
+Problem: Implement a neural network for image recognition using OpenCV
+
+Write a python program o solve the problem.
+ Code: (Python)
+```
+import cv2
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Conv2D, MaxPooling2D, Flatten
+
+# Load the dataset
+train_data = 
+Data ID 80: decoding step: 4302, large model step: 2592, 1.6597222222222223
+###
+Problem: Create a Python script to simulate a PID controller
+
+Write a python program o solve the problem.
+ Code: PID.py
+###
+
+# PID controller class
+class PID:
+    def __init__(self, P=2.0, I=0.0, D=1.0):
+        self.Kp = P
+        self.Ki = I
+        self.Kd = 
+Data ID 81: decoding step: 4361, large model step: 2624, 1.661966463414634
+###
+Problem: Implement a genetic algorithm for solving optimization problems
+
+Write a python program o solve the problem.
+ Code: genetic_algorithm.py
+###
+
+
+import random
+import numpy as np
+
+class GeneticAlgorithm:
+    def __init__(self, population_size, mutation_rate, selection_rate, fitness_function):
+        self.population_size = population_size
+        self.mutation_rate = mutation_rate
+        self.selection_rate = 
+Data ID 82: decoding step: 4421, large model step: 2656, 1.6645331325301205
+###
+Problem: Implement a Python script for anomaly detection using Isolation Forest
+
+Write a python program o solve the problem.
+ Code: IsolationForest.py
+###
+
+
+import numpy as np
+from sklearn.ensemble import IsolationForest
+from sklearn.datasets import make_moons
+import matplotlib.pyplot as plt
+
+# Generate some noisy 
+Data ID 83: decoding step: 4469, large model step: 2688, 1.6625744047619047
+###
+Problem: Implement a Principal Component Analysis for feature reduction
+
+Write a python program o solve the problem.
+ Code: python
+###
+
+
+import numpy as np
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+# Generate a random dataset
+np.random.seed(0)
+n_samples = 1000
+n_features = 20
+X 
+Data ID 84: decoding step: 4518, large model step: 2720, 1.661029411764706
+###
+Problem: Implement a k-Nearest Neighbors algorithm for classification
+
+Write a python program o solve the problem.
+ Code: k-Nearest Neighbors (KNN) Algorithm
+###
+
+
+import numpy as np
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+import matplotlib.pyplot as 
+Data ID 85: decoding step: 4573, large model step: 2752, 1.661700581395349
+###
+Problem: Implement a Python script to perform web scraping and data extraction
+
+Write a python program o solve the problem.
+ Code: web_scraping.py
+###
+
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Send a GET request
+url = "https://www.example.com"
+response = requests.get(url)
+
+# If the GET request is successful, the status code will 
+Data ID 86: decoding step: 4629, large model step: 2784, 1.6627155172413792
+###
+Problem: Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Send a GET request
+url = "https://sharegpt.com/c/4qj1DB0"
+response = requests.get(url)
+
+# If the GET 
+Data ID 87: decoding step: 4682, large model step: 2816, 1.6626420454545454
+###
+Problem: Fetch the latest gaming news and display them interactively
+
+Write a python program o solve the problem.
+ Code: (python)
+```
+import requests
+import json
+import tkinter as tk
+from tkinter import ttk
+
+# API endpoint for gaming news
+url = "https://api.igdb.com/v4/news"
+
+# API 
+Data ID 88: decoding step: 4727, large model step: 2848, 1.6597612359550562
+###
+Problem: Monitor CPU and GPU temperature and alert if it's too high
+
+Write a python program o solve the problem.
+ Code: https://github.com/rajdeepdahiya/temperature_monitor
+###
+
+
+import psutil
+import time
+import os
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text 
+Data ID 89: decoding step: 4772, large model step: 2880, 1.6569444444444446
+###
+Problem: Automatically update game mods based on user choice
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+import os
+import requests
+import json
+from tkinter import Tk
+from tkinter.filedialog import askdirectory
+
+# Function to get the directory path
+def get_directory_path():
+    root = Tk()
+    root.withdraw()
+    
+Data ID 90: decoding step: 4825, large model step: 2912, 1.6569368131868132
+###
+Problem: Fetch and display live game scores based on user's choice
+
+Write a python program o solve the problem.
+ Code: https://github.com/Pranav-12345/Python-Projects/blob/main/Fetch%20Live%20Game%20Scores.py
+###
+
+import requests
+import json
+import time
+
+def fetch_live_scores():
+    # Define the API 
+Data ID 91: decoding step: 4876, large model step: 2944, 1.65625
+###
+Problem: Optimize game settings interactively based on hardware specs
+
+Write a python program o solve the problem.
+ Code: 
+Data ID 92: decoding step: 4922, large model step: 2976, 1.6538978494623655
+###
+Problem: Suggest a game to play based on mood
+
+Write a python program o solve the problem.
+ Code: 1
+###
+import random
+
+def suggest_game(mood):
+    if mood == "happy":
+        return random.choice(["Tetris", "Minecraft", "Overcooked"])
+    elif mood == "sad":
+        return random.choice(["The Sims", 
+Data ID 93: decoding step: 4974, large model step: 3008, 1.653590425531915
+###
+Problem: Change game settings to dark mode if it's night time
+
+Write a python program o solve the problem.
+ Code: Python
+###
+
+
+from datetime import datetime
+import pytz
+import os
+
+def check_time():
+    tz = pytz.timezone('US/Eastern')
+    current_time = datetime.now(tz)
+    if current_time.hour >= 18 or current_time.hour 
+Data ID 94: decoding step: 5029, large model step: 3040, 1.6542763157894738
+###
+Problem: Mute all background apps while gaming
+
+Write a python program o solve the problem.
+ Code: This is a simple Python script that uses the `psutil` library to get the list of running processes and `subprocess` library to kill the background apps while gaming.
+
+```Python
+import psutil
+import subprocess
+import time
+
+# List 
+Data ID 95: decoding step: 5080, large model step: 3072, 1.6536458333333333
+###
+Problem: Display a summary of my gaming stats
+
+Write a python program o solve the problem.
+ Code: https://github.com/AnirbanMandal/Python-Programming-Practice/blob/master/Problem%204%20-%20Gaming%20Stats.py
+###
+
+class Gamer:
+    def __init__(self, name, 
+Data ID 96: decoding step: 5127, large model step: 3104, 1.6517396907216495
+###
+Problem: Find online co-op games available now
+
+Write a python program o solve the problem.
+ Code: https://github.com/CodeWithSudhi/Online-Co-op-Games
+###
+
+
+import requests
+from bs4 import BeautifulSoup
+import re
+
+# URL of the website
+url = 
+Data ID 97: decoding step: 5176, large model step: 3136, 1.6505102040816326
+###
+Problem: Check if any of my Steam friends are online
+
+Write a python program o solve the problem.
+ Code: https://github.com/steam/steam_api/blob/master/steam_api.h
+###
+
+
+import steam
+import time
+import threading
+
+class SteamFriendChecker:
+    def __init__(self, steam_api):
+        self.steam_api = 
+Data ID 98: decoding step: 5226, large model step: 3168, 1.6496212121212122
+###
+Problem: Suggest a game based on my mood and genre preference
+
+Write a python program o solve the problem.
+ Code: (Python)
+```
+# Define a dictionary to store the mood-game mapping
+mood_game_map = {
+    "happy": {"genre": "action", "game": "Overwatch"},
+    "sad": {"genre": "rpg", "game": 
+Data ID 99: decoding step: 5280, large model step: 3200, 1.65

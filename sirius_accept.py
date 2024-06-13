@@ -10,6 +10,7 @@ import torch.distributed as dist
 import numpy as np
 import random
 import argparse
+from database import mtbench
 parser = argparse.ArgumentParser()
 parser.add_argument('--seed', type=int, help='random_seed')
 parser.add_argument('--data', type=str, help='dataset')
@@ -43,23 +44,23 @@ torch.cuda.set_device(local_rank)
 
 DEVICE = torch.device("cuda", local_rank)
 DTYPE = torch.bfloat16
-STEP = 32
-GAMMA = 2
+STEP = 256
+GAMMA = 3
 TEMP = 0.3
 VOCAB = 128256
-
-data = get_dataset(args.data, 100, num_fewshots=args.shot)
+IDX = 100
+data = get_dataset(args.data, IDX, num_fewshots=args.shot)
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", use_fast=False)
 EOS = tokenizer.eos_token_id
 PAD = tokenizer.pad_token_id
 BOS = tokenizer.bos_token_id
 if PAD == None:
     PAD = EOS
-draft = LLMSingleGPUEngine(model_name="meta-llama/Meta-Llama-3-8B-Instruct", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
-target = LLMEngine(model_name="meta-llama/Meta-Llama-3-8B-Instruct", batch_size=1, max_length=4096, device=DEVICE, dtype=DTYPE)
-causal_mask = _make_causal_mask((1, 4096), DTYPE, DEVICE)
-storage_ids = torch.arange(start=0, end=4096, device=DEVICE).long()
-position_ids = torch.arange(start=0, end=4096, device=DEVICE).long().unsqueeze(0)
+draft = LLMSingleGPUEngine(model_name="meta-llama/Meta-Llama-3-8B-Instruct", batch_size=1, max_length=8192, device=DEVICE, dtype=DTYPE)
+target = LLMEngine(model_name="meta-llama/Meta-Llama-3-8B-Instruct", batch_size=1, max_length=8192, device=DEVICE, dtype=DTYPE)
+causal_mask = _make_causal_mask((1, 8192), DTYPE, DEVICE)
+storage_ids = torch.arange(start=0, end=8192, device=DEVICE).long()
+position_ids = torch.arange(start=0, end=8192, device=DEVICE).long().unsqueeze(0)
 
 draft_proba_buffer = torch.zeros((GAMMA, VOCAB)).to(DEVICE)
 
@@ -68,6 +69,8 @@ ACCEPT_TOKENS = 0
 data_id = 0
 for patch in data:
     input_sentence = patch
+    #input_sentence = patch
+    # draft_input_sentence = patch
     draft_tokens = tokenizer.encode(input_sentence)
     tokens = tokenizer.encode(input_sentence)
     draft_tokens = torch.LongTensor(draft_tokens).unsqueeze(0).to(DEVICE)
@@ -160,6 +163,13 @@ for patch in data:
 
         draft.llm.kv_cache.gather_kv_incremental(indices=list(range(last_verified_position + offset, last_verified_position + num_accept_tokens + 1 + offset)), offset=(last_verified_position+offset))
         target.llm.kv_cache.gather_kv_incremental(indices=list(range(last_verified_position, last_verified_position + num_accept_tokens + 1)), offset=last_verified_position)
+
+        draft.llm.kv_cache.initialize_kv(
+            k_cache=target.llm.kv_cache.k_cache,
+            v_cache=target.llm.kv_cache.v_cache,
+            kv_len=target.llm.kv_cache.kv_offset
+        )
+
         last_verified_position = last_verified_position + num_accept_tokens + 1
         extra_proba = tproba[num_accept_tokens].unsqueeze(0)
         sampled_tokens = torch.multinomial(extra_proba, num_samples=1)
@@ -187,7 +197,7 @@ for patch in data:
         dist.barrier()
         NUM_STEPS = NUM_STEPS + 1
         ACCEPT_TOKENS = ACCEPT_TOKENS + num_accept_tokens + 1
-    if local_rank == 0:
+    if local_rank == 0 and NUM_STEPS > 0:
         print("\nData ID {}: decoding step: {}, large model step: {}, {}".format(data_id, ACCEPT_TOKENS, NUM_STEPS, ACCEPT_TOKENS / NUM_STEPS), flush=True)
     data_id += 1
     draft.llm.kv_cache.clear()

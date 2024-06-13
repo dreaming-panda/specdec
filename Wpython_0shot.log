@@ -1,0 +1,1389 @@
+###
+[INST]Help me set up my daily to-do list!
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a function to create a daily to-do list
+def daily_todo_list():
+    # Ask the user for the number of tasks they want to add
+    num_tasks = int(input("How many tasks do you want to add to your 
+Data ID 0: decoding step: 51, large model step: 32, 1.59375
+###
+[INST]Create a shopping list based on my inputs!
+
+Write a python program based on the above instruction.[/INST] ###
+# Python program to create a shopping list based on user inputs
+# This program will ask the user to input the items they want to buy and store them in a list.
+
+# Initialize an empty list to store the shopping 
+Data ID 1: decoding step: 98, large model step: 64, 1.53125
+###
+[INST]Calculate how much time I spend on my phone per week!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import datetime
+import time
+import os
+
+# Function to get the current time
+def get_current_time():
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+# Function 
+Data ID 2: decoding step: 145, large model step: 96, 1.5104166666666667
+###
+[INST]Help me split the bill among my friends!
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to split the bill among friends
+def split_bill():
+    # Ask the user for the total bill amount
+    total_bill = float(input("Enter the total bill amount: "))
+
+    # Ask the user for the number of friends
+    
+Data ID 3: decoding step: 199, large model step: 128, 1.5546875
+###
+[INST]Organize my movie list into genres!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a dictionary to store the movie list
+movie_list = {
+    "Action": ["Die Hard", "The Dark Knight", "Mad Max: Fury Road"],
+    "Comedy": ["The 
+Data ID 4: decoding step: 243, large model step: 160, 1.51875
+###
+[INST]Calculate the average rating of my book collection!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a dictionary to store book information
+book_collection = {
+    "Book1": {"rating": 4.5},
+    "Book2": {"rating": 3.8},
+    "Book3": 
+Data ID 5: decoding step: 293, large model step: 192, 1.5260416666666667
+###
+[INST]Create a playlist based on my mood!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a dictionary to map moods to song genres
+mood_to_genre = {
+    "happy": ["upbeat", "pop", "rock"],
+    "sad": ["ballad", 
+Data ID 6: decoding step: 339, large model step: 224, 1.5133928571428572
+###
+[INST]Help me find the best deals on my shopping list!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to find the best deals on a shopping list
+def find_best_deals(shopping_list):
+    # Initialize a dictionary to store the best deals
+    best_deals = {}
+
+    # Loop through each item on the shopping 
+Data ID 7: decoding step: 393, large model step: 256, 1.53515625
+###
+[INST]Calculate how much I need to save per month for my vacation!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define the variables
+vacation_cost = 10000  # The total cost of the vacation
+months_to_save = 6  # The number of months to save
+
+# Calculate the monthly savings
+monthly_savings = vacation_cost / 
+Data ID 8: decoding step: 446, large model step: 288, 1.5486111111111112
+###
+[INST]Determine the most efficient route for my errands!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to calculate the distance between two points
+def calculate_distance(point1, point2):
+    return ((point1[0] - point2[0]) ** 2 + (point1[1] - 
+Data ID 9: decoding step: 497, large model step: 320, 1.553125
+###
+[INST]Help me manage my subscriptions!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a dictionary to store the subscriptions
+subscriptions = {}
+
+# Function to add a subscription
+def add_subscription(name, frequency):
+    if name in subscriptions:
+        print("Subscription already exists. Please update the existing 
+Data ID 10: decoding step: 545, large model step: 352, 1.5482954545454546
+###
+[INST]Create a meal plan for the week!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a dictionary to store the meal plan
+meal_plan = {
+    "Monday": ["Breakfast: Omelette", "Lunch: Grilled Chicken", "Dinner: Spaghetti"],
+    "Tuesday": 
+Data ID 11: decoding step: 594, large model step: 384, 1.546875
+###
+[INST]Calculate my carbon footprint based on my daily activities!
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Import necessary libraries
+import math
+
+# Define the carbon footprint of different daily activities
+activities = {
+    'commuting': 0.25,  # kg CO2e per km
+    'cooking': 0.15,  
+Data ID 12: decoding step: 647, large model step: 416, 1.5552884615384615
+###
+[INST]Help me set reminders for my favorite TV shows!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import datetime
+import time
+import os
+
+def set_reminders():
+    # List of TV shows with their respective reminder times
+    tv_shows = {
+        "Game of Thrones": datetime.time(20, 0),  
+Data ID 13: decoding step: 697, large model step: 448, 1.5558035714285714
+###
+[INST]Assist me in managing my study schedule!
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a function to manage study schedule
+def study_schedule():
+    # Initialize variables
+    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+    subjects = ['Math', 'Science', 'English', 
+Data ID 14: decoding step: 748, large model step: 480, 1.5583333333333333
+###
+[INST]Help me calculate the ROI for my investments!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to calculate ROI
+def calculate_roi(investment, profit):
+    roi = (profit / investment) * 100
+    return roi
+
+# Get the investment and profit from the user
+investment = float(input("Enter the investment 
+Data ID 15: decoding step: 801, large model step: 512, 1.564453125
+###
+[INST]Assist me in tracking my water intake!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to track water intake
+def track_water_intake():
+    # Initialize a variable to store the total water intake
+    total_water_intake = 0
+    
+    # Initialize a variable to store the current date
+    current_date = 
+Data ID 16: decoding step: 855, large model step: 544, 1.5716911764705883
+###
+[INST]Help me find the best time to post on social media based on my followers!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import datetime
+import random
+import time
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+# Function to generate random likes and comments
+def 
+Data ID 17: decoding step: 895, large model step: 576, 1.5538194444444444
+###
+[INST]Assist me in calculating my monthly budget!
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Python program to calculate monthly budget
+def calculate_budget():
+    # Get income
+    income = float(input("Enter your monthly income: "))
+
+    # Get fixed expenses
+    fixed_expenses = float(input("Enter your fixed monthly 
+Data ID 18: decoding step: 946, large model step: 608, 1.555921052631579
+###
+[INST]Calculate my coffee consumption
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to calculate coffee consumption
+def calculate_coffee_consumption():
+    # Ask the user for the number of cups of coffee they drink per day
+    cups_per_day = float(input("Enter the number of cups of coffee you drink per 
+Data ID 19: decoding step: 998, large model step: 640, 1.559375
+###
+[INST]Help me balance my diet
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to calculate the daily calorie intake
+def calculate_daily_calorie_intake():
+    # Ask the user for their age, sex, height, and weight
+    age = int(input("Enter your age: "))
+    sex = 
+Data ID 20: decoding step: 1051, large model step: 672, 1.5639880952380953
+###
+[INST]Help me set fitness goals
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function to set fitness goals
+def set_fitness_goals():
+    print("Welcome to the fitness goal setting program!")
+    
+    # Ask the user for their fitness goal
+    goal = input("What is your fitness goal? 
+Data ID 21: decoding step: 1104, large model step: 704, 1.5681818181818181
+###
+[INST]Sort my favorite quotes
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a list of quotes
+quotes = ["Believe you can and you're halfway there. - Theodore Roosevelt",
+          "The best way to get started is to quit talking and 
+Data ID 22: decoding step: 1144, large model step: 736, 1.5543478260869565
+###
+[INST]Help me manage my reading list
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a function to add a book to the reading list
+def add_book(reading_list, book):
+    reading_list.append(book)
+    print(f"Added '{book}' to your reading list.")
+
+# Define a function to remove a book from the reading list
+def 
+Data ID 23: decoding step: 1201, large model step: 768, 1.5638020833333333
+###
+[INST]Recommend me a movie based on my mood
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import random
+
+# Define a dictionary to map mood to movie
+mood_to_movie = {
+    "happy": ["The Shawshank Redemption", "The Sound of Music", "La La 
+Data ID 24: decoding step: 1243, large model step: 800, 1.55375
+###
+[INST]Calculate how much I should tip
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a function to calculate the tip
+def calculate_tip(total_bill, tip_percentage):
+    tip_amount = total_bill * (tip_percentage / 100)
+    return tip_amount
+
+# Ask the user for the total bill and the tip percentage
+total_bill 
+Data ID 25: decoding step: 1297, large model step: 832, 1.5588942307692308
+###
+[INST]Find me the best day to book a flight
+
+Write a python program based on the above instruction.[/INST] ###
+
+import datetime
+import random
+
+# Define a function to generate a random date
+def generate_random_date(start_date, end_date):
+    start_date_obj = datetime.datetime.strptime(start_date, "%Y-%m-%d")
+    end_date_obj = 
+Data ID 26: decoding step: 1350, large model step: 864, 1.5625
+###
+[INST]Calculate my screen time
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to calculate screen time
+import datetime
+import time
+
+def calculate_screen_time():
+    # Get the current time
+    start_time = datetime.datetime.now()
+
+    # Run the program for a certain amount of time
+    
+Data ID 27: decoding step: 1401, large model step: 896, 1.5636160714285714
+###
+[INST]Switch to dark mode
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Python program to switch to dark mode
+import tkinter as tk
+from tkinter import ttk
+
+def switch_to_dark_mode():
+    # Create a new Tkinter window
+    window = tk.Tk()
+    
+Data ID 28: decoding step: 1446, large model step: 928, 1.5581896551724137
+###
+[INST]Open a random browser tab from a list of my favorite websites
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import random
+import webbrowser
+
+# List of favorite websites
+favorite_websites = ["https://www.google.com", "https://www.facebook.com", "https://www.stackoverflow.com", "https://www.youtube.com", "https://www.github.com"]
+
+# Open 
+Data ID 29: decoding step: 1504, large model step: 960, 1.5666666666666667
+###
+[INST]Create a quick text note
+
+Write a python program based on the above instruction.[/INST] ###
+# Python program to create a quick text note
+
+import datetime
+
+def create_note():
+    note = input("Enter your note: ")
+    date = datetime.datetime.now().strftime("%Y-%m-%d 
+Data ID 30: decoding step: 1550, large model step: 992, 1.5625
+###
+[INST]Restart my PC now!
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a function to restart the PC
+def restart_pc():
+    print("Restarting my PC now!")
+
+# Call the function
+restart_pc()  # Output: Restarting my PC 
+Data ID 31: decoding step: 1591, large model step: 1016, 1.5659448818897639
+###
+[INST]Empty my recycle bin
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+import shutil
+
+# Get the path to the recycle bin
+recycle_bin_path = os.path.join(os.environ['USERPROFILE'], 'Recycle Bin')
+
+# Check if the recycle bin exists
+if 
+Data ID 32: decoding step: 1643, large model step: 1048, 1.5677480916030535
+###
+[INST]Set my desktop background color to black
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to set the desktop background color to black
+import ctypes
+
+# Set the desktop background color to black
+ctypes.windll.user32.SystemParametersInfoW(20, 0, "black", 
+Data ID 33: decoding step: 1689, large model step: 1080, 1.5638888888888889
+###
+[INST]Show system information
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to show system information
+import platform
+import psutil
+
+def show_system_info():
+    print("System Information:")
+    print("Operating System: ", platform.system())
+    print("Platform: ", platform.platform())
+    print("Architecture: ", 
+Data ID 34: decoding step: 1742, large model step: 1112, 1.566546762589928
+###
+[INST]Find the largest file in a given folder
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+
+def find_largest_file(directory):
+    largest_file = None
+    largest_size = 0
+    for filename in os.listdir(directory):
+        filepath = os.path.join(directory, filename)
+        if 
+Data ID 35: decoding step: 1792, large model step: 1144, 1.5664335664335665
+###
+[INST]Close all instances of a specific application
+
+Write a python program based on the above instruction.[/INST] ###
+
+import subprocess
+import os
+
+def close_app(app_name):
+    # Get the process ID of the application
+    process = subprocess.Popen(['tasklist'], stdout=subprocess.PIPE)
+    output = 
+Data ID 36: decoding step: 1839, large model step: 1176, 1.5637755102040816
+###
+[INST]Toggle airplane mode
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to toggle airplane mode
+
+import subprocess
+
+def toggle_airplane_mode():
+    # Get the current state of airplane mode
+    output = subprocess.check_output(['netsh', 'wlan', 
+Data ID 37: decoding step: 1887, large model step: 1208, 1.5620860927152318
+###
+[INST]Clone a GitHub repository
+
+Write a python program based on the above instruction.[/INST] ###
+
+import os
+import requests
+
+def clone_github_repo(repo_url, repo_path):
+    if not os.path.exists(repo_path):
+        os.makedirs(repo_path)
+    repo_name = repo_url.split("/")[-1]
+    
+Data ID 38: decoding step: 1934, large model step: 1240, 1.5596774193548386
+###
+[INST]Create a SQLite database and table
+
+Write a python program based on the above instruction.[/INST] ###
+
+import sqlite3
+
+# Connect to SQLite database. It will be created if it doesn't exist.
+conn = sqlite3.connect('my_database.db')
+
+# Create a cursor object
+c = conn.cursor()
+
+# Create table
+c.execute("""CREATE TABLE IF 
+Data ID 39: decoding step: 1987, large model step: 1272, 1.5621069182389937
+###
+[INST]Update all Python packages
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import subprocess
+import os
+
+# List of Python packages to be updated
+packages = ['numpy', 'pandas', Update each package
+for package in packages:
+    
+Data ID 40: decoding step: 2038, large model step: 1304, 1.562883435582822
+###
+[INST]Run a Python script at a specific time
+
+Write a python program based on the above instruction.[/INST] ###
+
+import time
+import datetime
+import os
+
+def run_script_at_time(script_path, time_str):
+    while True:
+        current_time = datetime.datetime.now().strftime("%H:%M:%S")
+        if current_time == 
+Data ID 41: decoding step: 2088, large model step: 1336, 1.562874251497006
+###
+[INST]Rename all files in a folder to lowercase
+
+Write a python program based on the above instruction.[/INST] ###
+
+import os
+
+# specify the folder path
+folder_path = '/path/to/your/folder'
+
+# iterate over all files in the folder
+for filename in os.listdir(folder_path):
+    # rename the file to lowercase
+    
+Data ID 42: decoding step: 2139, large model step: 1368, 1.5635964912280702
+###
+[INST]Count the number of lines in a file
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to count the number of lines in a file
+
+# Open the file in read mode
+file = open("file.txt", "r")
+
+# Initialize a counter variable
+count = 0
+
+# Read the file 
+Data ID 43: decoding step: 2187, large model step: 1400, 1.562142857142857
+###
+[INST]List all branches in a Git repository
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Import the necessary module
+import os
+import subprocess
+
+# Define the path to the Git repository
+repo_path = '/path/to/your/repo'
+
+# Use the subprocess module to run the command 'git 
+Data ID 44: decoding step: 2234, large model step: 1432, 1.5600558659217878
+###
+[INST]Create a ZIP archive of a folder
+
+Write a python program based on the above instruction.[/INST] ###
+
+import zipfile
+import os
+
+def create_zip_archive(zip_file_path, folder_path):
+    zip_file = zipfile.ZipFile(zip_file_path, 'w')
+    for root, dirs, files in 
+Data ID 45: decoding step: 2280, large model step: 1464, 1.5573770491803278
+###
+[INST]Push changes to a GitHub repository
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+import requests
+
+# Set your GitHub repository details
+username = 'your-username'
+repo_name = 'your-repo-name'
+token = 'your-github-token'
+
+# Set the local directory path
+local_dir = 
+Data ID 46: decoding step: 2330, large model step: 1496, 1.5574866310160427
+###
+[INST]Start a local web server
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    
+Data ID 47: decoding step: 2374, large model step: 1528, 1.5536649214659686
+###
+[INST]Create an HTTP server to share files
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving 
+Data ID 48: decoding step: 2421, large model step: 1560, 1.551923076923077
+###
+[INST]Create a symbolic link
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+import argparse
+
+def create_symbolic_link(src, dst):
+    try:
+        os.symlink(src, dst)
+        print(f"Symbolic link created from {src} to {dst}")
+    except 
+Data ID 49: decoding step: 2472, large model step: 1592, 1.5527638190954773
+###
+[INST]Extract the text content from a webpage
+
+Write a python program based on the above instruction.[/INST] ###
+
+import requests
+from bs4 import BeautifulSoup
+
+def extract_text(url):
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        text = soup.get_text()
+        return text
+    except Exception 
+Data ID 50: decoding step: 2523, large model step: 1624, 1.5535714285714286
+###
+[INST]Extract all email addresses from a text file
+
+Write a python program based on the above instruction.[/INST] ###
+
+import re
+
+def extract_email(file_name):
+    with open(file_name, 'r') as file:
+        text = file.read()
+        email_pattern = 
+Data ID 51: decoding step: 2570, large model step: 1656, 1.5519323671497585
+###
+[INST]Check for updates of a specific Python package
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import requests
+import json
+
+def check_for_updates(package_name):
+    url = f"https://pypi.org/pypi/{package_name}/json"
+    response = requests.get(url)
+    data = json.loads(response.text)
+
+    if 
+Data ID 52: decoding step: 2620, large model step: 1688, 1.552132701421801
+###
+[INST]Remove trailing whitespaces from a Python file
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+
+def remove_trailing_whitespace(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    with open(file_path, 'w') as file:
+        for line in 
+Data ID 53: decoding step: 2670, large model step: 1720, 1.552325581395349
+###
+[INST]Convert tabs to spaces in a Python file
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to convert tabs to spaces in a file
+import re
+
+def convert_tabs_to_spaces(file_path):
+    # Open the file in read mode
+    with open(file_path, 'r') as file:
+        # 
+Data ID 54: decoding step: 2718, large model step: 1752, 1.5513698630136987
+###
+[INST]Sort the import statements alphabetically
+
+Write a python program based on the above instruction.[/INST] ###
+import os
+import random
+import sys
+
+# Generate a random number
+random_number = random.randint(1, 100)
+
+# Print the random number
+print("Random Number: ", random_number)
+
+# Check if the random number is even or 
+Data ID 55: decoding step: 2772, large model step: 1784, 1.553811659192825
+###
+[INST]Break lines longer than 80 characters
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Python program to break lines longer than 80 characters
+import textwrap
+
+def break_lines(text):
+    wrapped_text = textwrap.fill(text, width=80)
+    return wrapped_text
+
+text = "This is a very long 
+Data ID 56: decoding step: 2821, large model step: 1816, 1.5534140969162995
+###
+[INST]Convert a Python file to PEP8 standards
+
+Write a python program based on the above instruction.[/INST] ###
+
+import os
+import re
+import ast
+import six
+
+class PEP8Converter:
+    def __init__(self, filename):
+        self.filename = filename
+        self.code = open(filename, 
+Data ID 57: decoding step: 2866, large model step: 1848, 1.550865800865801
+###
+[INST]Add type annotations to function arguments
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Define a function with type annotations for arguments
+def greet(name: str, age: int) -> None:
+    print(f"Hello, {name}! You are {age} years old.")
+
+
+# Call the function with 
+Data ID 58: decoding step: 2917, large model step: 1880, 1.551595744680851
+###
+[INST]Remove all comments from a Python file
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import re
+
+def remove_comments(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    cleaned_lines = []
+    for line in lines:
+        line = re.sub(r'#.*', '', 
+Data ID 59: decoding step: 2968, large model step: 1912, 1.5523012552301256
+###
+[INST]Remove all print statements from a Python file
+
+Write a python program based on the above instruction.[/INST] ###
+
+import os
+
+def remove_print_statements(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    new_lines = []
+    for line in lines:
+        if 'print' not in 
+Data ID 60: decoding step: 3018, large model step: 1944, 1.5524691358024691
+###
+[INST]Add docstrings to all functions
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Function to calculate the area of a rectangle
+def calculate_rectangle_area(length, width):
+    """
+    Calculate the area of a rectangle given its length and width.
+
+    Args:
+        length (float): The length of the rectangle.
+        
+Data ID 61: decoding step: 3069, large model step: 1976, 1.5531376518218623
+###
+[INST]Implement a simple feedforward neural network
+
+Write a python program based on the above instruction.[/INST] ###
+
+import numpy as np
+
+class NeuralNetwork:
+    def __init__(self, x, y):
+        self.input      = x
+        self.weights1   = 
+Data ID 62: decoding step: 3112, large model step: 2008, 1.549800796812749
+###
+[INST]Implement an advanced feedforward neural network using PyTorch and train it
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the dataset
+X = np.array([[0, 0], 
+Data ID 63: decoding step: 3159, large model step: 2040, 1.548529411764706
+###
+[INST]Visualize the activations of a neural network layer
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Create a simple neural network
+model = Sequential()
+model.add(Dense(64, activation='relu', 
+Data ID 64: decoding step: 3207, large model step: 2072, 1.5477799227799227
+###
+[INST]Implement a GAN to generate new data samples
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.layers import Dense, Reshape, Flatten
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.layers import LeakyReLU
+from 
+Data ID 65: decoding step: 3252, large model step: 2104, 1.5456273764258555
+###
+[INST]Extract features from an image using a pre-trained CNN
+
+Write a python program based on the above instruction.[/INST] ###
+
+import cv2
+import numpy as np
+from keras.applications import VGG16
+from keras.preprocessing import image
+from keras.applications.vgg16 import preprocess_input, decode_predictions
+
+# Load the pre-trained VGG16 
+Data ID 66: decoding step: 3300, large model step: 2136, 1.5449438202247192
+###
+[INST]Implement a Random Forest Classifier using scikit-learn
+
+Write a python program based on the above instruction.[/INST] ###
+
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+
+# Generate a random classification dataset
+X, y = 
+Data ID 67: decoding step: 3349, large model step: 2168, 1.544741697416974
+###
+[INST]Create a TensorFlow model to recognize handwritten digits
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models
+import matplotlib.pyplot as plt
+
+# Load MNIST dataset
+(train_images, train_labels), (test_images, test_labels) = 
+Data ID 68: decoding step: 3397, large model step: 2200, 1.5440909090909092
+###
+[INST]Create a K-means clustering model to segment customers
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Load the dataset
+customer_data = pd.read_csv('customer_data.csv')
+
+# Define the 
+Data ID 69: decoding step: 3447, large model step: 2232, 1.5443548387096775
+###
+[INST]Implement a Naive Bayes classifier for text classification
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes 
+Data ID 70: decoding step: 3491, large model step: 2264, 1.5419611307420495
+###
+[INST]Implement a simple chatbot using Python's NLTK library
+
+Write a python program based on the above instruction.[/INST] ###
+
+import nltk
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+import json
+import pickle
+import numpy as np
+
+from keras.models 
+Data ID 71: decoding step: 3532, large model step: 2296, 1.538327526132404
+###
+[INST]Implement a Python script to control a robotic arm
+
+Write a python program based on the above instruction.[/INST] #
+
+
+import RPi.GPIO as GPIO
+import time
+import math
+
+# Set up GPIO pins
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(17, GPIO.OUT) # Motor 
+Data ID 72: decoding step: 3571, large model step: 2328, 1.5339347079037802
+###
+[INST]Implement reinforcement learning for a maze-solving bot
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the maze
+maze = [
+    ['#', '#', '#', '#', '#', '#', '#', '#'],
+    
+Data ID 73: decoding step: 3615, large model step: 2360, 1.5317796610169492
+###
+[INST]Implement a linear regression model using scikit-learn
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Import necessary libraries
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+
+# Generate some random data
+np.random.seed(0)
+X = 2 * 
+Data ID 74: decoding step: 3661, large model step: 2392, 1.5305183946488294
+###
+[INST]Create a neural network for natural language processing using PyTorch
+
+Write a python program based on the above instruction.[/INST] ###
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+import pandas as pd
+import numpy as np
+
+# Load the dataset
+train_data = pd.read_csv('train.csv')
+test_data 
+Data ID 75: decoding step: 3712, large model step: 2424, 1.5313531353135315
+###
+[INST]Implement a decision tree classifier to predict loan approval
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load the dataset
+loan_data = 
+Data ID 76: decoding step: 3762, large model step: 2456, 1.531758957654723
+###
+[INST]Implement a Support Vector Machine for binary classification
+
+Write a python program based on the above instruction.[/INST] ###
+
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+
+# Load the iris dataset
+iris = datasets.load_iris()
+X = 
+Data ID 77: decoding step: 3811, large model step: 2488, 1.5317524115755627
+###
+[INST]Create a Python script for sentiment analysis using TextBlob
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+# Import necessary libraries
+from textblob import TextBlob
+
+# Function to perform sentiment analysis
+def sentiment_analysis(text):
+    # Create a TextBlob object
+    blob = TextBlob(text)
+
+    # Check if the sentiment is positive, negative 
+Data ID 78: decoding step: 3863, large model step: 2520, 1.532936507936508
+###
+[INST]Implement a logistic regression model for churn prediction
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load the dataset
+df = 
+Data ID 79: decoding step: 3915, large model step: 2552, 1.5340909090909092
+###
+[INST]Implement a neural network for image recognition using OpenCV
+
+Write a python program based on the above instruction.[/INST] ###
+
+import cv2
+import numpy as np
+
+# Load the pre-trained model
+net = cv2.dnn.readNetFromCaffe('deploy.prototxt', 
+Data ID 80: decoding step: 3956, large model step: 2584, 1.5309597523219813
+###
+[INST]Create a Python script to simulate a PID controller
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+class PIDController:
+    def __init__(self, Kp, Ki, Kd):
+        self.Kp = Kp
+        self.Ki = Ki
+        
+Data ID 81: decoding step: 4005, large model step: 2616, 1.5309633027522935
+###
+[INST]Implement a genetic algorithm for solving optimization problems
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import random
+import math
+
+class GeneticAlgorithm:
+    def __init__(self, population_size, mutation_rate, crossover_rate, max_generations):
+        self.population_size = population_size
+        self.mutation_rate = mutation_rate
+        
+Data ID 82: decoding step: 4058, large model step: 2648, 1.5324773413897281
+###
+[INST]Implement a Python script for anomaly detection using Isolation Forest
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import IsolationForest
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load the dataset
+df = 
+Data ID 83: decoding step: 4108, large model step: 2680, 1.5328358208955224
+###
+[INST]Implement a Principal Component Analysis for feature reduction
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import numpy as np
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+# Generate some random data
+np.random.seed(0)
+n_samples = 500
+n_features = 10
+X = 
+Data ID 84: decoding step: 4158, large model step: 2712, 1.5331858407079646
+###
+[INST]Implement a k-Nearest Neighbors algorithm for classification
+
+Write a python program based on the above instruction.[/INST] ###
+
+import numpy as np
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+
+# Generate a random classification dataset
+X, y = 
+Data ID 85: decoding step: 4204, large model step: 2744, 1.532069970845481
+###
+[INST]Implement a Python script to perform web scraping and data extraction
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Send a GET request
+url = "https://www.example.com"
+response = requests.get(url)
+
+# If the GET request is successful, the status 
+Data ID 86: decoding step: 4252, large model step: 2776, 1.531700288184438
+###
+[INST]Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv
+
+Write a python program based on the above instruction.[/INST] ###
+import requests
+import csv
+import json
+from bs4 import BeautifulSoup
+
+# Send a GET request
+url = "https://sharegpt.com/c/4qj1DB0"
+response = requests.get(url)
+
+# If the GET request is successful, 
+Data ID 87: decoding step: 4307, large model step: 2808, 1.5338319088319088
+###
+[INST]Fetch the latest gaming news and display them interactively
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import requests
+import json
+import time
+import random
+import tkinter as tk
+from tkinter import ttk
+
+# Function to fetch the latest gaming news
+def fetch_gaming_news():
+    url = 
+Data ID 88: decoding step: 4354, large model step: 2840, 1.5330985915492958
+###
+[INST]Monitor CPU and GPU temperature and alert if it's too high
+
+Write a python program based on the above instruction.[/INST] ###
+
+import psutil
+import time
+import os
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+# Set the threshold temperature
+cpu_threshold = 
+Data ID 89: decoding step: 4401, large model step: 2872, 1.5323816155988859
+###
+[INST]Automatically update game mods based on user choice
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import os
+import requests
+import json
+import time
+import tkinter as tk
+from tkinter import messagebox
+
+class ModUpdater:
+    def __init__(self, root):
+        self.root = root
+        
+Data ID 90: decoding step: 4448, large model step: 2904, 1.5316804407713498
+###
+[INST]Fetch and display live game scores based on user's choice
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import requests
+import json
+import time
+
+def fetch_scores(sport, league):
+    url = 
+Data ID 91: decoding step: 4491, large model step: 2936, 1.529632152588556
+###
+[INST]Optimize game settings interactively based on hardware specs
+
+Write a python program based on the above instruction.[/INST] ###
+
+import psutil
+import platform
+
+def get_system_info():
+    system_info = {}
+    system_info['platform'] = platform.system()
+    system_info['architecture'] = platform.machine()
+    system_info['cpu_count'] = 
+Data ID 92: decoding step: 4540, large model step: 2968, 1.5296495956873315
+###
+[INST]Suggest a game to play based on mood
+
+Write a python program based on the above instruction.[/INST] #
+
+
+# Define a dictionary to map moods to games
+mood_games = {
+    "relaxed": ["Solitaire", "Chess", "Tetris"],
+    "energetic": ["First Person Shooter", 
+Data ID 93: decoding step: 4587, large model step: 3000, 1.529
+###
+[INST]Change game settings to dark mode if it's night time
+
+Write a python program based on the above instruction.[/INST] ###
+
+import datetime
+import pygame
+
+# Initialize Pygame
+pygame.init()
+
+# Set the game settings
+game_settings = {
+    "dark_mode": False,
+    "night_time": datetime.time(18, 0, 
+Data ID 94: decoding step: 4636, large model step: 3032, 1.529023746701847
+###
+[INST]Mute all background apps while gaming
+
+Write a python program based on the above instruction.[/INST] ###
+
+import psutil
+import time
+import os
+
+def mute_all_apps():
+    for proc in psutil.process_iter():
+        try:
+            if proc.name().lower()!= "python.exe" and proc.name().lower()!= 
+Data ID 95: decoding step: 4684, large model step: 3064, 1.5287206266318538
+###
+[INST]Display a summary of my gaming stats
+
+Write a python program based on the above instruction.[/INST] ###
+
+# Define a dictionary to store gaming stats
+gaming_stats = {
+    "Games Played": 100,
+    "Wins": 80,
+    "Losses": 20,
+    "Draws": 0,
+    "Kills": 
+Data ID 96: decoding step: 4738, large model step: 3096, 1.5303617571059431
+###
+[INST]Find online co-op games available now
+
+Write a python program based on the above instruction.[/INST] ###
+
+import requests
+from bs4 import BeautifulSoup
+
+def find_online_coop_games():
+    url = "https://www.giantbomb.com/games/search/?query=online%20co-op&fields=game"
+    response = 
+Data ID 97: decoding step: 4788, large model step: 3128, 1.530690537084399
+###
+[INST]Check if any of my Steam friends are online
+
+Write a python program based on the above instruction.[/INST] ###
+
+import steam
+import time
+
+# Set up the Steam API
+steam_api = steam.SteamAPI()
+
+# Get the Steam ID of the user
+steam_id = steam_api.get_steam_id()
+
+# Get the list of friends
+friends = 
+Data ID 98: decoding step: 4839, large model step: 3160, 1.5313291139240506
+###
+[INST]Suggest a game based on my mood and genre preference
+
+Write a python program based on the above instruction.[/INST] ###
+
+
+import random
+import requests
+
+# Define a dictionary to store games based on mood and genre
+games = {
+    "action": {
+        "happy": ["Overwatch", "Call of Duty", "Halo"],
+        
+Data ID 99: decoding step: 4887, large model step: 3192, 1.531015037593985

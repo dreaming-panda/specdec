@@ -148,9 +148,9 @@ def get_dataset(dataset_name: str, max_samples :int, num_fewshots: int = 0):
         prompts = []
         #base_prompt = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>You are a helpful AI assistant for travel tips and recommendations<|eot_id|><|start_header_id|>user<|end_header_id|>{usr_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
         for sample in list_data:
-            conv = "USER: [INST]" + sample["turns"][0] + "[/INST]. Assistant: "
+            conv = "" + sample["turns"][0] + ""
             prompts.append(conv)
-        return prompts
+        return prompts[:max_samples]
 
 
     elif dataset_name == "python":
@@ -158,13 +158,13 @@ def get_dataset(dataset_name: str, max_samples :int, num_fewshots: int = 0):
         fewshot_dataset = datasets.load_dataset("flytech/python-codes-25k", split="train[2000:2500]")
         for patch in fewshot_dataset:
            
-            text = "###\n[INST]" + patch["instruction"] + "\n\nWrite a python program based on the above instruction.[/INST]\n" + patch["output"] + "\n"
+            text = "###\nProblem: " + patch["instruction"] + "\n\nWrite a python program to solve the problem.\n Code: " + patch["output"] + "\n"
             fewshot_data.append(text)
 
     
         few_shot_list = list(range(len(fewshot_data)))
         for patch in test_dataset:
-            text = "###\n[INST]" + patch["instruction"] + "\n\nWrite a python program based on the above instruction.[/INST]\n"
+            text = "###\nProblem: " + patch["instruction"] + "\n\nWrite a python program o solve the problem.\n Code: "
             random.shuffle(few_shot_list)
             prefix = ""
             for i in range(num_fewshots):
