@@ -309,7 +309,11 @@ class LLM:
         self.rope_theta = self.config.rope_theta
         self.rope_callables =  {}
         self.mempool = None
-
+        self.layer_mask = [None for _ in range(len(self.layers))]
+        self.layer_mask_attn = [None for _ in range(len(self.layers))]
+        self.sparse_config = open("layer_sparse.yaml")
+        import yaml
+        self.k_factor = yaml.safe_load(self.sparse_config)
     def init_parameters(self):
 
         hf_model = LlamaForCausalLM.from_pretrained(self.model_name, torch_dtype=self.dtype)
@@ -384,6 +388,7 @@ class LLM:
         gate_proj: torch.Tensor,
         up_proj: torch.Tensor,
         down_proj: torch.Tensor,
+        layer_idx:int
     ):  
     
     
@@ -396,6 +401,16 @@ class LLM:
         gate = F.linear(hidden_states, gate_proj)
         gate = F.silu(gate)
         hidden_states = gate * up
+
+        # if hidden_states.shape[1] > 1:
+        #     neuron_stat = ((hidden_states / hidden_states.norm(dim=-1, keepdim=True))) # B, D
+        #     neuron_stat = neuron_stat.norm(dim=1)
+        #     _, indices = torch.abs(neuron_stat).topk(k=int(self.k_factor['mlp'][layer_idx] * gate.shape[-1]), largest=False, dim=-1)
+        #     self.layer_mask[layer_idx] = indices
+        
+        # else:
+        #     assert self.layer_mask[layer_idx] is not None
+        #     hidden_states[:,:,self.layer_mask[layer_idx].unsqueeze(0)] = 0.0
         hidden_states = F.linear(hidden_states, down_proj)
         hidden_states = residual + hidden_states
         return hidden_states
@@ -446,6 +461,7 @@ class LLM:
                         buffer.gate_proj,
                         buffer.up_proj,
                         buffer.down_proj,
+                        layer_idx
                         )
         
         return hidden_states

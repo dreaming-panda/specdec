@@ -148,9 +148,9 @@ def get_dataset(dataset_name: str, max_samples :int, num_fewshots: int = 0):
         prompts = []
         #base_prompt = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>You are a helpful AI assistant for travel tips and recommendations<|eot_id|><|start_header_id|>user<|end_header_id|>{usr_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
         for sample in list_data:
-            conv = "" + sample["turns"][0] + ""
+            conv = "User: [INST]" + sample["turns"][0] + "[/INST]. \nAssistant: "
             prompts.append(conv)
-        return prompts[:max_samples]
+        return prompts
 
 
     elif dataset_name == "python":

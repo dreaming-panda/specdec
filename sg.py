@@ -403,6 +403,7 @@ class LLM:
         hidden_states = gate * up
 
         if hidden_states.shape[1] > 1:
+            self.layer_mask[layer_idx] = None
             neuron_stat = ((hidden_states / hidden_states.norm(dim=-1, keepdim=True))) # B, D
             neuron_stat = neuron_stat.norm(dim=1)
             if int(self.k_factor['mlp'][layer_idx] * gate.shape[-1]) > 0:
